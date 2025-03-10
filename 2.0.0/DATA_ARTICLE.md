@@ -57,7 +57,7 @@ The following step-by-step is suggested:
 
 ## The Data Article
 
-### Title 
+### Title ✅
 
 > 💡 Titles may not exceed 110 characters, including whitespaces. They should avoid the use of acronyms, abbreviations, and unnecessary punctuation where possible. Colons and parentheses are not permitted.
 
@@ -65,13 +65,13 @@ The following step-by-step is suggested:
 
 _Note: the use of the acronym **3W** in the title is intentional and beneficial. Its meaning will be explained in the Background & Summary Section._
 
-### Abstract
+### Abstract ⁉️
 
 > 💡 We recommend the Abstract should not exceed 170 words. It should not include references and should succinctly describe the data and how it may be used but should not make any claims regarding new scientific findings. We recommend URLs for download, or other details on dataset access, are not included. Please do not use sub-headings to break the Abstract into sections. 
 
 In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for early detection of events have shown promise for different industries. In 2019, after recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and made public the 3W Dataset first version, consisting of Multivariate Time Series labeled by experts corresponding to undesirable events or to periods of normal operation. Since then, the 3W Dataset has been explored and the published works already form a considerable scientific framework. Over the last few years, the 3W Dataset has also been evolved by Petrobras. For example, its structure was considerably modified, and more labeled data were incorporated. This data article describes the 3W Dataset current publicly available version and its publication will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions.
 
-### Background & Summary
+### Background & Summary 🚧
 
 > 💡 This section should provide an overview of the study that generated the data, as well as outlining the potential reuse value of the data. Any previous publications that used these data, in whole or in part, should be cited and briefly summarized. Unlimited length.
 
@@ -82,7 +82,7 @@ In the oil industry, events in wells can cause economic damage, environmental ac
 
 _Note: the initial definition of this list of contents is ***being prepared***._
 
-### Methods
+### Methods 🚧
 
 > 💡 The Methods section in Data Descriptors should describe any steps or procedures used in producing the data, including full descriptions of the experimental design, data acquisition and any computational processing. Unlimited length.
 
@@ -93,7 +93,7 @@ _Note: the initial definition of this list of contents is ***being prepared***._
 
 _Note: the initial definition of this list of contents is still pending._
 
-### Data Records
+### Data Records 🚧
 
 > 💡 This section should be used to explain each data record associated with this work, including the repository where this information is stored, and to provide an overview of the data files and their formats and any folder structure. Please do not include extensive summary statistics, which should be limited to less than half a page, with 1-2 tables or figures, if required at all. Note the general expectation is that, if readers wish to scrutinise your dataset's contents, they will download and analyse it for themselves. Unlimited length.
 
@@ -104,7 +104,7 @@ _Note: the initial definition of this list of contents is still pending._
 
 _Note: the initial definition of this list of contents is still pending._
 
-### Technical Validation
+### Technical Validation 🚧
 
 > 💡 This section should present any experiments or analyses that are needed to support the technical quality of the dataset. This section may be supported by figures and tables, as needed. Unlimited length.
 
@@ -115,7 +115,7 @@ _Note: the initial definition of this list of contents is still pending._
 
 _Note: the initial definition of this list of contents is still pending._
 
-### Usage Notes
+### Usage Notes 🚧
 
 > 💡 'Usage Notes' is an optional section that can be used to provide information that may assist other researchers who reuse your data. Most commonly these are additional technical notes about how to access or process the data. Please do not use this section to write a conclusions section, or similar, as we do not publish these. Unlimited length.
 
@@ -126,7 +126,7 @@ _Note: the initial definition of this list of contents is still pending._
 
 _Note: the initial definition of this list of contents is still pending._
 
-### Code Availability
+### Code Availability 🚧
 
 > 💡 For all publications, a statement must be included under the subheading "Code Availability" indicating whether and how and custom code can be accessed, including any restrictions to access. This section can also include information on the versions of any software used, if relevant, and any specific variables or parameters used to generate, test, or process the current dataset if these are not included in the Methods. Please see our policy on code availability for more information. The code availability statement should be placed at the end of the manuscript, immediately before the references. If no custom code has been used then the statement is still required in order to state this. 
 
@@ -137,7 +137,7 @@ _Note: the initial definition of this list of contents is still pending._
 
 _Note: the initial definition of this list of contents is still pending._
 
-### Acknowledgements
+### Acknowledgements 🚧
 
 > 💡 The 'Acknowledgements' statement should contain text acknowledging non-author contributors. Acknowledgements should be brief, and should not include thanks editors or effusive comments. Grant or contribution numbers may be acknowledged.
 
@@ -148,7 +148,7 @@ _Note: the initial definition of this list of contents is still pending._
 
 _Note: the initial definition of this list of contents is still pending._
 
-### Authors & Affiliations
+### Authors & Affiliations ⁉️
 
 > 💡 Author affiliations should provide enough detail for the author to be reached, including the department, institution and country wherever possible. Full postal addresses are not required. Affiliations should be cited in numerical order within the author list, starting with the affiliations of the first author. Email addresses should be provided for corresponding authors.
 
@@ -162,7 +162,7 @@ _Note: the initial definition of this list of contents is still pending._
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your name in association with your affiliation in the list above._
 
-### Author Contributions
+### Author Contributions ⁉️
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
@@ -170,17 +170,17 @@ R.V. lead this project, prepared this manuscript drafts version, and incorporate
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
-### Corresponding Author
+### Corresponding Author ✅
 
 Correspondence to Ricardo Emanuel Vaz Vargas (ricardo.vargas@petrobras.com.br).
 
-### Competing Interests
+### Competing Interests ✅
 
 > 💡 A 'Competing interests' statement is required for all papers accepted by and published in Scientific Data. If there is no conflict of interest, a statement declaring this must still be included in the manuscript (e.g. "The author(s) declare no competing interests").
 
 The authors declare no competing interests.
 
-### References
+### References ⁉️
 
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
