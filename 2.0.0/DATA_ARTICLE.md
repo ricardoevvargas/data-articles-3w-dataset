@@ -23,7 +23,7 @@ All the sections of this file should be duly revised during the development of t
     * This definition stems from the following discussion: [How should we publish this article?](https://github.com/ricardoevvargas/data-articles-3w-dataset/discussions/2)
 1. This submission will be made through the [Scientific Data online manuscript submission and tracking system](https://mts-scidata.nature.com/cgi-bin/main.plex);
     * At the end of the last stage of this work by [Ricardo Vargas](https://github.com/ricardoevvargas).
-1. This [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) publication fee ($2,490) will be paid by Petrobras;
+1. The publication fee for this [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) (US$ 2,490), charged by [Scientific Data (Springer Nature)](https://www.nature.com/sdata), will be paid by Petrobras;
     * This definition was announced [here](https://github.com/ricardoevvargas/data-articles-3w-dataset/discussions/8);
     * The [3W Project](https://github.com/petrobras/3W) is one of the main projects of the Petrobras' program called [Conexões para Inovação - Módulo Open Lab](https://tecnologia.petrobras.com.br/modulo-open-lab);
     * The publication of this [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) is essential for the development and success of the [3W Project](https://github.com/petrobras/3W).
