@@ -75,7 +75,7 @@ In the oil industry, events in wells can cause economic damage, environmental ac
 
 > 💡 This section should provide an overview of the study that generated the data, as well as outlining the potential reuse value of the data. Any previous publications that used these data, in whole or in part, should be cited and briefly summarized. Unlimited length.
 
-_Note: the idea is that this section will be composed of the contents listed below, in the same order as the list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+_Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
 <details>
 <summary>
