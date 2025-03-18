@@ -234,7 +234,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>The terms that make up the nomenclature used in this work are derived from the definition of MTS and are shown in Table 1 ...</li>
 </details>
 
-&nbsp;&nbsp;&nbsp; 2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, sample, period, instance and dataset ...
+&nbsp;&nbsp;&nbsp; 2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, class label, state label, sample, period, instance, type of event, and dataset ...
 
 #### Types of Instances
 
@@ -319,7 +319,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 9. Overview of the labeling process ...
 </summary>
 <li>The labeling process applied to all instances of 3W Dataset 2.0.0 resulted in two types of labels, called class and state ...</li>
-<li>The type of class label is directly related to normality or to some undesirable event ...</li>
+<li>The type of label class is directly related to normality or to some undesirable event ...</li>
 <li>The type of label state is directly related to the operational status of the well in question ...</li>
 </details>
 
@@ -328,6 +328,9 @@ _Note: the idea is that this section will be composed of the subsections and con
 10. Possible values for the label type class ...
 </summary>
 <li>The set of numerical codes associated with the class label type is detailed in Table 4 ...</li>
+<li>Any of these codes can be associated with any observation from any instance ...</li>
+<li>Each instance as a whole is associated with the only steady state code to which at least part of its observations have been associated ...</li>
+<li>This code is referenced as type of event ...</li>
 </details>
 
 &nbsp;&nbsp;&nbsp; 11. Table 4 [with name and description columns] ...
@@ -337,6 +340,8 @@ _Note: the idea is that this section will be composed of the subsections and con
 12. Possible values for the label type state ...
 </summary>
 <li>The set of numerical codes associated with the type of state label is detailed in Table 5 ...</li>
+<li>Any of these codes can also be associated with any observation from any instance ...</li>
+<li>None of these codes are associated with any instance as a whole ...</li>
 </details>
 
 &nbsp;&nbsp;&nbsp; 13. Table 5 [with name and description columns] ...
