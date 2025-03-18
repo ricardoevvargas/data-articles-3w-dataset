@@ -194,7 +194,7 @@ _Note: the idea is that this section will be composed of the contents listed bel
 <li>This data article will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions ...</li>
 </details>
 
-### Methods 🚧
+### Methods ⁉️
 
 > 💡 The Methods section in Data Descriptors should describe any steps or procedures used in producing the data, including full descriptions of the experimental design, data acquisition and any computational processing. Unlimited length.
 
@@ -455,7 +455,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 * Content;
 * Content.
 
-_Note: the initial definition of this list of contents is still pending._
+_Note: the initial definition of this list of contents is ***being prepared***._
 
 ### Technical Validation 🚧
 
