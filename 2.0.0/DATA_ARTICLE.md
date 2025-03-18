@@ -222,11 +222,11 @@ _Note: the idea is that this section will be composed of the subsections and con
 </details>
 
 <summary>
-2. Copy of the original definition here ...
+&nbsp;&nbsp;&nbsp; 2. Copy of the original definition here ...
 </summary>
 
 <summary>
-3. Copy of the original note here ...
+&nbsp;&nbsp;&nbsp; 3. Copy of the original note here ...
 </summary>
 
 #### The Developed Nomenclature
@@ -239,7 +239,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 </details>
 
 <summary>
-2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, sample, period, instance and dataset ...
+&nbsp;&nbsp;&nbsp; 2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, sample, period, instance and dataset ...
 </summary>
 
 #### Types of Instances
@@ -278,7 +278,6 @@ _Note: the idea is that this section will be composed of the subsections and con
 </summary>
 <li>All instances, regardless of their type, are related to satellite-type offshore producing wells without manifold [add ref] ...</li>
 <li>This type of well can be operated with different methods interspersed over time, sometimes with natural lifting [add ref] and sometimes with artificial lifting [add ref] ...</li>
-
 </details>
 
 <details>
@@ -288,11 +287,10 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>Figure 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0 ...</li>
 <li>This figure only covers the components necessary for a good understanding of how 3W Dataset 2.0.0 was conceived ...</li>
 <li>In summary, this picture shows the production platform, the well itself, the wet Christmas tree [add ref], the production and service lines, as well as sensors and valves ...</li>
-
 </details>
 
 <summary>
-3. Figure 1 [author created from the used diagram in the article describing 3W Dataset 1.0.0] ...
+&nbsp;&nbsp;&nbsp; 3. Figure 1 [author created from the used diagram in the article describing 3W Dataset 1.0.0] ...
 </summary>
 
 <details>
@@ -302,11 +300,10 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>There are 27 variables present in all instances of 3W Dataset 2.0.0 ...</li>
 <li>According to the used definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance ...</li>
 <li>The name of each variable, what it represents and its physical position in the considered scenario (see Figure 1) are shown in Table 2 ...</li>
-
 </details>
 
 <summary>
-5. Table 2 [with name, description and position columns] ...
+&nbsp;&nbsp;&nbsp; 5. Table 2 [with name, description and position columns] ...
 </summary>
 
 <details>
@@ -326,7 +323,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 </details>
 
 <summary>
-8. Table 3 [with magnitude and measurement unit columns] ...
+&nbsp;&nbsp;&nbsp; 8. Table 3 [with magnitude and measurement unit columns] ...
 </summary>
 
 <details>
@@ -346,7 +343,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 </details>
 
 <summary>
-11. Table 4 [with name and description columns] ...
+&nbsp;&nbsp;&nbsp; 11. Table 4 [with name and description columns] ...
 </summary>
 
 <details>
@@ -357,7 +354,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 </details>
 
 <summary>
-13. Table 5 [with name and description columns] ...
+&nbsp;&nbsp;&nbsp; 13. Table 5 [with name and description columns] ...
 </summary>
 
 #### Method Relating to Real Instances
