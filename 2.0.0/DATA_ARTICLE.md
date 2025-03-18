@@ -576,7 +576,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 * Content;
 * Content.
 
-_Note: the initial definition of this list of contents is still pending._
+_Note: the initial definition of this list of contents is ***being prepared***._
 
 ### Usage Notes 🚧
 
