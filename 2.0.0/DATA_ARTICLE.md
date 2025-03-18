@@ -242,7 +242,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <summary>
 1. The 3W Dataset 2.0.0 consists of three types of instances ...
 </summary>
-<li>As mentioned in the introduction to this section, the 3W Dataset 2.0.0 is made up of three types of instances, called real, simulated and hand-drawn ... </li>
+<li>As mentioned in the introduction to this section, the 3W Dataset 2.0.0 is made up of three types of instances, called real, simulated and hand-drawn ...</li>
 </details>
 
 <details>
@@ -361,7 +361,7 @@ _Note: the idea is that this section will be composed of the subsections and con
     </ul>
 <li>Related to labeling ...</li>
     <ul>
-    <li>By experts using our own web system developed exclusively for labeling and exporting real data to the 3W Dataset ... </li> 
+    <li>By experts using our own web system developed exclusively for labeling and exporting real data to the 3W Dataset ...</li> 
     </ul>
 </details>
 
@@ -432,16 +432,140 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>Expert manual dexterity ...</li>
 </details>
 
-### Data Records 🚧
+### Data Records ⁉️
 
 > 💡 This section should be used to explain each data record associated with this work, including the repository where this information is stored, and to provide an overview of the data files and their formats and any folder structure. Please do not include extensive summary statistics, which should be limited to less than half a page, with 1-2 tables or figures, if required at all. Note the general expectation is that, if readers wish to scrutinise your dataset's contents, they will download and analyse it for themselves. Unlimited length.
 
-* Content;
-* Content;
-* Content;
-* Content.
+_Note: the idea is that this section will be composed of the subsections and contents listed below, in the same order as the subsections and **expandable** lists are and with one paragraph per each item in these lists. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
-_Note: the initial definition of this list of contents is ***being prepared***._
+<details>
+<summary>
+1. Repository in which the 3W Dataset 2.0.0 is made available ...
+</summary>
+<li>The 3W Dataset 2.0.0 is publicly available on Figshare [add ref], in the following exclusive repository: [add ref] ...</li>
+<li>This dataset is licensed via CC-BY 4.0 ...</li>
+</details>
+
+<details>
+<summary>
+2. How this section is organized ...
+</summary>
+<li>The following subsection gives an overview of this dataset (main quantities and statistics) ...</li>
+<li>The subsequent subsection details how the data records are structured in this dataset ...</li>
+</details>
+
+#### 3W Dataset 2.0.0 Overview
+
+<details>
+<summary>
+1. Quantities of instances ...
+</summary>
+<li>The quantities of instances that compose the 3W Dataset 2.0.0, by type of instance and by type of event, are shown in Table 6 ...</li>
+</details>
+
+&nbsp;&nbsp;&nbsp; 2. Table 6 [with REAL SIMULATED, HAND-DRAWN and TOTAL columns] ...
+
+<details>
+<summary>
+3. Scatter Map of Real Instances ...
+</summary>
+<li>A scatter map with all the real instances is shown in Figure 2 ...</li>
+<li>The oldest one occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells, this map provides an overview of the occurrences distributions of each instance over time and between wells ...</li>
+</details>
+
+&nbsp;&nbsp;&nbsp; 4. Figure 2 [created with the tk.create_and_plot_scatter_map(real_instances) method] ...
+
+<details>
+<summary>
+5. Main statistics ...
+</summary>
+<li>The 3W dataset's main statistics related to inherent difficulties of actual data are presented in Table 7 ...</li>
+</details>
+
+&nbsp;&nbsp;&nbsp; 6. Table 7 [with Amount and Percentage columns] ...
+
+#### 3W Dataset 2.0.0 Structure
+
+<details>
+<summary>
+1. The configuration file ...
+</summary>
+<li>At the root of the directory containing the dataset, there is a file called dataset.ini which specifies a series of dataset properties ...</li>
+</details>
+
+<details>
+<summary>
+2. Division into subdirectories ...
+</summary>
+<li>The data itself in the dataset is organized in subdirectories dedicated to each type of event ...</li>
+<li>The name of each directory is the numerical code associated with each type of event (see Table 4) ...</li>
+</details>
+
+<details>
+<summary>
+3. One instance per Parquet file ...
+</summary>
+<li>Each instance is persisted in its own Parquet [add ref] file ...</li>
+<li>The main benefits of Parquet are as follows ...</li>
+</details>
+
+<details>
+<summary>
+4. Formulation of file names ...
+</summary>
+<li>The logic used to formulate file names depends on the type of instance ...</li>
+</details>
+
+<details>
+<summary>
+5. Real instance names ...
+</summary>
+<li>The name of each real instance is composed as follows: WELL-[incremental id]_[timestamp of oldest observation].parquet ...</li>
+<li>Example: WELL-00014_20170917140000.parquet ...</li>
+<li>Each real well is associated with a unique id, regardless of the type of event (subdirectory) ...</li>
+</details>
+
+<details>
+<summary>
+6. Simulated instance names ...
+</summary>
+<li>The name of each simulated instance is composed as follows: SIMULATED_[incremental id].parquet ...</li>
+<li>Example: SIMULATED_00072.parquet ...</li>
+<li>The incremental id is initialized from 1 for each event type (subdirectory) ...</li>
+</details>
+
+<details>
+<summary>
+7. Hand-drawn instance names ...
+</summary>
+<li>The name of each hand-drawn instance is composed as follows: DRAWN_[incremental id].parquet ...</li>
+<li>Example: DRAWN_00007.parquet</li>
+<li>The incremental id is initialized from 1 for each event type (subdirectory) ...</li>
+</details>
+
+<details>
+<summary>
+8. Engine and compression method ...
+</summary>
+<li>All Parquet files are created with pyarrow engine and brotli compression ...</li>
+<li>These choices were made on the basis of the good compromise between compression ratio and reading time ...</li>
+</details>
+
+<details>
+<summary>
+9. Format and use of timestamps ...
+</summary>
+<li>The timestamps vector of each instance is used as index in the corresponding Parquet file ...</li>
+<li>All timestamps are represented in the format 'YYYY-MM-DD HH:MM:SS' ...</li>
+</details>
+
+<details>
+<summary>
+10. Type of each attribute (variable or label) ...
+</summary>
+<li>All variables are stored as float in columns of Parquet files ...</li>
+<li>All labels are stored as Int64 (not int64) in columns of Parquet files ...</li>
+</details>
 
 ### Technical Validation 🚧
 
