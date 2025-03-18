@@ -221,13 +221,9 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>For convenience, it is reproduced below ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 2. Copy of the original definition here ...
-</summary>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 3. Copy of the original note here ...
-</summary>
 
 #### The Developed Nomenclature
 
@@ -238,9 +234,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>The terms that make up the nomenclature used in this work are derived from the definition of MTS and are shown in Table 1 ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, sample, period, instance and dataset ...
-</summary>
 
 #### Types of Instances
 
@@ -289,9 +283,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>In summary, this picture shows the production platform, the well itself, the wet Christmas tree [add ref], the production and service lines, as well as sensors and valves ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 3. Figure 1 [author created from the used diagram in the article describing 3W Dataset 1.0.0] ...
-</summary>
 
 <details>
 <summary>
@@ -302,9 +294,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>The name of each variable, what it represents and its physical position in the considered scenario (see Figure 1) are shown in Table 2 ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 5. Table 2 [with name, description and position columns] ...
-</summary>
 
 <details>
 <summary>
@@ -322,9 +312,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>The measurement units considered for each quantity are shown in Table 3 ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 8. Table 3 [with magnitude and measurement unit columns] ...
-</summary>
 
 <details>
 <summary>
@@ -342,9 +330,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>The set of numerical codes associated with the class label type is detailed in Table 4 ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 11. Table 4 [with name and description columns] ...
-</summary>
 
 <details>
 <summary>
@@ -353,9 +339,7 @@ _Note: the idea is that this section will be composed of the subsections and con
 <li>The set of numerical codes associated with the type of state label is detailed in Table 5 ...</li>
 </details>
 
-<summary>
 &nbsp;&nbsp;&nbsp; 13. Table 5 [with name and description columns] ...
-</summary>
 
 #### Method Relating to Real Instances
 
