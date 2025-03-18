@@ -10,7 +10,7 @@ The following second section contains the ***draft version*** of the [data artic
 
 The content of this file in its current version is the result of an ***in-depth evaluation*** of the following sources of guidance:
 
-* [For Authors | Scientific Data](https://www.nature.com/sdata/author-instructions)
+* [For Authors | Scientific Data](https://www.nature.com/sdata/publish/for-authors)
 * [Submission Guidelines | Scientific Data](https://www.nature.com/sdata/publish/submission-guidelines)
 * [Data Policies | Scientific Data](https://www.nature.com/sdata/policies/data-policies)
 * [Data Repository Guidance | Scientific Data](https://www.nature.com/sdata/policies/repositories#general)
@@ -198,12 +198,253 @@ _Note: the idea is that this section will be composed of the contents listed bel
 
 > 💡 The Methods section in Data Descriptors should describe any steps or procedures used in producing the data, including full descriptions of the experimental design, data acquisition and any computational processing. Unlimited length.
 
-* Content;
-* Content;
-* Content;
-* Content.
+_Note: the idea is that this section will be composed of the subsections and contents listed below, in the same order as the subsections and **expandable** lists are and with one paragraph per each item in these lists. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
-_Note: the initial definition of this list of contents is ***being prepared***._
+<details>
+<summary>
+1. How this section is organized ...
+</summary>
+<li>To summarize, the 3W Dataset 2.0.0 is made up of 3 types of instances and was generated with 3 methods, one per type of instance ...</li>
+<li>These methods are described in this section based on the mathematical definition of MTS presented in the following subsection ...</li>
+<li>Based on this definition and to support the 3W Project itself and this article, the nomenclature detailed in the subsequent subsection was developed ...</li>
+<li>The types of instances and the methods associated with them are described in their own subsections ...</li>
+<li>Certain characteristics are common to all 3 methods and are therefore detailed in a separate subsection ...</li>
+</details>
+
+#### Mathematical Definition of Multivariate Time Series
+
+<details>
+<summary>
+1. Origin of the definition of MTS ...
+</summary>
+<li>The chosen definition for MTS is the same as that used in the article that published the 3W Dataset 1.0.0 [add ref] ...</li>
+<li>For convenience, it is reproduced below ...</li>
+</details>
+
+<summary>
+2. Copy of the original definition here ...
+</summary>
+
+<summary>
+3. Copy of the original note here ...
+</summary>
+
+#### The Developed Nomenclature
+
+<details>
+<summary>
+1. The terms are derived from the MTS definition ...
+</summary>
+<li>The terms that make up the nomenclature used in this work are derived from the definition of MTS and are shown in Table 1 ...</li>
+</details>
+
+<summary>
+2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, sample, period, instance and dataset ...
+</summary>
+
+#### Types of Instances
+
+<details>
+<summary>
+1. The 3W Dataset 2.0.0 consists of three types of instances ...
+</summary>
+<li>As mentioned in the introduction to this section, the 3W Dataset 2.0.0 is made up of three types of instances, called real, simulated and hand-drawn ... </li>
+</details>
+
+<details>
+<summary>
+2. The types of instances have been defined according to the origins of their data ...
+</summary>
+<li>Each of these types of instances has been fundamentally defined according to the origin of its data ...</li>
+<li>Data from real instances were obtained from different Petrobras PIMS [add ref], more precisely PI Systems [add ref] ...</li>
+<li>Data from simulated instances were generated with the transient simulator called OLGA [add ref] ...</li>
+<li>Data from hand-drawn instances was literally drawn by experts and extracted with a digital tool developed exclusively for this purpose ...</li>
+</details>
+
+<details>
+<summary>
+3. The different types of instances required different methods to be developed, which are described below ...
+</summary>
+<li>Each type of instance, and therefore each data source, required the development of its own method for acquiring and labeling data ...</li>
+<li>The common characteristics among the three developed methods are described in the following subsection ...</li>
+<li>The particularities of each method are detailed in the subsequent subsections ...</li>
+</details>
+
+#### Common Characteristics Among the Methods
+
+<details>
+<summary>
+1. The considered type of well ...
+</summary>
+<li>All instances, regardless of their type, are related to satellite-type offshore producing wells without manifold [add ref] ...</li>
+<li>This type of well can be operated with different methods interspersed over time, sometimes with natural lifting [add ref] and sometimes with artificial lifting [add ref] ...</li>
+
+</details>
+
+<details>
+<summary>
+2. Representative diagram of the scenario ...
+</summary>
+<li>Figure 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0 ...</li>
+<li>This figure only covers the components necessary for a good understanding of how 3W Dataset 2.0.0 was conceived ...</li>
+<li>In summary, this picture shows the production platform, the well itself, the wet Christmas tree [add ref], the production and service lines, as well as sensors and valves ...</li>
+
+</details>
+
+<summary>
+3. Figure 1 [author created from the used diagram in the article describing 3W Dataset 1.0.0] ...
+</summary>
+
+<details>
+<summary>
+4. Variables taken into account ...
+</summary>
+<li>There are 27 variables present in all instances of 3W Dataset 2.0.0 ...</li>
+<li>According to the used definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance ...</li>
+<li>The name of each variable, what it represents and its physical position in the considered scenario (see Figure 1) are shown in Table 2 ...</li>
+
+</details>
+
+<summary>
+5. Table 2 [with name, description and position columns] ...
+</summary>
+
+<details>
+<summary>
+6. Sampling frequency ...
+</summary>
+<li>All instances were generated with t = 1s ...</li>
+<li>In other words, the sampling frequency of all instances is 1 Hz ...</li>
+</details>
+
+<details>
+<summary>
+7. Measurement units ...
+</summary>
+<li>All the variables associated with each quantity (type of variable) are represented with the same measurement unit ...</li>
+<li>The measurement units considered for each quantity are shown in Table 3 ...</li>
+</details>
+
+<summary>
+8. Table 3 [with magnitude and measurement unit columns] ...
+</summary>
+
+<details>
+<summary>
+9. Overview of the labeling process ...
+</summary>
+<li>The labeling process applied to all instances of 3W Dataset 2.0.0 resulted in two types of labels, called class and state ...</li>
+<li>The type of class label is directly related to normality or to some undesirable event ...</li>
+<li>The type of label state is directly related to the operational status of the well in question ...</li>
+</details>
+
+<details>
+<summary>
+10. Possible values for the label type class ...
+</summary>
+<li>The set of numerical codes associated with the class label type is detailed in Table 4 ...</li>
+</details>
+
+<summary>
+11. Table 4 [with name and description columns] ...
+</summary>
+
+<details>
+<summary>
+12. Possible values for the label type state ...
+</summary>
+<li>The set of numerical codes associated with the type of state label is detailed in Table 5 ...</li>
+</details>
+
+<summary>
+13. Table 5 [with name and description columns] ...
+</summary>
+
+#### Method Relating to Real Instances
+
+<details>
+<summary>
+1. The particularities of the method developed for acquiring and labeling real data are listed below ...
+</summary>
+<li>Related to data acquisition ...</li>
+    <ul>
+    <li>From records in Petrobras' PIMS [add ref], more precisely PI Systems [add ref] ...</li> 
+    <li>With linear interpolation provided by the PI System itself ...</li>
+    <li>No treatments for frozen variables or missing values ...</li>
+    <li>With conversion to standard measurement unit ...</li>
+    </ul>
+<li>Related to labeling ...</li>
+    <ul>
+    <li>By experts using our own web system developed exclusively for labeling and exporting real data to the 3W Dataset ... </li> 
+    </ul>
+</details>
+
+<details>
+<summary>
+2. The main limitations of this method are ...
+</summary>
+<li>Coverage of only events that took place in real life and had archived records ...</li>
+<li>Contextualizations were not verified ...</li>
+<li>Measurement units were not verified ...</li>
+<li>Expert bias when labeling time series ...</li>
+</details>
+
+#### Method Relating to Simulated Instances
+
+<details>
+<summary>
+1. The particularities of the method developed for generating and labeling simulated data are listed below ...
+</summary>
+<li>Related to data generation ...</li>
+    <ul>
+    <li>By planning a matrix of simulations with OLGA, gradually varying the main parameters of the considered scenario ...</li> 
+    <li>Running simulations and filtering out those whose results did not converge (well did not produce normally) ...</li>
+    <li>Automated extraction of time series from the TPL files generated by OLGA and relating to successful simulations ...</li>
+    <li>With perfectly periodic time series ...</li>
+    <li>No frozen variables or missing values ...</li>
+    <li>With variables already represented with standardized measurement units ...</li>
+    <li>Without any noise in the time series ...</li>
+    </ul>
+<li>Related to labeling ...</li>
+    <ul>
+    <li>Fully automated ...</li> 
+    </ul>
+</details>
+
+<details>
+<summary>
+2. The main limitations of this method are ...
+</summary>
+<li>Single well model ...</li>
+<li>Simplified simulation strategy ... Example: hydrates were simulated using a valve with a linear closing %</li>
+</details>
+
+#### Method Relating to Hand-Drawn Instances
+
+<details>
+<summary>
+1. The particularities of the method developed for generating and labeling hand-drawn data are listed below ...
+</summary>
+<li>Related to data generation ...</li>
+    <ul>
+    <li>Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset ...</li> 
+    <li>Each variable hand-drawn on its own chart by a specialist ...</li>
+    <li>Automated digitization of time series ...</li>
+    </ul>
+<li>Related to labeling ...</li>
+    <ul>
+    <li>From expert markings on the graphs ...</li> 
+    </ul>
+</details>
+
+<details>
+<summary>
+2. The main limitations of this method are ...
+</summary>
+<li>Covering only the well-known signatures of undesirable events ...</li>
+<li>Expert bias when drawing and labeling time series ...</li>
+<li>Expert manual dexterity ...</li>
+</details>
 
 ### Data Records 🚧
 
