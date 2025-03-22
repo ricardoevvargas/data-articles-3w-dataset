@@ -642,16 +642,29 @@ _Note: the idea is that this section will be composed of the contents listed bel
 <li>The main developments incorporated into the intermediate versions are listed in the 3W Project repository [add ref] ...</li>
 </details>
 
-### Code Availability 🚧
+### Code Availability ⁉️
 
 > 💡 For all publications, a statement must be included under the subheading "Code Availability" indicating whether and how and custom code can be accessed, including any restrictions to access. This section can also include information on the versions of any software used, if relevant, and any specific variables or parameters used to generate, test, or process the current dataset if these are not included in the Methods. Please see our policy on code availability for more information. The code availability statement should be placed at the end of the manuscript, immediately before the references. If no custom code has been used then the statement is still required in order to state this. 
 
-* Content;
-* Content;
-* Content;
-* Content.
+_Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
-_Note: the initial definition of this list of contents is ***been prepared***._
+<details>
+<summary>
+1. 3W Project also offers the 3W Toolkit ...
+</summary>
+<li>The 3W Project also develops and makes available, in the same Git repository where the 3W Dataset 2.0.0 is located, the 3W Toolkit ...</li>
+<li>It is a software package written in Python 3 [add ref] and licensed with Apache 2.0 [add ref] ...</li>
+<li>Its purpose is to facilitate and encourage exploration of the 3W Dataset 2.0.0 and proposals for comparative approaches and models ...</li>
+<li>It provides a range of features for loading data, visualizing time series, calculating metrics, etc. ...</li>
+</details>
+
+<details>
+<summary>
+2. The 3W Toolkit is publicly available for Python practitioners ...
+</summary>
+<li>Python practitioners can therefore use and adapt the 3W Toolkit to speed up their analysis with 3W Dataset 2.0.0 ...</li>
+<li>The details of this toolkit are beyond the scope of this data article, but its documentation and examples of use can be found in the 3W Project repository[add ref] ...</li>
+</details>
 
 ### Acknowledgements 🚧
 
