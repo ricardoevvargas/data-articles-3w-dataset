@@ -46,6 +46,13 @@ All the sections of this file should be duly revised during the development of t
     * In some sections (Title, Abstract, Corresponding author, ...), there are no lists of contents, but rather developed ***preliminary versions*** of the contents deemed necessary.
 1. Provide a complete and cohesive ***big picture*** of this [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) before each section's content is developed.
 
+### Meaning of the Emojis
+
+* 💡 Highlights the purposes of the existens sections in the [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1);
+* ✅ Indicates that the section is considered ready to be submitted for review;
+* ⁉️ Indicates that the section has content listed or drafted, but that it is not yet ready to be submitted for review;
+* 🚧 Indicates that the section does not have content listed or prepared yet.
+
 ### Before You Contribute
 
 The following step-by-step is suggested:
