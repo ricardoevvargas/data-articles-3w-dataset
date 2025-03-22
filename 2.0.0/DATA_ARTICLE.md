@@ -703,6 +703,8 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 ### Corresponding Author ✅
 
+> 💡 The named 'corresponding author' on the system is the main point of contact for peer review. The named 'corresponding author' in the paper is the main point of contact for publication. These do not have to be the same and only the information in the article file is published. Email addresses should be provided for corresponding authors.
+
 Correspondence to Ricardo Emanuel Vaz Vargas (ricardo.vargas@petrobras.com.br).
 
 ### Competing Interests ✅
