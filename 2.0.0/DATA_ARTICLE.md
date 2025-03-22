@@ -666,16 +666,11 @@ _Note: the idea is that this section will be composed of the contents listed bel
 <li>The details of this toolkit are beyond the scope of this data article, but its documentation and examples of use can be found in the 3W Project repository[add ref] ...</li>
 </details>
 
-### Acknowledgements 🚧
+### Acknowledgements ✅
 
 > 💡 The 'Acknowledgements' statement should contain text acknowledging non-author contributors. Acknowledgements should be brief, and should not include thanks editors or effusive comments. Grant or contribution numbers may be acknowledged.
 
-* Content;
-* Content;
-* Content;
-* Content.
-
-_Note: the initial definition of this list of contents is ***been prepared***._
+The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for providing all the necessary resources for the preparation and publication of this data article.
 
 ### Authors & Affiliations ⁉️
 
