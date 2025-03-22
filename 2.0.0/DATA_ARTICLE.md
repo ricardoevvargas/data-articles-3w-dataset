@@ -31,14 +31,14 @@ All the sections of this file should be duly revised during the development of t
     * The [3W Dataset ***2.0.0***](https://github.com/petrobras/3W/tree/main/dataset) is already licensed with [CC-BY](https://creativecommons.org/licenses/by/4.0/). Details [here](https://github.com/petrobras/3W/blob/main/dataset/LICENSE-CC-BY);
     * [Figshare](https://figshare.com/) is the most favorable option among the repositories considered reliable by [Scientific Data (Springer Nature)](https://www.nature.com/sdata). Details [here](https://www.nature.com/sdata/policies/repositories#general);
     * GitHub is not a repository option accepted by [Scientific Data (Springer Nature)](https://www.nature.com/sdata).
-1. This [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) will be developed with the [Scientific Data (Springer Nature)](https://www.nature.com/sdata)'s [Data Descriptor](https://www.nature.com/sdata/author-instructions#format).
+1. This [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) will be developed with the [Scientific Data (Springer Nature)](https://www.nature.com/sdata)'s [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1).
     * The other content types (***article*** and ***comment***) are not suitable for our purpose. Details [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-1).
 
 ### Specific Goals with this Draft Version
 
 1. Start the development of this [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me) with the right structure;
-    * Structure forced by the [Scientific Data (Springer Nature)](https://www.nature.com/sdata)'s [Data Descriptor](https://www.nature.com/sdata/author-instructions#format).
-1. Facilitate consultation of the guidelines related to the purposes of the [Data Descriptor](https://www.nature.com/sdata/author-instructions#format) sections;
+    * Structure forced by the [Scientific Data (Springer Nature)](https://www.nature.com/sdata)'s [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1).
+1. Facilitate consultation of the guidelines related to the purposes of the [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1) sections;
     * The purpose of each section is transcribed in this file, highlighted with the 💡emoji, and it shouldn't be edited.
 1. Specify the contents in each section to encourage and facilitate contributions by those interested in becoming co-authors of this [data article](http://researchdata.springernature.com/posts/data-articles-what-are-they-and-how-can-they-benefit-me);
     * Contents can be paragraphs, figures, equations, tables, and graphs;
@@ -704,7 +704,7 @@ Correspondence to Ricardo Emanuel Vaz Vargas (ricardo.vargas@petrobras.com.br).
 
 The authors declare no competing interests.
 
-### References ⁉️
+### References 🚧
 
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
