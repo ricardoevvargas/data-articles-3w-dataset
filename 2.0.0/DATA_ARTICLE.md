@@ -10,7 +10,7 @@ The following second section contains the ***draft version*** of the [data artic
 
 The content of this file in its current version is the result of an ***in-depth evaluation*** of the following sources of guidance:
 
-* [For Authors | Scientific Data](https://www.nature.com/sdata/publish/for-authors)
+* [For Authors | Scientific Data](https://www.nature.com/sdata/submission-guidelines)
 * [Submission Guidelines | Scientific Data](https://www.nature.com/sdata/publish/submission-guidelines)
 * [Data Policies | Scientific Data](https://www.nature.com/sdata/policies/data-policies)
 * [Data Repository Guidance | Scientific Data](https://www.nature.com/sdata/policies/repositories#general)
