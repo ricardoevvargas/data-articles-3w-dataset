@@ -76,130 +76,46 @@ _Note: the use of the acronym **3W** in the title is intentional and beneficial.
 
 > 💡 We recommend the Abstract should not exceed 170 words. It should not include references and should succinctly describe the data and how it may be used but should not make any claims regarding new scientific findings. We recommend URLs for download, or other details on dataset access, are not included. Please do not use sub-headings to break the Abstract into sections. 
 
-In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for early detection of events have shown promise for different industries. In 2019, after recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and made public the 3W Dataset first version, consisting of Multivariate Time Series labeled by experts corresponding to undesirable events or to periods of normal operation. Since then, the 3W Dataset has been explored and the published works already form a considerable scientific framework. Over the last few years, the 3W Dataset has also been evolved by Petrobras. For example, its structure was considerably modified, and more labeled data were incorporated. This data article describes the 3W Dataset current publicly available version and its publication will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions.
+In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for Early Detection of events have shown promise for different industries. In 2019, after recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and made public the 3W Dataset first version, consisting of Multivariate Time Series labeled by experts corresponding to undesirable events or to periods of normal operation. Since then, the 3W Dataset has been explored and the published works already form a considerable scientific framework. Over the last few years, the 3W Dataset has also been evolved by Petrobras. For example, its structure was considerably modified, and more labeled data were incorporated. This data article describes the 3W Dataset current publicly available version and its publication will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions.
 
 ### Background & Summary ⁉️
 
 > 💡 This section should provide an overview of the study that generated the data, as well as outlining the potential reuse value of the data. Any previous publications that used these data, in whole or in part, should be cited and briefly summarized. Unlimited length.
 
-_Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1 - Pending]](#1).
 
-<details>
-<summary>
-1. A short description of the problem ...
-</summary>
-<li>Undesirable events cause damage to the oil industry [add ref] ...</li>
-</details>
+Artificial Intelligence (AI) and Machine Learning (ML) based solutions have shown promise for Early Detection [[2 - Pending]](#2) of undesirable events in different industries [[3 - Pending]](#3). A requirement that is recognized as essential in this type of approach is the use of quality datasets [[4 - Pending]](#4).
 
-<details>
-<summary>
-2. The expectation of a solution ... 
-</summary>
-<li>AI and ML-based solutions for early event detection have shown promise for different industries [add ref] ...</li>
-<li>These solutions require quality datasets ...</li>
-</details>
+In 2019, Petrobras recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[5]](#5).
 
-<details>
-<summary>
-3. The generation and publication of the first version of the 3W Dataset ...
-</summary>
-<li>In 2019, Petrobras recognized the need, developed, and published the 1st version of the 3W Dataset ...</li>
-<li>This version is described in detail by Vargas et al. [add ref] ...</li>
-</details>
+The 3W Dataset is a set of Multivariate Time Series (MTS) [[6 - Pending]](#6), also called instance, labeled by experts. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
 
-<details>
-<summary>
-4. The basics of the 3W Dataset ...
-</summary>
-<li>The 3W Dataset is a set of Multivariate Time Series (MTS) [add ref] labeled by experts, also called instances ...</li>
-<li>The 3W name origin is as follows ... real, simulated and hand-drawn ...</li>
-<li>Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event ...</li>
-<li>The basic idea is that temporal signatures between the multiple variables of each type of event and normality can be learned/modeled from a set of MTS ...</li>
-</details>
+The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the behavior of the variables during these events.
 
-<details>
-<summary>
-5. The main features of the 3W Dataset ...
-</summary>
-<li>One of the main features of the 3W Dataset is that its real instances correspond to the real industrial environment ...</li>
-<li>Frozen variables, missing variables, etc. are not dealt with on purpose ...</li>
-<li>The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities ...</li>
-<li>Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets ...</li>
-<li>Simulated instances have been added because some types of undesirable events are rare ...</li>
-<li>Hand-drawn instances have been added because some rare events are complicated to simulate and professionals know the behavior of the variables ...</li>
-</details>
+As the 3W Dataset has been managed with Semantic Versioning [[7]](#7), its first version is identified by the code 1.0.0.
 
-<details>
-<summary>
-6. The versioning system ...
-</summary>
-<li>As the 3W Dataset has been managed with Semantic Versioning [add ref], its first version is identified by the code 1.0.0 ...</li>
-</details>
+Since its publication, the 3W Dataset has been explored by several people who make up the 3W Community. These people are independent professionals and representatives of research institutions, startups, companies and oil operators from different countries.
 
-<details>
-<summary>
-7. The 3W Community ...
-</summary>
-<li>Since its publication, the 3W Dataset has been explored by several people who make up the 3W Community ...</li>
-<li>These people are independent professionals and representatives of research institutions, startups, companies and oil operators from different countries ...</li>
-</details>
+Several works that have been developed and published has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final draduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs.
 
-<details>
-<summary>
-8. The scientific framework ...
-</summary>
-<li>Work that is being developed and published has formed a considerable scientific framework ...</li>
-<li>This framework is composed by books, conference papers, doctoral theses, final draduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs ...</li>
-</details>
+In 2022, Petrobras created the 3W Project as the first and only pilot of the Open Lab Module of the Connections Program for Innovation [[8]](#8). The purpose of this module is to encourage collaborative and open project developments on the Internet, more specifically on GitHub [[9]](#9). Since then, the 3W Dataset has been maintained and developed in its own corporate Git repository [[10]](#10) on GitHub.
 
-<details>
-<summary>
-9. The 3W Project ...
-</summary>
-<li>In 2022, Petrobras created the 3W Project as the 1st and only pilot of the Open Lab Module of the Connections Program for Innovation [add ref] ...</li>
-<li>The purpose of this module is to encourage collaborative and open project development on the Internet, more specifically on GitHub [add ref] ...</li>
-<li>The 3W Dataset is now maintained and developed in its own corporate Git repository [add ref] ...</li>
-</details>
+In this same Git repository and as part of the 3W Project, there is also the 3W Toolkit, which is a software package written in Python 3 [add ref] whose purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches.
 
-<details>
-<summary>
-10. The 3W Toolkit ...
-</summary>
-<li>In this same Git repository and as part of the 3W Project, there is also the 3W Toolkit ...</li>
-<li>The 3W Toolkit is a package written in Python 3 [add ref] whose purpose is to facilitate/encourage comparable explorations and propositions ...</li>
-</details>
+In addition to these two main resources, 3W Dataset and 3W Toolkit, this Git repository [[10]](#10) also provides:
 
-<details>
-<summary>
-11. The other 3W Project resources ...
-</summary>
-<li>In addition to these two main resources, 3W Dataset and 3W Toolkit, this Git repository also provides: </li>
-    <ul>
-    <li>Detailed description of the motivation, strategy, ambition, governance, etc. of the 3W Project ...</li> 
-	<li>Information about the 3W Community ...</li>
-	<li>Lists of ~100 published works that cite the 3W Dataset ...</li>
-	<li>3W Dataset Overviews developed by the 3W Community ...</li>
-	<li>Specification of priority problems (benchmarks)...</li>
-	<li>Code of conduct ...</li>
-	<li>Contributing guide ...</li>
-	<li>Release notes on published versions ...</li>
-    </ul>
-</details>
+- Detailed description of the motivation, strategy, ambition, governance, and other aspects of the 3W Project;
+- Lists with at least 100 published works that cite the 3W Dataset;
+- Specification of priority problems (benchmarks);
+- The 3W Project contributing guide;
+- Information about the 3W Community;
+- 3W Dataset overviews developed by the 3W Community;
+- The 3W Community code of conduct;
+- Release notes for the published versions of the 3W Dataset.
 
-<details>
-<summary>
-12. The generation and publication of the 2nd version of the 3W Dataset ...
-</summary>
-<li>Since 2022, the 3W Dataset has also been evolved by Petrobras e a sua current publicly available version é identificada pelo código 2.0.0 ...</li> 
-</details>
+Since 2022, the 3W Dataset has also been evolved by Petrobras and its current publicly available version is identified by the code 2.0.0.
 
-<details>
-<summary>
-13. The purpose of this data article ...
-</summary>
-<li>This data article describes the 3W Dataset 2.0.0, the current publicly available version, and details the developments with respect to version 1.0.0, which is detailed in [add ref] ...</li>
-<li>This data article will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions ...</li>
-</details>
+This data article details the 3W Dataset 2.0.0 and summarizes the advances incorporated into this version since version 1.0.0. The content of this data article will support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events in oil wells early enough to enable corrective or mitigating actions.
 
 ### Methods ⁉️
 
@@ -661,7 +577,7 @@ _Note: the idea is that this section will be composed of the contents listed bel
 </summary>
 <li>The 3W Project also develops and makes available, in the same Git repository where the 3W Dataset 2.0.0 is located, the 3W Toolkit ...</li>
 <li>It is a software package written in Python 3 [add ref] and licensed with Apache 2.0 [add ref] ...</li>
-<li>Its purpose is to facilitate and encourage exploration of the 3W Dataset 2.0.0 and proposals for comparative approaches and models ...</li>
+<li>Its purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches ...</li>
 <li>It provides a range of features for loading data, visualizing time series, calculating metrics, etc. ...</li>
 </details>
 
@@ -717,10 +633,24 @@ The authors declare no competing interests.
 
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
-1. Reference.
-1. Reference.
-1. Reference.
-1. Reference.
-1. Reference.
-
-_Note: references will be added here as needed._
+#### 1
+Pending.
+#### 2
+Pending.
+#### 3
+Pending.
+#### 4
+Pending.
+#### 5
+Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
+#### 6
+#### 7
+Preston-Werner, T. (2013). Semantic Versioning 2.0.0. http://semver.org.
+#### 8
+Petróleo Brasileiro S.A. (Petrobras) (2025). Open Lab Module of the Connections Program for Innovation. https://conexoes-inovacao.petrobras.com.br/s/openlab?language=en_US.
+#### 9
+Microsoft Corporation (2025). GitHub. https://github.com.
+#### 10
+Petróleo Brasileiro S.A. (Petrobras) (2025). The 3W Project. https://github.com/petrobras/3W.
+#### 11
+Pending.
