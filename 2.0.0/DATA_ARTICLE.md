@@ -51,6 +51,7 @@ All the sections of this file should be duly revised during the development of t
 * 💡 Highlights the purposes of the existens sections in the [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1);
 * ✅ Indicates that the section is considered ready to be submitted for review;
 * ⁉️ Indicates that the section has content listed or drafted, but that it is not yet ready to be submitted for review;
+* 👍 Indicates expected contributions in a given section;
 * 🚧 Indicates that the section does not have content listed or prepared yet.
 
 ### Before You Contribute
@@ -76,11 +77,15 @@ _Note: the use of the acronym **3W** in the title is intentional and beneficial.
 
 > 💡 We recommend the Abstract should not exceed 170 words. It should not include references and should succinctly describe the data and how it may be used but should not make any claims regarding new scientific findings. We recommend URLs for download, or other details on dataset access, are not included. Please do not use sub-headings to break the Abstract into sections. 
 
+> 👍 Cohesion, clarity, and English grammar.
+
 In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for Early Detection of events have shown promise for different industries. In 2019, after recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and made public the 3W Dataset first version, consisting of Multivariate Time Series labeled by experts corresponding to undesirable events or to periods of normal operation. Since then, the 3W Dataset has been explored and the published works already form a considerable scientific framework. Over the last few years, the 3W Dataset has also been evolved by Petrobras. For example, its structure was considerably modified, and more labeled data were incorporated. This data article describes the 3W Dataset current publicly available version and its publication will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions.
 
 ### Background & Summary ⁉️
 
 > 💡 This section should provide an overview of the study that generated the data, as well as outlining the potential reuse value of the data. Any previous publications that used these data, in whole or in part, should be cited and briefly summarized. Unlimited length.
+
+> 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
 Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1 - Pending]](#1).
 
@@ -122,6 +127,8 @@ This data article details the 3W Dataset 2.0.0 and summarizes the advances incor
 > 💡 The Methods section in Data Descriptors should describe any steps or procedures used in producing the data, including full descriptions of the experimental design, data acquisition and any computational processing. Unlimited length.
 
 _Note: the idea is that this section will be composed of the subsections and contents listed below, in the same order as the subsections and **expandable** lists are and with one paragraph per each item in these lists. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+
+> 👍 Excellent references, lack of relevant content, cohesion, presentation format, content conversion into paragraphs, and table and figure generation.
 
 <details>
 <summary>
@@ -361,6 +368,8 @@ _Note: the idea is that this section will be composed of the subsections and con
 
 _Note: the idea is that this section will be composed of the subsections and contents listed below, in the same order as the subsections and **expandable** lists are and with one paragraph per each item in these lists. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
+> 👍 Excellent references, lack of relevant content, cohesion, presentation format, content conversion into paragraphs, and table and figure generation.
+
 <details>
 <summary>
 1. Repository in which the 3W Dataset 2.0.0 is made available ...
@@ -496,6 +505,8 @@ _Note: the idea is that this section will be composed of the subsections and con
 
 _Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
+> 👍 Excellent references, lack of relevant content, cohesion, presentation format, and content conversion into paragraphs.
+
 <details>
 <summary>
 1. The developed methods guarantee adequate technical quality ...
@@ -521,6 +532,8 @@ _Note: the idea is that this section will be composed of the contents listed bel
 > 💡 'Usage Notes' is an optional section that can be used to provide information that may assist other researchers who reuse your data. Most commonly these are additional technical notes about how to access or process the data. Please do not use this section to write a conclusions section, or similar, as we do not publish these. Unlimited length.
 
 _Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+
+> 👍 Excellent references, lack of relevant content, cohesion, presentation format, and content conversion into paragraphs.
 
 <details>
 <summary>
@@ -570,6 +583,8 @@ _Note: the idea is that this section will be composed of the contents listed bel
 > 💡 For all publications, a statement must be included under the subheading "Code Availability" indicating whether and how and custom code can be accessed, including any restrictions to access. This section can also include information on the versions of any software used, if relevant, and any specific variables or parameters used to generate, test, or process the current dataset if these are not included in the Methods. Please see our policy on code availability for more information. The code availability statement should be placed at the end of the manuscript, immediately before the references. If no custom code has been used then the statement is still required in order to state this. 
 
 _Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+
+> 👍 Excellent references, lack of relevant content, cohesion, presentation format, and content conversion into paragraphs.
 
 <details>
 <summary>
