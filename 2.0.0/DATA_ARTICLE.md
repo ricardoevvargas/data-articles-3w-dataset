@@ -128,43 +128,37 @@ This data article details the 3W Dataset 2.0.0 and summarizes the advances incor
 
 _Note: the idea is that this section will be composed of the subsections and contents listed below, in the same order as the subsections and **expandable** lists are and with one paragraph per each item in these lists. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
 
-> 👍 Excellent references, lack of relevant content, cohesion, presentation format, content conversion into paragraphs, and table and figure generation.
+> 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, presentation format, content conversion into paragraphs, and table and figure generation.
 
-<details>
-<summary>
-1. How this section is organized ...
-</summary>
-<li>To summarize, the 3W Dataset 2.0.0 is made up of 3 types of instances and was generated with 3 methods, one per type of instance ...</li>
-<li>These methods are described in this section based on the mathematical definition of MTS presented in the following subsection ...</li>
-<li>Based on this definition and to support the 3W Project itself and this article, the nomenclature detailed in the subsequent subsection was developed ...</li>
-<li>The types of instances and the methods associated with them are described in their own subsections ...</li>
-<li>Certain characteristics are common to all 3 methods and are therefore detailed in a separate subsection ...</li>
-</details>
+In a nutshell, the 3W Dataset 2.0.0 is made up of 3 types of instances and was generated with 3 methods, one per type of instance. These methods are described in this section based on the mathematical definition of MTS presented in the following subsection. Based on this definition and to support both the 3W Project and this article, a nomenclature was developed and is detailed in the subsequent subsection. The types of instances and the methods associated with them are described in their own subsections. Certain characteristics are common to all 3 methods and are therefore detailed in a separate subsection.
 
 #### Mathematical Definition of Multivariate Time Series
 
-<details>
-<summary>
-1. Origin of the definition of MTS ...
-</summary>
-<li>The chosen definition for MTS is the same as that used in the article that published the 3W Dataset 1.0.0 [add ref] ...</li>
-<li>For convenience, it is reproduced below ...</li>
-</details>
+The chosen definition for MTS is the same as that used in the article that published the 3W Dataset 1.0.0 [[5]](#5). This definition is reproduced below.
 
-&nbsp;&nbsp;&nbsp; 2. Copy of the original definition here ...
+A dataset ***DS*** is a set of _m_ MTS (S<sup>_i_</sup> | _i_ = {1, 2, …, _m_}, ∀ _m_ ∈ Z, and _m_ > 1) and is defined as ***DS*** = {***S***<sup>1</sup>, ***S***<sup>2</sup>, …, ***S***<sup>_m_</sup>}. Each MTS _i_ is an instance that is composed of a set of _n_ univariate time series (x<sup>_i_</sup><sub>_j_</sub> | _j_ = {1, 2, …, _n_}, ∀ _n_ ∈ Z, and _n_ > 1) (also referenced as process variable or just variable), and is defined as ***S***<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1</sub>, _x_<sup>_i_</sup><sub>2</sub>, …, _x_<sup>_i_</sup><sub>_n_</sub>}. Each variable _j_ that composes an MTS _i_ is an ordered temporal sequence of _p_<sub>_i_</sub> observations taken at the time _t_ (_x_<sup>_i_</sup><sub>_j,t_</sub> | _t_ = {1, 2, …, _p_<sub>_i_</sub>}, ∀ _p_<sub>_i_</sub> ∈ Z, and _p_<sub>_i_</sub> > 1). Therefore, each MTS _i_ is viewed in this work as a matrix defined as S<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1,1</sub>, _x_<sup>_i_</sup><sub>2,1</sub>, ..., _x_<sup>_i_</sup><sub>_n_,1</sub>; _x_<sup>_i_</sup><sub>1,2</sub>, _x_<sup>_i_</sup><sub>2,2</sub>, ..., _x_<sup>_i_</sup><sub>_n_,2</sub>; _x_<sup>_i_</sup><sub>1,_p_<sub>_i_</sub></sub>, _x_<sup>_i_</sup><sub>2,_p_<sub>_i_</sub></sub>, ..., _x_<sup>_i_</sup><sub>_n_,_p_<sub>_i_</sub></sub>}.
 
-&nbsp;&nbsp;&nbsp; 3. Copy of the original note here ...
+Note that all instances have a fixed number of variables _n_, but each instance can be composed of any quantity of observations _p_<sub>_i_</sub>. It is also important to note that all variables of an instance _i_ have fixed number
+of observations _p_<sub>_i_</sub>.
 
 #### The Developed Nomenclature
 
-<details>
-<summary>
-1. The terms are derived from the MTS definition ...
-</summary>
-<li>The terms that make up the nomenclature used in this work are derived from the definition of MTS and are shown in Table 1 ...</li>
-</details>
+The terms that make up the nomenclature used in this work are derived from the definition of MTS presented in the previous section. These terms are shown in Table 1.
 
-&nbsp;&nbsp;&nbsp; 2. Table 1 [with term and meaning columns]: observation, variable, timestamp, label, class label, state label, sample, period, instance, type of event, and dataset ...
+**Table 1**<br>Terms that make up the nomenclature used in this work.
+| **Term** | **Meaning** |
+| -------- | ------- |
+| Observation | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Variable | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Timestamp | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Label | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Class label | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| State label | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Sample | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Period | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Instance | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Type of event | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
+| Dataset | Lorem ipsum dolor sit amet. Ut laborum architecto ex maiores quia et veritatis consequatur |
 
 #### Types of Instances
 
