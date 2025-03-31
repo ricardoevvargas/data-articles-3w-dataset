@@ -126,8 +126,6 @@ This data article details the 3W Dataset 2.0.0 and summarizes the advances incor
 
 > 💡 The Methods section in Data Descriptors should describe any steps or procedures used in producing the data, including full descriptions of the experimental design, data acquisition and any computational processing. Unlimited length.
 
-_Note: the idea is that this section will be composed of the subsections and contents listed below, in the same order as the subsections and **expandable** lists are and with one paragraph per each item in these lists. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
-
 > 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, presentation format, content conversion into paragraphs, and table and figure generation.
 
 In a nutshell, the 3W Dataset 2.0.0 is made up of three types of instances and was generated with three methods, one per type of instance. These methods are described in this section and are based on the mathematical definition of MTS presented in the following subsection. According to this definition and to support both the 3W Project and this article, a nomenclature was developed and is detailed in the subsequent subsection. The types of instances and the methods associated with them are described in their own subsections. Certain characteristics are common to all three methods and are therefore detailed in a separate subsection.
