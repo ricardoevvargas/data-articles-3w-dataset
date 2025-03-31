@@ -413,52 +413,25 @@ The quantity and the diversity of the works developed and published by the 3W Co
 
 > 💡 'Usage Notes' is an optional section that can be used to provide information that may assist other researchers who reuse your data. Most commonly these are additional technical notes about how to access or process the data. Please do not use this section to write a conclusions section, or similar, as we do not publish these. Unlimited length.
 
-_Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+> 👍 Lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-> 👍 Excellent references, lack of relevant content, cohesion, presentation format, and content conversion into paragraphs.
+This data article describes the 3W Dataset 2.0.0, the current publicly available version, and details its evolution with respect to version 1.0.0, which is detailed by Vargas et al. [[5]](#5).
 
-<details>
-<summary>
-1. This data article describes the 3W Dataset 2.0.0 ...
-</summary>
-<li>This data article describes 3W Dataset 2.0.0, the current publicly available version, and details the evolutions with respect to version 1.0.0, which is detailed in [add ref] ...</li>
-</details>
+3W Dataset 2.0.0 was generated with code written in Python 3.10 [[11]](#11) and the main used resources were from the Pandas 1.5 [[22]](#22) and Pyarrow 19.0 [[20]](#20) packages. 
 
-<details>
-<summary>
-2. With which resources 3W Dataset 2.0.0 was generated ...
-</summary>
-<li>3W Dataset 2.0.0 was generated with code written in Python 3.10.6 [add ref] ...</li>
-<li>The main resources used are from the Pandas 1.5.0 [add ref] and Pyarrow 17.0.0 packages [add ref] ...</li>
-</details>
+The 3W Dataset 2.0.0 was designed to be explored with basically any programming language (not just Python). Regardless of the language used, the Parquet files [[19]](#19) must be read with the Pyarrow method and the Brotli compression [[21]](#21).
 
-<details>
-<summary>
-3. With which features the 3W Dataset 2.0.0 should be explored ...
-</summary>
-<li>The 3W Dataset 2.0.0 was designed to be explored with practically any programming language, not just Python ...</li>
-<li>Regardless of the language used, Parquet files must be read with the Pyarrow method [add ref] and the Brotli compression [add ref] ...</li>
-</details>
+When comparing results obtained in different works, it is important to note which versions of the 3W Dataset were used. Certain comparisons can be complex due to the significant differences between the versions of the 3W Dataset published so far. The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as follows:
 
-<details>
-<summary>
-4. Results from different works may not be directly comparable ...
-</summary>
-<li>When comparing results obtained in different works, it is important to note which versions of the 3W Dataset were used ...</li>
-<li>Certain comparisons can be complex due to the significant differences between the versions of the 3W Dataset published so far ...</li>
-<li>Version 1.0.0 is described in detail by Vargas et al. [add ref] ...</li>
-<li>The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as follows:</li>
-    <ul>
-    <li>Its structure was considerably modified ... Dados passaram a ser salvos em arquivos Parquet [add ref], e não mais CSV [add ref] ...</li> 
-    <li>1 variable was discontinued (T-JUS-CKGL) and 20 others were added, resulting in 27 variables in the current version ...</li> 
-    <li>1 undesirable event type has been added: Hydrate in Service Line ...</li> 
-    <li>The number of real instances increased by 94 ...</li> 
-    <li>The number of simulated instances increased by 150 ...</li> 
-    <li>The number of actual wells covered rose from 21 to 42 ...</li> 
-    <li>More labeled data (observations) were incorporated ...</li> 
-    </ul>
-<li>The main developments incorporated into the intermediate versions are listed in the 3W Project repository [add ref] ...</li>
-</details>
+1. Its structure was considerably modified. Data is now saved in Parquet files, and no longer in CSV files; 
+1. 1 variable was discontinued (T-JUS-CKGL) and 20 others were added, resulting in 27 variables in the current version;
+1. 1 undesirable type of event has been added: Hydrate in Service Line;
+1. The number of real instances increased by 94;
+1. The number of simulated instances increased by 150;
+1. The number of actual wells covered rose from 21 to 42;
+1. More labeled data (observations) were incorporated.
+
+More details can be found in the release notes available in the 3W Project repository [[10]](#10).
 
 ### Code Availability ⁉️
 
