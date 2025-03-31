@@ -170,7 +170,7 @@ Each type of instance, and therefore each data source, required the development 
 
 All instances, regardless of their type, are related to satellite-type offshore producing wells without manifold [[15 - Pending]](#15). This type of well can be operated with different lifting methods [[16 - Pending]](#16) interspersed over time, sometimes with the natural method and sometimes with an artificial lifting method. The natural method can only be used when the reservoir pressure is sufficient to produce hydrocarbons at a commercial rate without requiring any additional energy. Otherwise, some artificial lifting method is required precisely so that extra energy can be added to the system.
 
-Fig. 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[17 - Pending]](#17), the production and service lines, as well as sensors and valves.
+Fig. 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how the 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[17 - Pending]](#17), the production and service lines, as well as sensors and valves.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -178,7 +178,7 @@ Fig. 1 contains a diagram representing the considered scenario when designing th
   </tr>
 </table>
 
-There are 27 variables present in all instances of 3W Dataset 2.0.0. According to the used definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 1) are shown in Table 2.
+There are 27 variables present in all instances of the 3W Dataset 2.0.0. According to the used definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 1) are shown in Table 2.
 
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
@@ -401,7 +401,7 @@ All variables and labels are stored in columns of Parquet files, variables as fl
 
 > 👍 Lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-Several features that have been carefully incorporated into the methods described in the Methods Section ensure that 3W Dataset 2.0.0 has high technical quality. The main ones are as follows:
+Several features that have been carefully incorporated into the methods described in the Methods Section ensure that the 3W Dataset 2.0.0 has high technical quality. The main ones are as follows:
 
 * In the real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
@@ -417,7 +417,7 @@ The quantity and the diversity of the works developed and published by the 3W Co
 
 This data article describes the 3W Dataset 2.0.0, the current publicly available version, and details its evolution with respect to version 1.0.0, which is detailed by Vargas et al. [[5]](#5).
 
-3W Dataset 2.0.0 was generated with code written in Python 3.10 [[11]](#11) and the main used resources were from the Pandas 1.5 [[22]](#22) and Pyarrow 19.0 [[20]](#20) packages. 
+The 3W Dataset 2.0.0 was generated with code written in Python 3.10 [[11]](#11) and the main used resources were from the Pandas 1.5 [[22]](#22) and Pyarrow 19.0 [[20]](#20) packages. 
 
 The 3W Dataset 2.0.0 was designed to be explored with basically any programming language (not just Python). Regardless of the language used, the Parquet files [[19]](#19) must be read with the Pyarrow method and the Brotli compression [[21]](#21).
 
@@ -437,27 +437,13 @@ More details can be found in the release notes available in the 3W Project repos
 
 > 💡 For all publications, a statement must be included under the subheading "Code Availability" indicating whether and how and custom code can be accessed, including any restrictions to access. This section can also include information on the versions of any software used, if relevant, and any specific variables or parameters used to generate, test, or process the current dataset if these are not included in the Methods. Please see our policy on code availability for more information. The code availability statement should be placed at the end of the manuscript, immediately before the references. If no custom code has been used then the statement is still required in order to state this. 
 
-_Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+> 👍 Lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-> 👍 Excellent references, lack of relevant content, cohesion, presentation format, and content conversion into paragraphs.
+The 3W Project also develops and makes publicly available in its Git repository [[10]](#10) the 3W Toolkit, which is a software package written in Python 3 [[11]](#11) and licensed under Apache 2.0 [[23]](#23). Its purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches. It provides a range of features for loading data, visualizing time series, calculating metrics, etc.
 
-<details>
-<summary>
-1. 3W Project also offers the 3W Toolkit ...
-</summary>
-<li>The 3W Project also develops and makes available, in the same Git repository where the 3W Dataset 2.0.0 is located, the 3W Toolkit ...</li>
-<li>It is a software package written in Python 3 [add ref] and licensed with Apache 2.0 [add ref] ...</li>
-<li>Its purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches ...</li>
-<li>It provides a range of features for loading data, visualizing time series, calculating metrics, etc. ...</li>
-</details>
+Python practitioners can therefore use and adapt the 3W Toolkit to speed up their analysis with the 3W Dataset 2.0.0.
 
-<details>
-<summary>
-2. The 3W Toolkit is publicly available for Python practitioners ...
-</summary>
-<li>Python practitioners can therefore use and adapt the 3W Toolkit to speed up their analysis with 3W Dataset 2.0.0 ...</li>
-<li>The details of this toolkit are beyond the scope of this data article, but its documentation and examples of use can be found in the 3W Project repository[add ref] ...</li>
-</details>
+An in-depth description of the 3W Toolkit is beyond the scope of this data article, but its documentation and examples of use can be found in the 3W Project repository [[10]](#10).
 
 ### Acknowledgements ✅
 
@@ -546,3 +532,5 @@ Apache Software Foundation (2025). PyArrow. https://arrow.apache.org/docs/index.
 J. Alakuijala & Z. Szabadka (2016). Brotli Compressed Data Format. Internet Engineering Task Force (IETF). Request for Comments: 7932. https://www.ietf.org/rfc/rfc7932.txt.
 #### 22
 The pandas development team (2020). pandas-dev/pandas: Pandas. https://doi.org/10.5281/zenodo.3509134.
+#### 23
+Apache Software Foundation (2004). Apache License Version 2.0. https://www.apache.org/licenses/LICENSE-2.0.txt.
