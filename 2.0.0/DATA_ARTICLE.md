@@ -331,7 +331,7 @@ The main limitations of this method are:
 
 > 💡 This section should be used to explain each data record associated with this work, including the repository where this information is stored, and to provide an overview of the data files and their formats and any folder structure. Please do not include extensive summary statistics, which should be limited to less than half a page, with 1-2 tables or figures, if required at all. Note the general expectation is that, if readers wish to scrutinise your dataset's contents, they will download and analyse it for themselves. Unlimited length.
 
-> 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, and presentation format.
+> 👍 Lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
 The 3W Dataset 2.0.0 is licensed under CC-BY 4.0 and is publicly available at the following Figshare [[18]](#18) address: https://figshare.com/articles/dataset/pending.
 
@@ -385,11 +385,11 @@ The logic used to formulate file names depends on the type of instance.
 
 The name of each real instance is composed as follows: WELL-[incremental id]_[timestamp of oldest observation].parquet. Example: WELL-00014_20170917140000.parquet. Each real well is associated with a unique id, regardless of the type of event (subdirectory).
 
-The name of each simulated instance is composed as follows: SIMULATED_[incremental id].parquet. Example: SIMULATED_00072.parquet. The incremental id is initialized from 1 for each event type (subdirectory).
+The name of each simulated instance is composed as follows: SIMULATED_[incremental id].parquet. Example: SIMULATED_00072.parquet. The incremental id is initialized from 1 for each type of event (subdirectory).
 
-The name of each hand-drawn instance is composed as follows: DRAWN_[incremental id].parquet. Example: DRAWN_00007.parquet. The incremental id is initialized from 1 for each event type (subdirectory).
+The name of each hand-drawn instance is composed as follows: DRAWN_[incremental id].parquet. Example: DRAWN_00007.parquet. The incremental id is initialized from 1 for each type of event (subdirectory).
 
-All Parquet files are created with pyarrow engine and brotli compression. These choices were made on the basis of the good compromise between compression ratio and reading time.
+All Parquet files are created with Pyarrow engine [[20]](#20) and Brotli compression [[21]](#21). These choices were made on the basis of the good compromise between compression ratio and reading time.
 
 The timestamps vector of each instance is used as index in the corresponding Parquet file. All timestamps are represented in the format 'YYYY-MM-DD HH:MM:SS'.
 
@@ -399,29 +399,15 @@ All variables and labels are stored in columns of Parquet files, variables as fl
 
 > 💡 This section should present any experiments or analyses that are needed to support the technical quality of the dataset. This section may be supported by figures and tables, as needed. Unlimited length.
 
-_Note: the idea is that this section will be composed of the contents listed below, in the same order as the **expandable** list is and with one paragraph per each item in this list. The references deemed necessary are also indicated. **Everyone is invited to contribute to this section. The completeness and cohesion of this section can be checked and its contents can be expanded/converted into paragraphs**._
+> 👍 Lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-> 👍 Excellent references, lack of relevant content, cohesion, presentation format, and content conversion into paragraphs.
+Several features that have been carefully incorporated into the methods described in the Methods Section ensure that 3W Dataset 2.0.0 has high technical quality. The main ones are as follows:
 
-<details>
-<summary>
-1. The developed methods guarantee adequate technical quality ...
-</summary>
-<li>Several features that have been carefully incorporated into the methods described in the Methods Section ensure that 3W Dataset 2.0.0 has adequate technical quality ...</li>
-<li>In the real instances, the following were applied: labeling by experts, validation by committee, and maintenance of characteristics in the real data ...</li>
-<li>In the simulated instances, the following were applied: simulation models calibrated by experts, and systematized labeling ...</li>
-<li>In the hand-drawn instances, the following were applied: hand-drawn graphics by experts, and systematized labeling  ...</li>
-</details>
+* In the real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
+* In the simulated instances: simulation models calibrated by experts, and systematized labeling;
+* In the hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
 
-<details>
-<summary>
-2. The scientific framework highlights the relevance and the technical quality of the 3W Dataset 2.0.0 ...
-</summary>
-<li>The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset ...</li>
-<li>This scientific framework is made up of dozens of published works ...</li>
-<li>These are books, conference papers, doctoral theses, final draduation projects, journal articles, master's degree dissertations, and specialization monographs ...</li>
-<li>More information on these works can be found in the 3W Project repository [add ref] ...</li>
-</details>
+The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is made up of dozens of published works, including books, conference papers, doctoral theses, final draduation projects, journal articles, master's degree dissertations, and specialization monographs. More information on these works can be found in the 3W Project repository [[10]](#10).
 
 ### Usage Notes ⁉️
 
@@ -581,3 +567,9 @@ Pending.
 Figshare LLP (2025). Figshare. https://info.figshare.com.
 #### 19
 Apache Software Foundation (2025). Apache Parquet. https://parquet.apache.org.
+#### 20
+Apache Software Foundation (2025). PyArrow. https://arrow.apache.org/docs/index.html.
+#### 21
+J. Alakuijala & Z. Szabadka (2016). Brotli Compressed Data Format. Internet Engineering Task Force (IETF). Request for Comments: 7932. https://www.ietf.org/rfc/rfc7932.txt.
+#### 22
+The pandas development team (2020). pandas-dev/pandas: Pandas. https://doi.org/10.5281/zenodo.3509134.
