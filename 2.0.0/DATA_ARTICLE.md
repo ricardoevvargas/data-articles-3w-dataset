@@ -457,6 +457,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
     * Ricardo Emanuel Vaz Vargas, Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
+* Laboratório de Computação Científica e Visualização (LCCV/UFAL), Maceió, Brazil
+    * Lucas Gouveia Omena Lopes, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * Affiliation
     * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * ...
@@ -469,9 +471,10 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. L.L. made textual revisions and updated citations. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
+
 
 ### Corresponding Author ✅
 
