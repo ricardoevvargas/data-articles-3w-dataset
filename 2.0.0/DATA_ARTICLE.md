@@ -492,7 +492,7 @@ The authors declare no competing interests.
 #### 1
 Pending.
 #### 2
-Panza, M.A.; Pota, M.; Esposito, M. Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics 2023, 12, 3971. https://doi.org/10.3390/electronics12183971
+Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971
 #### 3
 Pending.
 #### 4
