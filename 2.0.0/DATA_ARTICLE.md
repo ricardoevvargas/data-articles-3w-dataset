@@ -500,7 +500,7 @@ Gong, Y., Liu, G., Xue, Y., Li, R., & Meng, L. (2023). A survey on dataset quali
 #### 5
 Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
 #### 6
-Tsay, R.S. (2005). Multivariate Time Series Analysis and Its Applications. In Analysis of Financial Time Series (eds W.A. Shewhart, S.S. Wilks and R.S. Tsay). https://doi.org/10.1002/0471746193.ch8
+Tsay, R. S. (2010). Multivariate time series analysis and its applications. In Analysis of financial time series (pp. 389–465). John Wiley & Sons, Ltd. https://doi.org/10.1002/9780470644560.ch8
 #### 7
 Preston-Werner, T. (2013). Semantic Versioning 2.0.0. http://semver.org.
 #### 8
