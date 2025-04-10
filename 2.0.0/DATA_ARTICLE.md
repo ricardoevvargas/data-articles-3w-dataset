@@ -278,6 +278,14 @@ The particularities of the method developed for real data are listed below.
 * Regarding labeling:
     1. By experts using a Petrobras' web system developed exclusively for labeling and exporting real data to the 3W Dataset.
 
+The labeling of real instances begins with the registration of historical events mapped by Petrobras in a tracking system, ensuring accessibility and traceability for the specialists involved. Based on these records, one or more specialists (referred to as *labelers*) carry out the labeling process using a web-based tool specifically designed for this purpose. Once the initial labeling is completed, a group of specialists (*validators*) reviews the data to suggest potential adjustments and ultimately validate the assigned labels. After validation, a *curator* specialist finalizes the process by updating the system to mark the corresponding event as labeled, thereby enabling its subsequent use in the extraction of real data and its final inclusion in the 3W dataset. Fig. n illustrates the labeling process conducted for the generation of real instances.
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. n</b><br><img src="images/labeling.png" width=100%><br>Ilustration of the labeling process for the generation of 3W real instances.</td>
+  </tr>
+</table>
+
 The main limitations of this method are:
 
 1. Coverage of only events that took place in real life and had archived records;
