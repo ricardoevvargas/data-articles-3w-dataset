@@ -278,11 +278,11 @@ The particularities of the method developed for real data are listed below.
 * Regarding labeling:
     1. By experts using a Petrobras' web system developed exclusively for labeling and exporting real data to the 3W Dataset.
 
-The labeling of real instances begins with the registration of historical events mapped by Petrobras in a tracking system, ensuring accessibility and traceability for the specialists involved. Based on these records, one or more specialists (referred to as *labelers*) carry out the labeling process using a web-based tool specifically designed for this purpose. Once the initial labeling is completed, a group of specialists (*validators*) reviews the data to suggest potential adjustments and ultimately validate the assigned labels. After validation, a *curator* specialist finalizes the process by updating the system to mark the corresponding event as labeled, thereby enabling its subsequent use in the extraction of real data and its final inclusion in the 3W dataset. Fig. n illustrates the labeling process conducted for the generation of real instances.
+The labeling of real instances begins with the registration of historical events mapped by Petrobras in a tracking system, ensuring accessibility and traceability for the specialists involved. Based on these records, one or more specialists (referred to as *labelers*) carry out the labeling process using a web-based tool specifically designed for this purpose. Once the initial labeling is completed, a group of specialists (*validators*) reviews the data to suggest potential adjustments and ultimately validate the assigned labels. After validation, a *curator* specialist finalizes the process by updating the system to mark the corresponding event as labeled, thereby enabling its subsequent use in the extraction of real data and its final inclusion in the 3W dataset. Fig. 2 illustrates the labeling process conducted for the generation of real instances.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. n</b><br><img src="images/labeling.png" width=100%><br>Ilustration of the labeling process for the generation of 3W real instances.</td>
+    <td><b>Fig. 2</b><br><img src="images/labeling.png" width=100%><br>Ilustration of the labeling process for the generation of 3W real instances.</td>
   </tr>
 </table>
 
@@ -318,7 +318,7 @@ The particularities of the method developed for hand-drawn data are listed below
 
 * Regarding data generation:
     1. Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset;
-    1. Each variable hand-drawn on its own chart by a expert. An example is shown in Fig. 2;
+    1. Each variable hand-drawn on its own chart by a expert. An example is shown in Fig. 3;
     1. Automated digitization of time series via scanning graphs printed on paper.
 * Regarding labeling:
     1. From expert markings on the graphs printed on paper.
@@ -331,7 +331,7 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 2</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert in the tool developed exclusively for generating instances for the 3W Dataset.</td>
+    <td><b>Fig. 3</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert in the tool developed exclusively for generating instances for the 3W Dataset.</td>
   </tr>
 </table>
 
@@ -364,11 +364,11 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 | 150 | 0 | 207 |
 | Total | 1119 | 1089 | 20 | 2228 |
 
-A scatter map with all the real instances is shown in Fig. 3. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+A scatter map with all the real instances is shown in Fig. 4. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 4</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
