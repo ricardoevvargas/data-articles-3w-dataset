@@ -87,7 +87,7 @@ In the oil industry, events in wells can cause economic damage, environmental ac
 
 > 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1 - Pending]](#1).
+Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1]](#1).
 
 Artificial Intelligence (AI) and Machine Learning (ML) based solutions have shown promise for Early Detection [[2]](#2) of undesirable events in different industries [[3]](#3). A requirement that is recognized as essential in this type of approach is the use of quality datasets [[4]](#4).
 
@@ -493,7 +493,7 @@ The authors declare no competing interests.
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
 #### 1
-Pending.
+Turley, J. A. (2014). An engineering look at the cause of the 2010 Macondo blowout. Paper presented at the IADC/SPE Drilling Conference and Exhibition, Fort Worth, TX, United States. https://doi.org/10.2118/167970-MS
 #### 2
 Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971
 #### 3
