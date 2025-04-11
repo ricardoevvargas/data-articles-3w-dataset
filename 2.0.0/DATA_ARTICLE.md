@@ -79,7 +79,7 @@ _Note: the use of the acronym **3W** in the title is intentional and beneficial.
 
 > 👍 Cohesion, clarity, and English grammar.
 
-In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for Early Detection of events have shown promise for different industries. In 2019, after recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and made public the 3W Dataset first version, consisting of Multivariate Time Series labeled by experts corresponding to undesirable events or to periods of normal operation. Since then, the 3W Dataset has been explored and the published works already form a considerable scientific framework. Over the last few years, the 3W Dataset has also been evolved by Petrobras. For example, its structure was considerably modified, and more labeled data were incorporated. This data article describes the 3W Dataset current publicly available version and its publication will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions.
+In the oil industry, undesirable events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for the Early Detection of such events have proven valuable for diverse applications in the industry. In 2019, after recognizing the importance and the lack of public datasets related to events in oil-producing wells, Petrobras developed and made public the first version of the 3W Dataset, consisting of Multivariate Time Series corresponding to undesirable events or periods of normal operation, labeled by experts. Since then, the 3W has become a foundational reference for numerous works in the field. Petrobras has been working on improving the 3W dataset, making structural modifications and adding more labeled data. This data article describes the current publicly available version of the 3W Dataset, with the main objective of encouraging and supporting the 3W Community to develop robust methodologies, digital products and services to detect undesirable events with enough anticipation to enable corrective or mitigating actions.
 
 ### Background & Summary ⁉️
 
@@ -87,25 +87,27 @@ In the oil industry, events in wells can cause economic damage, environmental ac
 
 > 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1 - Pending]](#1).
+Undesirable events during the production phase cause different types of damage to the oil industry, including economic losses, environmental accidents, and human casualties [[1 - Pending]](#1).
 
-Artificial Intelligence (AI) and Machine Learning (ML) based solutions have shown promise for Early Detection [[2 - Pending]](#2) of undesirable events in different industries [[3 - Pending]](#3). A requirement that is recognized as essential in this type of approach is the use of quality datasets [[4 - Pending]](#4).
+Artificial Intelligence (AI) and Machine Learning (ML) based solutions have shown promise for Early Detection [[2 - Pending]](#2) of undesirable events in different industries [[3 - Pending]](#3). A requirement that is recognized as essential in this type of approach is the use of quality datasets [[4]](#4).
 
 In 2019, Petrobras recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[5]](#5).
 
-The 3W Dataset is a set of Multivariate Time Series (MTS) [[6 - Pending]](#6), also called instance, labeled by experts. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
+The 3W Dataset is a set of Multivariate Time Series (MTS) [[6]](#6), also called instance, labeled by experts. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
 
 The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the behavior of the variables during these events.
 
 As the 3W Dataset has been managed with Semantic Versioning [[7]](#7), its first version is identified by the code 1.0.0.
 
-Since its publication, the 3W Dataset has been explored by several people who make up the 3W Community. These people are independent professionals and representatives of research institutions, startups, companies and oil operators from different countries.
+Since its publication, the 3W Dataset has been explored by members of the 3W Community - including independent professionals and representatives from research institutions, startups, companies, and oil operators from different countries.
 
-Several works that have been developed and published has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final draduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs.
+The community has developed and published multiple works that form a considerable scientific framework for early detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, undergraduate final projects, journal articles, master's dissertations, repository articles, and specialization monographs.
 
-In 2022, Petrobras created the 3W Project as the first and only pilot of the Open Lab Module of the Connections Program for Innovation [[8]](#8). The purpose of this module is to encourage collaborative and open project developments on the Internet, more specifically on GitHub [[9]](#9). Since then, the 3W Dataset has been maintained and developed in its own corporate Git repository [[10]](#10) on GitHub.
+In 2022, Petrobras created the 3W Project as the first (and currently only) pilot of the Open Lab Module of the Connections Program for Innovation [[8]](#8). The purpose of this module is to encourage open and collaborative project developments on the Internet, more specifically through GitHub [[9]](#9). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[10]](#10) on GitHub.
 
-In this same Git repository and as part of the 3W Project, there is also the 3W Toolkit, which is a software package written in Python 3 [[11]](#11) whose purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches.
+In this same Git repository and as part of the 3W Project, there is also the 3W Toolkit, which is a software package written in Python 3 [[11]](#11) whose purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for development of new ML frameworks and comparative approaches.
+
+Another possible application is as a training dataset for base models in transfer learning frameworks. These frameworks rely on a large, general dataset as a reference or starting point for training a new model to solve a different but related problem—particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in deep learning applications, especially those requiring large amounts of training data. [Pending Ref]
 
 In addition to these two main resources, 3W Dataset and 3W Toolkit, this Git repository [[10]](#10) also provides:
 
@@ -162,15 +164,15 @@ The terms that make up the nomenclature used in this work are derived from the d
 
 As mentioned at the beginning of this section, the 3W Dataset 2.0.0 is made up of three types of instances, called real, simulated and hand-drawn.
 
-Each of these types of instances has been fundamentally defined according to the origin of its data. Data from real instances were obtained from different Petrobras Plant Information Management Systems (PIMS) [[12 - Pending]](#12), more precisely different AVEVA PI System [[13]](#13) environments. Data from simulated instances were generated with OLGA [[14]](#14), a dynamic multiphase flow simulator adopted by several oil companies around the globe. And data from hand-drawn instances was literally drawn by experts and extracted with a digital tool developed exclusively for this purpose.
+Each of these types of instances has been fundamentally defined according to the origin of its data. Data from real instances were obtained from different Petrobras Plant Information Management Systems (PIMS) [[12 - Pending]](#12), more precisely different AVEVA PI System [[13]](#13) environments. Data from simulated instances were generated with OLGA [[14]](#14), a dynamic multiphase flow simulator adopted by several oil companies around the globe. And data from hand-drawn instances were literally drawn by experts and extracted with a digital tool developed exclusively for this purpose.
 
 Each type of instance, and therefore each data source, required the development of its own method for acquiring and labeling data. The common characteristics among the three developed methods are described in the following subsection. The particularities of each method are detailed in the subsequent subsections.
 
 #### Common Characteristics Among the Methods
 
-All instances, regardless of their type, are related to satellite-type offshore producing wells without manifold [[15 - Pending]](#15). This type of well can be operated with different lifting methods [[16 - Pending]](#16) interspersed over time, sometimes with the natural method and sometimes with an artificial lifting method. The natural method can only be used when the reservoir pressure is sufficient to produce hydrocarbons at a commercial rate without requiring any additional energy. Otherwise, some artificial lifting method is required precisely so that extra energy can be added to the system.
+All instances, regardless of their type, are related to satellite-type offshore oil-producing wells without manifold [[15]](#15). This type of well can be operated with different lifting methods [[16]](#16) interspersed over time, sometimes with the natural method and sometimes with an artificial lifting method. The natural method can only be used when the reservoir pressure is sufficient to produce hydrocarbons at a commercial rate without requiring any additional energy. Otherwise, some artificial lifting method is required precisely so that extra energy can be added to the system.
 
-Fig. 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how the 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[17 - Pending]](#17), the production and service lines, as well as sensors and valves.
+Fig. 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how the 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[17]](#17), the production and service lines, as well as sensors and valves.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -178,7 +180,7 @@ Fig. 1 contains a diagram representing the considered scenario when designing th
   </tr>
 </table>
 
-There are 27 variables present in all instances of the 3W Dataset 2.0.0. According to the used definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 1) are shown in Table 2.
+There are 27 variables present in all instances of the 3W Dataset 2.0.0. According to the adopted definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 1) are shown in Table 2.
 
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
@@ -456,7 +458,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 > 💡 Author affiliations should provide enough detail for the author to be reached, including the department, institution and country wherever possible. Full postal addresses are not required. Affiliations should be cited in numerical order within the author list, starting with the affiliations of the first author. Email addresses should be provided for corresponding authors.
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
-    * Ricardo Emanuel Vaz Vargas, Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
+    * Ricardo Emanuel Vaz Vargas, Mateus de Araujo Fernandes, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * Affiliation
     * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * ...
@@ -469,7 +471,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. M.F. contributed to text revision. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
@@ -496,10 +498,11 @@ Pending.
 #### 3
 Pending.
 #### 4
-Pending.
+Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162, https://doi.org/10.1016/j.infsof.2023.107268.
 #### 5
 Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
 #### 6
+Nielsen, A. (2019). Practical Time Series Analysis: Prediction with Statistics and Machine Learning. First Edition. O'Reilly Media, CA. 
 #### 7
 Preston-Werner, T. (2013). Semantic Versioning 2.0.0. http://semver.org.
 #### 8
@@ -517,11 +520,11 @@ AVEVA (2025). AVEVA PI System. https://www.aveva.com/en/products/aveva-pi-system
 #### 14
 SLB (2025). OLGA. https://www.slb.com/products-and-services/delivering-digital-at-scale/software/olga.
 #### 15
-Pending.
+Fang, H., Duan, M. (2014). Marine Petroleum (Gas) Engineering and Equipment. In Offshore Operation Facilities. Gulf Professional Publishing, Boston, pp. 341–536. https://doi.org/10.1016/b978-0-12-396977-4.00003-2.
 #### 16
-Pending.
+Guo, B., Liu, X., Tan, X. (2017). Part IV: Artificial Lift Methods. In Petroleum Production Engineering (Second Edition). Gulf Professional Publishing, Boston, pp. 513–635. https://doi.org/10.1016/B978-0-12-809374-0.00041-6.
 #### 17
-Pending.
+Sotoodeh, K. (2021). Introduction to the Subsea Sector of the Oil and Gas Industry. In Subsea Valves and Actuators for the Oil and Gas Industry. Gulf Professional Publishing, Boston, pp. 1–36. https://doi.org/10.1016/b978-0-323-90605-0.00006-2.
 #### 18
 Figshare LLP (2025). Figshare. https://info.figshare.com.
 #### 19
