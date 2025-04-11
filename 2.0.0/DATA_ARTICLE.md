@@ -79,7 +79,7 @@ _Note: the use of the acronym **3W** in the title is intentional and beneficial.
 
 > 👍 Cohesion, clarity, and English grammar.
 
-In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Intelligence or Machine Learning for Early Detection of events have shown promise for different industries. In 2019, after recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and made public the 3W Dataset first version, consisting of Multivariate Time Series labeled by experts corresponding to undesirable events or to periods of normal operation. Since then, the 3W Dataset has been explored and the published works already form a considerable scientific framework. Over the last few years, the 3W Dataset has also been evolved by Petrobras. For example, its structure was considerably modified, and more labeled data were incorporated. This data article describes the 3W Dataset current publicly available version and its publication will encourage and support the 3W Community to develop robust methodologies, digital products and services that can detect undesirable events early enough to enable corrective or mitigating actions.
+In the oil industry, events in wells can cause economic damage, environmental accidents, and human casualties. Solutions based on Artificial Antelligence or Machine Learning for Early Detection have shown promise across industries. In 2019, recognizing the importance and the lack of public datasets related to events in producing oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, consisting of Multivariate Time Series labeled by experts as either undesirable events or periods of normal operation. Since then, the 3W Dataset has been explored, and published works have already formed a considerable scientific framework. Over the last few years, Petrobras has further developed this dataset. For example, its structure has been modified, and more labeled data have been incorporated. This data article describes the 3W Dataset’s current publicly available version, and its publication will encourage and support the 3W Community to develop robust methodologies, digital products, and services that can detect undesirable events early enough to enable corrective or mitigating actions.
 
 ### Background & Summary ⁉️
 
@@ -87,13 +87,13 @@ In the oil industry, events in wells can cause economic damage, environmental ac
 
 > 👍 Excellent references, lack of relevant content, cohesion, clarity, English grammar, and presentation format.
 
-Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1 - Pending]](#1).
+Undesirable events cause different types of damage to the oil industry, including economic, environmental accidents, and human casualties [[1]](#1).
 
-Artificial Intelligence (AI) and Machine Learning (ML) based solutions have shown promise for Early Detection [[2 - Pending]](#2) of undesirable events in different industries [[3 - Pending]](#3). A requirement that is recognized as essential in this type of approach is the use of quality datasets [[4 - Pending]](#4).
+Artificial Intelligence (AI) and Machine Learning (ML) based solutions have shown promise for Early Detection [[2]](#2) of undesirable events in different industries [[3]](#3). A requirement that is recognized as essential in this type of approach is the use of quality datasets [[4]](#4).
 
 In 2019, Petrobras recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[5]](#5).
 
-The 3W Dataset is a set of Multivariate Time Series (MTS) [[6 - Pending]](#6), also called instance, labeled by experts. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
+The 3W Dataset is a set of Multivariate Time Series (MTS) [[6]](#6), also called instance, labeled by experts. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
 
 The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the behavior of the variables during these events.
 
@@ -457,6 +457,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
     * Ricardo Emanuel Vaz Vargas, Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
+* Laboratório de Computação Científica e Visualização (LCCV/UFAL), Maceió, Brazil
+    * Lucas Gouveia Omena Lopes, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * Affiliation
     * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * ...
@@ -469,9 +471,10 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. L.L. made textual revisions and updated citations. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
+
 
 ### Corresponding Author ✅
 
@@ -490,16 +493,17 @@ The authors declare no competing interests.
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
 #### 1
-Pending.
+Turley, J. A. (2014). An engineering look at the cause of the 2010 Macondo blowout. Paper presented at the IADC/SPE Drilling Conference and Exhibition, Fort Worth, TX, United States. https://doi.org/10.2118/167970-MS
 #### 2
-Pending.
+Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971
 #### 3
-Pending.
+Andrade, J., Rocha, C., Silva, R., Viana, J., Bessa, R., Gouveia, C., Almeida, B., Santos, R., Louro, M., Santos, P., & Ribeiro, A. (2022). Data-driven anomaly detection and event log profiling of SCADA alarms. IEEE Access, 10, 1–1. https://doi.org/10.1109/ACCESS.2022.3190398
 #### 4
-Pending.
+Gong, Y., Liu, G., Xue, Y., Li, R., & Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162, 107268. https://doi.org/10.1016/j.infsof.2023.107268
 #### 5
 Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
 #### 6
+Tsay, R. S. (2010). Multivariate time series analysis and its applications. In Analysis of financial time series (pp. 389–465). John Wiley & Sons, Ltd. https://doi.org/10.1002/9780470644560.ch8
 #### 7
 Preston-Werner, T. (2013). Semantic Versioning 2.0.0. http://semver.org.
 #### 8
