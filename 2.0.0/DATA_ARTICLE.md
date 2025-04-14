@@ -281,23 +281,23 @@ Labeling is performed manually by domain experts, based on operational logs and 
 
 Each operational state is defined according to the configuration of valves and the nature of the operation: 
 
-Normal: All production valves (M1, W1, SDV-P, PCK) are open; auxiliary valves (PXO, XO) are closed. 
+* Normal: All production valves (M1, W1, SDV-P, PCK) are open; auxiliary valves (PXO, XO) are closed. 
 
-Shut-in: At least one valve in the production path is closed. 
+* Shut-in: At least one valve in the production path is closed. 
 
-Flushing Diesel: At least one wellhead valve is closed, PXO or XO is open, and Diesel is injected. 
+* Flushing Diesel: At least one wellhead valve is closed, PXO or XO is open, and Diesel is injected. 
 
-Flushing Gas: At least one wellhead valve is closed, PXO or XO is open, and Gas is injected. 
+* Flushing Gas: At least one wellhead valve is closed, PXO or XO is open, and Gas is injected. 
 
-Bullheading: All production valves are open, and Diesel is injected from the topside through the production line. 
+* Bullheading: All production valves are open, and Diesel is injected from the topside through the production line. 
 
-Closed with Diesel: At least one production valve is closed, and the previous state was Flushing Diesel or Bullheading. 
+* Closed with Diesel: At least one production valve is closed, and the previous state was Flushing Diesel or Bullheading. 
 
-Closed with Gas: At least one production valve is closed, and the previous state was Flushing Gas. 
+* Closed with Gas: At least one production valve is closed, and the previous state was Flushing Gas. 
 
-Restart: Following a shut-in, all production valves are reopened. 
+* Restart: Following a shut-in, all production valves are reopened. 
 
-Depressurization: Following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed. 
+* Depressurization: Following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed. 
 
 #### Method Relating to Real Instances
 
@@ -498,8 +498,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
     * Ricardo Emanuel Vaz Vargas, Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
-* Affiliation
-    * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
+* HybridAI
+    * João Carneiro, Caio Kattenbach, Felipe Barrocas, Marcos Benício, Matheus Scramignon, Rodrigo Castello Branco & Vitor Bueno.
 * ...
 * Affiliation
     * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
