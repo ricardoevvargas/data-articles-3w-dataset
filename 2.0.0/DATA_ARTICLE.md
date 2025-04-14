@@ -97,7 +97,7 @@ The 3W Dataset is a set of Multivariate Time Series (MTS) [[6]](#6), also called
 
 The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the behavior of the variables during these events.
 
-Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks [add ref]. This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related problem, particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in Deep Learning Applications [add ref], especially those requiring large amounts of training data.
+Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks. This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related problem, particularly when an adequate training dataset of its own is unavailable [[101]](#101). This approach is commonly used in Deep Learning Applications, especially those requiring large amounts of training data [[102]](#102).
 
 As the 3W Dataset has been managed with Semantic Versioning [[7]](#7), its first version is identified by the code 1.0.0.
 
@@ -501,7 +501,7 @@ Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Indu
 #### 3
 Andrade, J., Rocha, C., Silva, R., Viana, J., Bessa, R., Gouveia, C., Almeida, B., Santos, R., Louro, M., Santos, P., & Ribeiro, A. (2022). Data-driven anomaly detection and event log profiling of SCADA alarms. IEEE Access, 10, 1–1. https://doi.org/10.1109/ACCESS.2022.3190398
 #### 4
-Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162, https://doi.org/10.1016/j.infsof.2023.107268.
+Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162. https://doi.org/10.1016/j.infsof.2023.107268.
 #### 5
 Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
 #### 6
@@ -541,3 +541,7 @@ J. Alakuijala & Z. Szabadka (2016). Brotli Compressed Data Format. Internet Engi
 The pandas development team (2020). pandas-dev/pandas: Pandas. https://doi.org/10.5281/zenodo.3509134.
 #### 23
 Apache Software Foundation (2004). Apache License Version 2.0. https://www.apache.org/licenses/LICENSE-2.0.txt.
+#### 101
+Pan, S.J., Yang, Q. (2010). A Survey on Transfer Learning. IEEE Transactions on Knowledge and Data Engineering, 22:10, pp. 1345-1359. https://doi.org/10.1109/TKDE.2009.191.
+#### 102
+Iman, M., Arabnia, H. R., Rasheed, K. (2023). A Review of Deep Transfer Learning and Recent Advancements. Technologies, 11(2): 40. https://doi.org/10.3390/technologies11020040.
