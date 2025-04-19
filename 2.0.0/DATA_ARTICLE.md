@@ -138,8 +138,7 @@ The chosen definition for MTS is the same as that used in the article that publi
 
 A dataset ***DS*** is a set of _m_ MTS (S<sup>_i_</sup> | _i_ = {1, 2, …, _m_}, ∀ _m_ ∈ Z, and _m_ > 1) and is defined as ***DS*** = {***S***<sup>1</sup>, ***S***<sup>2</sup>, …, ***S***<sup>_m_</sup>}. Each MTS _i_ is an instance that is composed of a set of _n_ univariate time series (x<sup>_i_</sup><sub>_j_</sub> | _j_ = {1, 2, …, _n_}, ∀ _n_ ∈ Z, and _n_ > 1) (also referenced as process variable or just variable), and is defined as ***S***<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1</sub>, _x_<sup>_i_</sup><sub>2</sub>, …, _x_<sup>_i_</sup><sub>_n_</sub>}. Each variable _j_ that composes an MTS _i_ is an ordered temporal sequence of _p_<sub>_i_</sub> observations taken at the time _t_ (_x_<sup>_i_</sup><sub>_j,t_</sub> | _t_ = {1, 2, …, _p_<sub>_i_</sub>}, ∀ _p_<sub>_i_</sub> ∈ Z, and _p_<sub>_i_</sub> > 1). Therefore, each MTS _i_ is viewed in this work as a matrix defined as S<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1,1</sub>, _x_<sup>_i_</sup><sub>2,1</sub>, ..., _x_<sup>_i_</sup><sub>_n_,1</sub>; _x_<sup>_i_</sup><sub>1,2</sub>, _x_<sup>_i_</sup><sub>2,2</sub>, ..., _x_<sup>_i_</sup><sub>_n_,2</sub>; _x_<sup>_i_</sup><sub>1,_p_<sub>_i_</sub></sub>, _x_<sup>_i_</sup><sub>2,_p_<sub>_i_</sub></sub>, ..., _x_<sup>_i_</sup><sub>_n_,_p_<sub>_i_</sub></sub>}.
 
-Note that all instances have a fixed number of variables _n_, but each instance can be composed of any quantity of observations _p_<sub>_i_</sub>. It is also important to note that all variables of an instance _i_ have fixed number
-of observations _p_<sub>_i_</sub>.
+Note that all instances have a fixed number of variables _n_; all instances are made up of the same _n_ variables; each instance can be composed of any number of observations _p_<sub>_i_</sub>; all _n_ variables of an instance _i_ have fixed number of observations _p_<sub>_i_</sub>; and different instances can be composed of different number of observations.
 
 #### The Developed Nomenclature
 
@@ -151,7 +150,7 @@ The terms that make up the nomenclature used in this work are derived from the d
 | Variable | Physical quantity at a specific point in the production system of a specific well from which values are acquired to generate a univariable time series _j_: _x_<sub>_j_</sub> |
 | Timestamp | Instant _t_ (date + time) at which values are acquired or generated and then associated with variables: YYYY-MM-DD HH:MM:SS |
 | Observation | Vector with values from _n_ variables of a single instance _i_ acquired at a timestamp _t_: {_x_<sup>_i_</sup><sub>1,t</sub>, _x_<sup>_i_</sup><sub>2,t</sub>, ..., _x_<sup>_i_</sup><sub>_n_,t</sub>} |
-| Label | Marking determined by an expert regarding the well condition in terms of a particular property. The labeling process is explained in Subsection [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) |
+| Label | Marking determined by an expert regarding the well condition in terms of a particular property. The 3W Dataset 2.0.0 has two labels which are defined below: class label and state label. The labeling process is explained in Subsection [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) |
 | Class label | Marking determined by an expert regarding the well condition in terms of occurrence of an undesirable event or normality. See additional explanation in Subsection [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) |
 | State label | Marking determined by an expert regarding the well condition in operational terms. See additional explanation in Subsection [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) |
 | Sample | Part of an MTS, including all _n_ variables and all observations between two timestamps |
@@ -212,6 +211,8 @@ There are 27 variables present in all instances of the 3W Dataset 2.0.0. Accordi
 | T-MON-CKP | Upstream temperature of the PCK | ?Position - Pending? |
 | T-PDG | Temperature at the PDG | ?Position - Pending? |
 | T-TPT | Temperature at the TPT | ?Position - Pending? |
+
+Note that some variable names contain terms or acronyms in Portuguese. For example: ABER = abertura = opening; CKGL = GLCK; CKP = PCK; ESTADO = state; ANULAR = annulus; JUS = jusante = downstream; MON = montante = upstream. Translating all these names into English is a pending issue that will be resolved in future versions of 3W Dataset.
 
 All instances were generated with observations taken every 1 second. In other words, the sampling frequency in all instances is fixed at 1 Hz.
 
@@ -358,7 +359,7 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 | 150 | 0 | 207 |
 | Total | 1119 | 1089 | 20 | 2228 |
 
-A scatter map with all the real instances is shown in Fig. 3. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+A scatter map with all the real instances is shown in Fig. 3. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -385,11 +386,11 @@ Each instance is persisted in its own Apache Parquet file [[19]](#19), or simply
 
 The logic used to formulate file names depends on the type of instance.
 
-The name of each real instance is composed as follows: WELL-[incremental id]_[timestamp of oldest observation].parquet. Example: WELL-00014_20170917140000.parquet. Each real well is associated with a unique id, regardless of the type of event (subdirectory).
+The name of each real instance is composed as follows: WELL-[incremental id]_[timestamp of oldest observation].parquet. Example: WELL-00014_20170917140000.parquet. Each real well is associated with a unique id, regardless of the type of event (subdirectory). As each real well can give rise to one or multiple instances, the [timestamp of oldest observation] part is needed to uniquely identify them.
 
-The name of each simulated instance is composed as follows: SIMULATED_[incremental id].parquet. Example: SIMULATED_00072.parquet. The incremental id is initialized from 1 for each type of event (subdirectory).
+The name of each simulated instance is composed as follows: SIMULATED_[incremental id].parquet. Example: SIMULATED_00072.parquet. The incremental id is initialized from 1 for each type of event (subdirectory) and is sufficient to uniquely identify all its simulated instances.
 
-The name of each hand-drawn instance is composed as follows: DRAWN_[incremental id].parquet. Example: DRAWN_00007.parquet. The incremental id is initialized from 1 for each type of event (subdirectory).
+The name of each hand-drawn instance is composed as follows: DRAWN_[incremental id].parquet. Example: DRAWN_00007.parquet. The incremental id is initialized from 1 for each type of event (subdirectory) and is sufficient to uniquely identify all its hand-drawn instances.
 
 All Parquet files are created with Pyarrow engine [[20]](#20) and Brotli compression [[21]](#21). These choices were made on the basis of the good compromise between compression ratio and reading time.
 
@@ -409,7 +410,7 @@ Several features that have been carefully incorporated into the methods describe
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
 * In the hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
 
-The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is made up of dozens of published works, including books, conference papers, doctoral theses, final draduation projects, journal articles, master's degree dissertations, and specialization monographs. More information on these works can be found in the 3W Project repository [[10]](#10).
+The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is made up of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, and specialization monographs. More information on these works can be found in the 3W Project repository [[10]](#10).
 
 ### Usage Notes ⁉️
 
@@ -461,8 +462,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Ricardo Emanuel Vaz Vargas, Mateus de Araujo Fernandes, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * Laboratório de Computação Científica e Visualização (LCCV/UFAL), Maceió, Brazil
     * Lucas Gouveia Omena Lopes, Author Name, ..., Author Name & Author Name (in alphabetical order)
-* Affiliation
-    * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
+* Department of Informatics, Federal University of Espírito Santo (UFES), Vitória, Brazil
+    * Flávio Miguel Varejão, Author Name, ..., Author Name & Author Name (in alphabetical order)
 * ...
 * Affiliation
     * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
@@ -473,7 +474,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. L.L. reviewed texts, and provided references. M.F. reviewed texts, and provided references. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. F.V. reviewed texts. L.L. reviewed texts, and provided references. M.F. reviewed texts, and provided references. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
