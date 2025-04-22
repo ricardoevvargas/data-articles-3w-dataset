@@ -95,7 +95,7 @@ The 3W Dataset is basically a set of Multivariate Time Series (MTS) [[6.1]](#6.1
 
 The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts from Petrobras are familiar with the behavior of the variables during these events.
 
-Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks [[XX - Pending]](#XX). This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related problem, particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in Deep Learning Applications [[XX - Pending]](#XX), especially those requiring large amounts of training data.
+Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks [[101]](#101). This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related problem, particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in Deep Learning Applications [[102]](#102), especially those requiring large amounts of training data.
 
 As the 3W Dataset has been managed with Semantic Versioning [[7]](#7), its first version is identified by the code 1.0.0.
 
@@ -522,7 +522,7 @@ Pending.
 #### 3
 Pending.
 #### 4
-Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162, https://doi.org/10.1016/j.infsof.2023.107268.
+Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162. https://doi.org/10.1016/j.infsof.2023.107268.
 #### 5
 Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
 #### 6.1
@@ -563,13 +563,7 @@ J. Alakuijala & Z. Szabadka (2016). Brotli Compressed Data Format. Internet Engi
 The pandas development team (2020). pandas-dev/pandas: Pandas. https://doi.org/10.5281/zenodo.3509134.
 #### 23
 Apache Software Foundation (2004). Apache License Version 2.0. https://www.apache.org/licenses/LICENSE-2.0.txt.
-#### 24
-Petróleo Brasileiro S.A. (Petrobras) (2025). The 3W Community. https://github.com/petrobras/3W/tree/main/community.
-#### 25
-Creative Commons (2025). CC BY 4.0. https://creativecommons.org/licenses/by/4.0.
-#### 33
-Dash, S., & Venkatasubramanian, V. (2003). Integrated framework for abnormal event management and process hazards analysis. AIChE journal, 49(1), 124-139. https://doi.org/10.1002/aic.690490112.
-#### 34
-Tran, H. M., Nguyen, T. A., Le, S. T., Huynh, G. V. T., & Lam, T. B. (2022). Two-Phase Defect Detection Using Clustering and Classification Methods. REV Journal on Electronics and Communications, 12(1-2). http://dx.doi.org/10.21553/rev-jec.296.
-#### 38
-Shark, W. (2020). 8.3 Importance of Datasets for ML and DM. Internet of Things and Big Data Applications: Recent Advances and Challenges, 180, 122.
+#### 101
+Pan, S.J., Yang, Q. (2010). A Survey on Transfer Learning. IEEE Transactions on Knowledge and Data Engineering, 22:10, pp. 1345-1359. https://doi.org/10.1109/TKDE.2009.191.
+#### 102
+Iman, M., Arabnia, H. R., Rasheed, K. (2023). A Review of Deep Transfer Learning and Recent Advancements. Technologies, 11(2): 40. https://doi.org/10.3390/technologies11020040.
