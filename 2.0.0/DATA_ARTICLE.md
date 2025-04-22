@@ -517,7 +517,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Caio Kattenbach, Felipe Barrocas, João Carneiro, Marcos Benício, Matheus Scramignon, Rodrigo Castello Branco & Vitor Bueno
     <br><font color="red">Full names must be provided.</font><br>
 * Laboratório de Computação Científica e Visualização (LCCV), Federal University of Alagoas (UFAL), Maceió, Brazil
-    * Lucas Gouveia Omena Lopes
+    * Igor de Melo Nery Oliveira & Lucas Gouveia Omena Lopes
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
     * Guiherme Fidelis Peixer
 
@@ -527,7 +527,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
@@ -548,11 +548,11 @@ The authors declare no competing interests.
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
 #### 1
-Pending.
+Turley, J. A. (2014). An engineering look at the cause of the 2010 Macondo blowout. Paper presented at the IADC/SPE Drilling Conference and Exhibition, Fort Worth, TX, United States. https://doi.org/10.2118/167970-MS.
 #### 2
-Pending.
+Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971.
 #### 3
-Pending.
+Andrade, J., Rocha, C., Silva, R., Viana, J., Bessa, R., Gouveia, C., Almeida, B., Santos, R., Louro, M., Santos, P., & Ribeiro, A. (2022). Data-driven anomaly detection and event log profiling of SCADA alarms. IEEE Access, 10, 1–1. https://doi.org/10.1109/ACCESS.2022.3190398.
 #### 4
 Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162. https://doi.org/10.1016/j.infsof.2023.107268.
 #### 5
