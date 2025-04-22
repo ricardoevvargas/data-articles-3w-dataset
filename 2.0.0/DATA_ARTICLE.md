@@ -188,33 +188,33 @@ There are 27 variables present in all instances of the 3W Dataset 2.0.0. Accordi
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
 | -------- | ------- | ------- |
-| ABER-CKGL | Opening of the GLCK (gas lift choke) | Topsides or Subsea Tree |
-| ABER-CKP | Opening of the PCK (production choke) | Topsides or Subsea Tree |
+| ABER-CKGL | Opening of the GLCK (gas lift choke) | Subsea or topside |
+| ABER-CKP | Opening of the PCK (production choke) | Subsea or topside |
 | ESTADO-DHSV | State of the DHSV (downhole safety valve) | Inside production tubing, below the tree |
-| ESTADO-M1 | State of the PMV (production master valve) | Subsea Tree |
-| ESTADO-M2 | State of the AMV (annulus master valve) | Subsea Tree |
-| ESTADO-PXO | State of the PXO (pig-crossover) valve | Manifold Area |
-| ESTADO-SDV-GL | State of the gas lift SDV (shutdown valve) | Subsea Manifold or Module |
-| ESTADO-SDV-P | State of the production SDV | Subsea Manifold or Module |
-| ESTADO-W1 | State of the PWV (production wing valve) | Subsea Tree |
-| ESTADO-W2 | State of the AWV (annulus wing valve) | Subsea Tree |
-| ESTADO-XO | State of the XO (crossover) valve | Subsea Tree or Manifold |
+| ESTADO-M1 | State of the PMV (production master valve) | Subsea tree |
+| ESTADO-M2 | State of the AMV (annulus master valve) | Subsea tree |
+| ESTADO-PXO | State of the PXO (pig-crossover) valve | Manifold area |
+| ESTADO-SDV-GL | State of the gas lift SDV (shutdown valve) | Subsea manifold or module |
+| ESTADO-SDV-P | State of the production SDV | Subsea manifold or module |
+| ESTADO-W1 | State of the PWV (production wing valve) | Subsea tree |
+| ESTADO-W2 | State of the AWV (annulus wing valve) | Subsea tree |
+| ESTADO-XO | State of the XO (crossover) valve | Subsea tree or manifold |
 | P-ANULAR | Pressure in the well annulus | Between casing and tubing |
-| P-JUS-BS | Downstream pressure of the SP (service pump) | Topsides or Pump Discharge |
-| P-JUS-CKGL | Downstream pressure of the GLCK | Subsea Tree or Tubing Hanger |
-| P-JUS-CKP | Downstream pressure of the PCK | Subsea Tree (Production Line Entry) |
+| P-JUS-BS | Downstream pressure of the SP (service pump) | Topside or pump discharge |
+| P-JUS-CKGL | Downstream pressure of the GLCK | Subsea tree or tubing hanger |
+| P-JUS-CKP | Downstream pressure of the PCK | Subsea or topside (production line entry) |
 | P-MON-CKGL | Upstream pressure of the GLCK | Gas Lift Line Entry |
-| P-MON-CKP | Upstream pressure of the PCK | Subsea Tree (Wellbore Side) |
-| P-MON-SDV-P | Upstream pressure of the production SDV | Subsea Manifold or Module |
-| P-PDG | Pressure at the PDG (permanent downhole gauge) | Near Reservoir Flow |
-| PT-P | Downstream pressure of the PWV in the production tube | Subsea Christmas Tree Preassure (above M2) |
-| P-TPT | Pressure at the TPT (temperature and pressure transducer) | Subsea Christmas Tree Preassure (above M1) |
-| QBS | Flow rate at the SP | Service Pump Outlet - Surface Facility |
-| QGL | Gas lift flow rate | Gas Lift Injection Line - From GLCK |
-| T-JUS-CKP | Downstream temperature of the PCK | Subsea or Topside |
-| T-MON-CKP | Upstream temperature of the PCK | Subsea or Topside |
-| T-PDG | Temperature at the PDG | Near Reservoir Flow |
-| T-TPT | Temperature at the TPT | Subsea Christmas Tree Temperature (above M1) |
+| P-MON-CKP | Upstream pressure of the PCK | Subsea or topside (wellbore side) |
+| P-MON-SDV-P | Upstream pressure of the production SDV | Subsea manifold or module |
+| P-PDG | Pressure at the PDG (permanent downhole gauge) | Near reservoir flow |
+| PT-P | Downstream pressure of the PWV in the production tube | Subsea tree pressure (above M2) |
+| P-TPT | Pressure at the TPT (temperature and pressure transducer) | Subsea tree pressure (above M1) |
+| QBS | Flow rate at the SP | Service pump outlet - surface facility |
+| QGL | Gas lift flow rate | Gas lift injection line - from GLCK |
+| T-JUS-CKP | Downstream temperature of the PCK | Subsea or topside (production line entry) |
+| T-MON-CKP | Upstream temperature of the PCK | Subsea or topside (wellbore side) |
+| T-PDG | Temperature at the PDG | Near reservoir flow |
+| T-TPT | Temperature at the TPT | Subsea tree temperature (above M1) |
 
 Note that some variable names contain terms or acronyms in Portuguese. For example: ABER = abertura = opening; CKGL = GLCK; CKP = PCK; ESTADO = state; ANULAR = annulus; JUS = jusante = downstream; MON = montante = upstream. Translating all these names into English is a pending issue that will be resolved in future versions of 3W Dataset.
 
