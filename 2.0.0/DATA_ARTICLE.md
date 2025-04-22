@@ -188,33 +188,33 @@ There are 27 variables present in all instances of the 3W Dataset 2.0.0. Accordi
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
 | -------- | ------- | ------- |
-| ABER-CKGL | Opening of the GLCK (gas lift choke) | ?Position - Pending? |
-| ABER-CKP | Opening of the PCK (production choke) | ?Position - Pending? |
-| ESTADO-DHSV | State of the DHSV (downhole safety valve) | ?Position - Pending? |
-| ESTADO-M1 | State of the PMV (production master valve) | ?Position - Pending? |
-| ESTADO-M2 | State of the AMV (annulus master valve) | ?Position - Pending? |
-| ESTADO-PXO | State of the PXO (pig-crossover) valve | ?Position - Pending? |
-| ESTADO-SDV-GL | State of the gas lift SDV (shutdown valve) | ?Position - Pending? |
-| ESTADO-SDV-P | State of the production SDV | ?Position - Pending? |
-| ESTADO-W1 | State of the PWV (production wing valve) | ?Position - Pending? |
-| ESTADO-W2 | State of the AWV (annulus wing valve) | ?Position - Pending? |
-| ESTADO-XO | State of the XO (crossover) valve | ?Position - Pending? |
-| P-ANULAR | Pressure in the well annulus | ?Position - Pending? |
-| P-JUS-BS | Downstream pressure of the SP (service pump) | ?Position - Pending? |
-| P-JUS-CKGL | Downstream pressure of the GLCK | ?Position - Pending? |
-| P-JUS-CKP | Downstream pressure of the PCK | ?Position - Pending? |
-| P-MON-CKGL | Upstream pressure of the GLCK | ?Position - Pending? |
-| P-MON-CKP | Upstream pressure of the PCK | ?Position - Pending? |
-| P-MON-SDV-P | Upstream pressure of the production SDV | ?Position - Pending? |
-| P-PDG | Pressure at the PDG (permanent downhole gauge) | ?Position - Pending? |
-| PT-P | Downstream pressure of the PWV in the production tube | ?Position - Pending? |
-| P-TPT | Pressure at the TPT (temperature and pressure transducer) | ?Position - Pending? |
-| QBS | Flow rate at the SP | ?Position - Pending? |
-| QGL | Gas lift flow rate | ?Position - Pending? |
-| T-JUS-CKP | Downstream temperature of the PCK | ?Position - Pending? |
-| T-MON-CKP | Upstream temperature of the PCK | ?Position - Pending? |
-| T-PDG | Temperature at the PDG | ?Position - Pending? |
-| T-TPT | Temperature at the TPT | ?Position - Pending? |
+| ABER-CKGL | Opening of the GLCK (gas lift choke) | Topsides or Subsea Tree |
+| ABER-CKP | Opening of the PCK (production choke) | Topsides or Subsea Tree |
+| ESTADO-DHSV | State of the DHSV (downhole safety valve) | Inside production tubing, below the tree |
+| ESTADO-M1 | State of the PMV (production master valve) | Subsea Tree |
+| ESTADO-M2 | State of the AMV (annulus master valve) | Subsea Tree |
+| ESTADO-PXO | State of the PXO (pig-crossover) valve | Manifold Area |
+| ESTADO-SDV-GL | State of the gas lift SDV (shutdown valve) | Subsea Manifold or Module |
+| ESTADO-SDV-P | State of the production SDV | Subsea Manifold or Module |
+| ESTADO-W1 | State of the PWV (production wing valve) | Subsea Tree |
+| ESTADO-W2 | State of the AWV (annulus wing valve) | Subsea Tree |
+| ESTADO-XO | State of the XO (crossover) valve | Subsea Tree or Manifold |
+| P-ANULAR | Pressure in the well annulus | Between casing and tubing |
+| P-JUS-BS | Downstream pressure of the SP (service pump) | Topsides or Pump Discharge |
+| P-JUS-CKGL | Downstream pressure of the GLCK | Subsea Tree or Tubing Hanger |
+| P-JUS-CKP | Downstream pressure of the PCK | Subsea Tree (Production Line Entry) |
+| P-MON-CKGL | Upstream pressure of the GLCK | Gas Lift Line Entry |
+| P-MON-CKP | Upstream pressure of the PCK | Subsea Tree (Wellbore Side) |
+| P-MON-SDV-P | Upstream pressure of the production SDV | Subsea Manifold or Module |
+| P-PDG | Pressure at the PDG (permanent downhole gauge) | Near Reservoir Flow |
+| PT-P | Downstream pressure of the PWV in the production tube | Subsea Christmas Tree Preassure (above M2) |
+| P-TPT | Pressure at the TPT (temperature and pressure transducer) | Subsea Christmas Tree Preassure (above M1) |
+| QBS | Flow rate at the SP | Service Pump Outlet - Surface Facility |
+| QGL | Gas lift flow rate | Gas Lift Injection Line - From GLCK |
+| T-JUS-CKP | Downstream temperature of the PCK | Subsea or Topside |
+| T-MON-CKP | Upstream temperature of the PCK | Subsea or Topside |
+| T-PDG | Temperature at the PDG | Near Reservoir Flow |
+| T-TPT | Temperature at the TPT | Subsea Christmas Tree Temperature (above M1) |
 
 Note that some variable names contain terms or acronyms in Portuguese. For example: ABER = abertura = opening; CKGL = GLCK; CKP = PCK; ESTADO = state; ANULAR = annulus; JUS = jusante = downstream; MON = montante = upstream. Translating all these names into English is a pending issue that will be resolved in future versions of 3W Dataset.
 
@@ -483,7 +483,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil.
     * Guiherme Fidelis Peixer
 * Laboratório de Computação Científica e Visualização (LCCV/UFAL), Maceió, Brazil
-    * Lucas Gouveia Omena Lopes, Author Name, ..., Author Name & Author Name (in alphabetical order)
+    * Igor de Melo Nery Oliveira, Lucas Gouveia Omena Lopes
 
 * ...
 * Affiliation
@@ -495,7 +495,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. added content and provided references. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
@@ -516,11 +516,11 @@ The authors declare no competing interests.
 > 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
 #### 1
-Pending.
+Turley, J. A. (2014). An engineering look at the cause of the 2010 Macondo blowout. Paper presented at the IADC/SPE Drilling Conference and Exhibition, Fort Worth, TX, United States. https://doi.org/10.2118/167970-MS.
 #### 2
-Pending.
+Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971.
 #### 3
-Pending.
+Andrade, J., Rocha, C., Silva, R., Viana, J., Bessa, R., Gouveia, C., Almeida, B., Santos, R., Louro, M., Santos, P., & Ribeiro, A. (2022). Data-driven anomaly detection and event log profiling of SCADA alarms. IEEE Access, 10, 1–1. https://doi.org/10.1109/ACCESS.2022.3190398.
 #### 4
 Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162. https://doi.org/10.1016/j.infsof.2023.107268.
 #### 5
