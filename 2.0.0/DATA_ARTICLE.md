@@ -183,33 +183,33 @@ There are 27 variables present in all instances of the 3W Dataset 2.0.0. Accordi
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
 | -------- | ------- | ------- |
-| ABER-CKGL | Opening of the GLCK (gas lift choke) | ?Position - Pending? |
-| ABER-CKP | Opening of the PCK (production choke) | ?Position - Pending? |
-| ESTADO-DHSV | State of the DHSV (downhole safety valve) | ?Position - Pending? |
-| ESTADO-M1 | State of the PMV (production master valve) | ?Position - Pending? |
-| ESTADO-M2 | State of the AMV (annulus master valve) | ?Position - Pending? |
-| ESTADO-PXO | State of the PXO (pig-crossover) valve | ?Position - Pending? |
-| ESTADO-SDV-GL | State of the gas lift SDV (shutdown valve) | ?Position - Pending? |
-| ESTADO-SDV-P | State of the production SDV | ?Position - Pending? |
-| ESTADO-W1 | State of the PWV (production wing valve) | ?Position - Pending? |
-| ESTADO-W2 | State of the AWV (annulus wing valve) | ?Position - Pending? |
-| ESTADO-XO | State of the XO (crossover) valve | ?Position - Pending? |
-| P-ANULAR | Pressure in the well annulus | ?Position - Pending? |
-| P-JUS-BS | Downstream pressure of the SP (service pump) | ?Position - Pending? |
-| P-JUS-CKGL | Downstream pressure of the GLCK | ?Position - Pending? |
-| P-JUS-CKP | Downstream pressure of the PCK | ?Position - Pending? |
-| P-MON-CKGL | Upstream pressure of the GLCK | ?Position - Pending? |
-| P-MON-CKP | Upstream pressure of the PCK | ?Position - Pending? |
-| P-MON-SDV-P | Upstream pressure of the production SDV | ?Position - Pending? |
-| P-PDG | Pressure at the PDG (permanent downhole gauge) | ?Position - Pending? |
-| PT-P | Downstream pressure of the PWV in the production tube | ?Position - Pending? |
-| P-TPT | Pressure at the TPT (temperature and pressure transducer) | ?Position - Pending? |
-| QBS | Flow rate at the SP | ?Position - Pending? |
-| QGL | Gas lift flow rate | ?Position - Pending? |
-| T-JUS-CKP | Downstream temperature of the PCK | ?Position - Pending? |
-| T-MON-CKP | Upstream temperature of the PCK | ?Position - Pending? |
-| T-PDG | Temperature at the PDG | ?Position - Pending? |
-| T-TPT | Temperature at the TPT | ?Position - Pending? |
+| ABER-CKGL | Opening of the GLCK (gas lift choke) | 1 |
+| ABER-CKP | Opening of the PCK (production choke) | 2 |
+| ESTADO-DHSV | State of the DHSV (downhole safety valve) | 3 |
+| ESTADO-M1 | State of the PMV (production master valve) | 4 |
+| ESTADO-M2 | State of the AMV (annulus master valve) | 5 |
+| ESTADO-PXO | State of the PXO (pig-crossover) valve | 6 |
+| ESTADO-SDV-GL | State of the gas lift SDV (shutdown valve) | 7 |
+| ESTADO-SDV-P | State of the production SDV | 8 |
+| ESTADO-W1 | State of the PWV (production wing valve) | 9 |
+| ESTADO-W2 | State of the AWV (annulus wing valve) | 10 |
+| ESTADO-XO | State of the XO (crossover) valve | 11 |
+| P-ANULAR | Pressure in the well annulus | 12 |
+| P-JUS-BS | Downstream pressure of the SP (service pump) | 13 |
+| P-JUS-CKGL | Downstream pressure of the GLCK | 1 |
+| P-JUS-CKP | Downstream pressure of the PCK | 2 |
+| P-MON-CKGL | Upstream pressure of the GLCK | 1 |
+| P-MON-CKP | Upstream pressure of the PCK | 2 |
+| P-MON-SDV-P | Upstream pressure of the production SDV | 8 |
+| P-PDG | Pressure at the PDG (permanent downhole gauge) | 14 |
+| PT-P | Downstream pressure of the PWV in the production tube | 4 |
+| P-TPT | Pressure at the TPT (temperature and pressure transducer) | 15 |
+| QBS | Flow rate at the SP | 13 |
+| QGL | Gas lift flow rate | 13|
+| T-JUS-CKP | Downstream temperature of the PCK | 2|
+| T-MON-CKP | Upstream temperature of the PCK | 2 |
+| T-PDG | Temperature at the PDG | 14 |
+| T-TPT | Temperature at the TPT | 15 |
 
 All instances were generated with observations taken every 1 second. In other words, the sampling frequency in all instances is fixed at 1 Hz.
 
@@ -252,6 +252,7 @@ The numerical codes associated with the class labels are detailed in Table 4. An
 
 The numerical codes associated with the state labels are detailed in Table 5. Any of these codes can also be associated with any observation from any instance. None of these codes are associated with any instance as a whole. When the well operating condition is unknown at any time, the associated observation is labeled with the state label Unknown (code = NaN).
 
+
 **Table 5**<br>State labels and their numerical codes.
 | **Numerical Code** | **State Label** |
 | -------- | ------- |
@@ -266,6 +267,38 @@ The numerical codes associated with the state labels are detailed in Table 5. An
 | 8 | Depressurization |
 | NaN | Unknown |
 
+All states other than Normal are associated with well shut-in procedures. The Normal state denotes continuous production with all key production path valves open and no auxiliary operations ongoing. 
+
+Understanding and correctly identifying these operational states is critical in monitoring and preventing undesirable events, such as hydrate formation. For example, the Closed with Diesel state occurs following successful Diesel Flushing or Bullheading, during which the well is filled with Diesel—a condition in which hydrate formation is highly unlikely. Bullheading is performed by injecting fluid (Diesel) directly from the topside into the production line under pressure, pushing the wellbore fluids back into the reservoir. This operation is used to ensure that a non-hydrate-forming fluid fills the system, often as a preventive action against hydrate plugs. In contrast, Diesel Flushing is performed by circulating Diesel through the service line and into the production flowline, displacing the original production fluids along the flowline path, typically toward the topside facilities. This operation ensures that hydrate-prone fluids are replaced with a more stable medium, reducing the chances of hydrate formation during shut-in. 
+
+Similarly, the Closed with Gas state occurs following a Gas Flushing operation, which is performed by injecting and circulating gas—usually dry gas—via the service line into the production line. This operation also serves to remove liquid hydrocarbons or water that could contribute to hydrate formation, creating a drier environment inside the pipeline. 
+
+Additionally, historical operational context can be valuable; for instance, depressurizing the production system is a typical measure performed shortly after the well is shut-in, in order to seek for thermodynamic conditions less favorable to the formation of hydrates, for example. 
+
+A Depressurization state may indicate that subcooling levels were reduced, potentially mitigating hydrate risks during extended shut-ins. 
+
+Labeling is performed manually by domain experts, based on operational logs and metadata for each well, time series of the pressure and temperature sensors, as well as valve openings and gas lift flow rates.
+
+Each operational state is defined according to the configuration of valves and the nature of the operation: 
+
+* Normal: All production valves (M1, W1, SDV-P, PCK) are open; auxiliary valves (PXO, XO) are closed. 
+
+* Shut-in: At least one valve in the production path is closed. 
+
+* Flushing Diesel: At least one wellhead valve is closed, PXO or XO is open, and Diesel is injected. 
+
+* Flushing Gas: At least one wellhead valve is closed, PXO or XO is open, and Gas is injected. 
+
+* Bullheading: All production valves are open, and Diesel is injected from the topside through the production line. 
+
+* Closed with Diesel: At least one production valve is closed, and the previous state was Flushing Diesel or Bullheading. 
+
+* Closed with Gas: At least one production valve is closed, and the previous state was Flushing Gas. 
+
+* Restart: Following a shut-in, all production valves are reopened. 
+
+* Depressurization: Following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed. 
+
 #### Method Relating to Real Instances
 
 The particularities of the method developed for real data are listed below.
@@ -277,6 +310,14 @@ The particularities of the method developed for real data are listed below.
     1. With conversion to standard measurement units.
 * Regarding labeling:
     1. By experts using a Petrobras' web system developed exclusively for labeling and exporting real data to the 3W Dataset.
+
+The labeling of real instances begins with the registration of historical events mapped by Petrobras in a tracking system, ensuring accessibility and traceability for the specialists involved. Based on these records, one or more specialists (referred to as labelers) carry out the labeling process using a web-based tool specifically designed for this purpose. Once the initial labeling is completed, a group of specialists (validators) reviews the data to suggest potential adjustments and ultimately validates the assigned labels. After validation, a curator specialist finalizes the process by updating the system to mark the corresponding event as labeled, thereby enabling its subsequent use in the extraction of real data and its final inclusion in the 3W dataset. Fig. 2 illustrates the labeling process conducted for the generation of real instances.
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 2</b><br><img src="images/labeling.png" width=100%><br>Ilustration of the labeling process for the generation of 3W real instances.</td>
+  </tr>
+</table>
 
 The main limitations of this method are:
 
@@ -310,7 +351,7 @@ The particularities of the method developed for hand-drawn data are listed below
 
 * Regarding data generation:
     1. Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset;
-    1. Each variable hand-drawn on its own chart by a expert. An example is shown in Fig. 2;
+    1. Each variable hand-drawn on its own chart by a expert. An example is shown in Fig. 3;
     1. Automated digitization of time series via scanning graphs printed on paper.
 * Regarding labeling:
     1. From expert markings on the graphs printed on paper.
@@ -323,7 +364,7 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 2</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert in the tool developed exclusively for generating instances for the 3W Dataset.</td>
+    <td><b>Fig. 3</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert in the tool developed exclusively for generating instances for the 3W Dataset.</td>
   </tr>
 </table>
 
@@ -356,11 +397,11 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 | 150 | 0 | 207 |
 | Total | 1119 | 1089 | 20 | 2228 |
 
-A scatter map with all the real instances is shown in Fig. 3. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+A scatter map with all the real instances is shown in Fig. 4. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 4</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
@@ -457,8 +498,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
     * Ricardo Emanuel Vaz Vargas, Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
-* Affiliation
-    * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
+* HybridAI
+    * João Carneiro, Caio Kattenbach, Felipe Barrocas, Marcos Benício, Matheus Scramignon, Rodrigo Castello Branco & Vitor Bueno.
 * ...
 * Affiliation
     * Author Name, Author Name, ..., Author Name & Author Name (in alphabetical order)
