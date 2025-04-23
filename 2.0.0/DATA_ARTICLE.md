@@ -77,7 +77,7 @@ _Note: the use of the acronym **3W** in the title is intentional and beneficial.
 
 > 💡 We recommend the Abstract should not exceed 170 words. It should not include references and should succinctly describe the data and how it may be used but should not make any claims regarding new scientific findings. We recommend URLs for download, or other details on dataset access, are not included. Please do not use sub-headings to break the Abstract into sections. 
 
-In the oil industry, undesirable events in oil wells can cause economic damage, environmental accidents, and human casualties. Artificial Intelligence and Machine Learning based solutions for Early Detection of such events have proven valuable for diverse applications across industries. In 2019, recognizing the importance and the lack of public datasets related to undesirable events in oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, which is basically a set of Multivariate Time Series labeled by experts. Since then, the 3W Dataset has been developed by Petrobras and has become a foundational reference for numerous works in the field. This data article describes the current publicly available version of the 3W Dataset, which contains structural modifications and additional labeled data. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
+In the oil industry, undesirable events in oil wells can cause economic damage, environmental accidents, and human casualties. Artificial Intelligence and Machine Learning based solutions for Early Detection of such events have proven valuable for diverse applications across industries. In 2019, recognizing the importance and the lack of public datasets related to undesirable events in oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, which is basically a set of Multivariate Time Series labeled by experts. Since then, the 3W Dataset has been developed collaboratively and has become a foundational reference for numerous works in the field. This data article describes the current publicly available version of the 3W Dataset, which contains structural modifications and additional labeled data. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
 
 ### Background & Summary ⁉️
 
@@ -91,15 +91,15 @@ Abnormal Event Management (AEM) refers to the systematic detection, diagnosis, a
 
 In 2019, Petrobras — the largest oil company in Brazil, which operates in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy — recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[8]](#8). 
 
-The 3W Dataset is basically a set of Multivariate Time Series (MTS) [[9]](#9)[[10]](#10), also called instances, labeled by experts from Petrobras The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated, and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
+The 3W Dataset is basically a set of Multivariate Time Series (MTS) [[9]](#9)[[10]](#10), also called instances, labeled by experts from Petrobras and its partners. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated, and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
 
-The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts from Petrobras are familiar with the behavior of the variables during these events.
+The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the behavior of the variables during these events.
 
 Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks [[11]](#11). This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related problem, particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in Deep Learning Applications [[12]](#12), especially those requiring large amounts of training data.
 
 As the 3W Dataset has been managed with Semantic Versioning [[13]](#13), its first version is identified by the code 1.0.0.
 
-Since its publication, the 3W Dataset has been explored by several people who make up the 3W Community [[14]](#14), including independent professionals and representatives of research institutions, startups, companies, and oil operators from different countries. 
+Since its first publication, the 3W Dataset has been explored by several people who make up the 3W Community [[14]](#14), including independent professionals and representatives of research institutions, startups, companies, and oil operators from different countries. 
 
 Several works that have been developed and published by the 3W Community has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[15]](#15).
 
@@ -118,7 +118,7 @@ In addition to these two main resources, 3W Dataset and 3W Toolkit, this Git rep
 - The 3W Community code of conduct;
 - Release notes for the published versions of the 3W Dataset.
 
-Since 2022, the 3W Dataset has also been evolved by Petrobras, and its current publicly available version is identified by the code 2.0.0.
+Since 2022, the 3W Dataset has also been evolved under Petrobras' leadership, and its current publicly available version is identified by the code 2.0.0.
 
 This data article describes the 3W Dataset 2.0.0 and summarizes the advances incorporated into this version since version 1.0.0. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
 
@@ -161,7 +161,7 @@ The terms that make up the nomenclature used in this work are derived from the d
 
 As mentioned at the beginning of this section, the 3W Dataset 2.0.0 is composed of three types of instances, called real, simulated, and hand-drawn.
 
-Each of these types of instances has been fundamentally defined according to the origin of its data. Data from real instances were obtained from different Petrobras Plant Information Management Systems (PIMS) [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments. Data from simulated instances were generated with OLGA [[21]](#21), a dynamic multiphase flow simulator adopted by several oil companies around the globe. Data from hand-drawn instances were literally drawn by experts from Petrobras and extracted with a digital tool developed exclusively for this purpose.
+Each of these types of instances has been fundamentally defined according to the origin of its data. Data from real instances were obtained from different Petrobras Plant Information Management Systems (PIMS) [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments. Data from simulated instances were generated with OLGA [[21]](#21), a dynamic multiphase flow simulator adopted by several oil companies around the globe. Data from hand-drawn instances were literally drawn by experts from Petrobras and its partners and extracted with a digital tool developed exclusively for this purpose.
 
 Each type of instance, and therefore each data source, required the development of its own method for acquiring and labeling data. The common characteristics among the three developed methods are described in the following subsection. The particularities of each method are detailed in the subsequent subsections.
 
@@ -300,7 +300,7 @@ The particularities of the method developed for real data are listed below.
     1. No treatments for frozen variables or missing values;
     1. With conversion to standard measurement units.
 * Regarding labeling:
-    1. Historical events are mapped in a Tracking System, which ensures accessibility and traceability for labelers (experts from Petrobras);
+    1. Historical events are mapped in a Tracking System, which ensures accessibility and traceability for labelers (experts from Petrobras and its partners);
     1. Based on these records, a Labeler carry out the labeling process using a Petrobras' Web Tool developed exclusively for labeling and exporting real data to the 3W Dataset;
     1. An expert committee (Validator) reviews labeling already carried out to suggest potential adjustments and ultimately validates the assigned labels;
     1. A Curator (3W Dataset specialist) finalizes the process by updating the tool to mark the validated events (Instances) as labeled, thereby enabling them to be exported and included in the 3W Dataset;
@@ -451,7 +451,7 @@ Several features that have been carefully incorporated into the methods describe
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
 * In the hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
 
-The experts mentioned here are all from Petrobras.
+The experts mentioned here are all from Petrobras and its partners.
 
 The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is composed of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[15]](#15).
 
