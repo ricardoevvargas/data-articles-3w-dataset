@@ -101,13 +101,7 @@ As the 3W Dataset has been managed with Semantic Versioning [[7]](#7), its first
 
 Since its publication, the 3W Dataset has been explored by several people who make up the 3W Community [[24]](#24), including independent professionals and representatives of research institutions, startups, companies, and oil operators from different countries. 
 
-Several works that have been developed and published by the 3W Community has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[10]](#10) and its yearly progression is plotted in Fig. 1. Over the years, its adoption by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems.
-
-<table align="center" style="margin: 0px auto;">
-  <tr>
-    <td><b>Fig. 1</b><br><font color="red">Note: this figure needs to be replaced by a svg file.</font><br><img src="images/citation_progress.png" width=80%><br>Number of different types of publications over the years that cite the 3W Dataset.</td>
-  </tr>
-</table>
+Several works that have been developed and published by the 3W Community has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[10]](#10).
 
 In 2022, Petrobras created the 3W Project as the first and only pilot of the Open Lab Module of the Connections Program for Innovation [[8]](#8). The purpose of this module is to encourage open and collaborative project developments on the Internet, more specifically through GitHub [[9]](#9). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[10]](#10) on GitHub.
 
@@ -175,15 +169,15 @@ Each type of instance, and therefore each data source, required the development 
 
 All instances, regardless of their type, are related to satellite-type offshore oil-producing wells without manifold [[15]](#15). This type of well can be operated with different lifting methods [[16]](#16) interspersed over time, sometimes with the natural method and sometimes with an artificial lifting method. The natural method can only be used when the reservoir pressure is sufficient to produce hydrocarbons at a commercial rate without requiring any additional energy. Otherwise, some artificial lifting method is required precisely so that extra energy can be added to the system.
 
-Fig. 2 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how the 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[17]](#17), the production and service lines, as well as sensors and valves.
+Fig. 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how the 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[17]](#17), the production and service lines, as well as sensors and valves.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 2</b><br><img src="images/diagram.svg" width=75%><br>Diagram representing the considered scenario when designing the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 1</b><br><img src="images/diagram.svg" width=75%><br>Diagram representing the considered scenario when designing the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
-There are 27 variables present in all instances of the 3W Dataset 2.0.0. According to the adopted definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 2) are shown in Table 2.
+There are 27 variables present in all instances of the 3W Dataset 2.0.0. According to the adopted definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 1) are shown in Table 2.
 
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
@@ -310,7 +304,7 @@ The particularities of the method developed for real data are listed below.
     1. Based on these records, a Labeler carry out the labeling process using a Petrobras' Web Tool developed exclusively for labeling and exporting real data to the 3W Dataset;
     1. An expert committee (Validator) reviews labeling already carried out to suggest potential adjustments and ultimately validates the assigned labels;
     1. A Curator (3W Dataset specialist) finalizes the process by updating the tool to mark the validated events (Instances) as labeled, thereby enabling them to be exported and included in the 3W Dataset;
-    1. Fig. 3 illustrates this labeling process and Fig. 4 shows an example of a real instance labeled with this process.
+    1. Fig. 2 illustrates this labeling process and Fig. 3 shows an example of a real instance labeled with this process.
 
 The main limitations of this method are:
 
@@ -320,13 +314,13 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/labeling.png" width=45%><br>Ilustration of the labeling process of real instances.</td>
+    <td><b>Fig. 2</b><br><img src="images/labeling.png" width=45%><br>Ilustration of the labeling process of real instances.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 4</b><br><img src="images/real_instance.png" width=100%><br>Example of a real instance that has 3 periods labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); light green: class label = 0 (Normal Operation) = 1st period; yellow: class label = 102 (Transient: Spurious Closure of DHSV) = 2nd period; red: class label = 2 (Spurious Closure of DHSV) = 3rd period. Only part of the variables are considered in this example.</td>
+    <td><b>Fig. 3</b><br><img src="images/real_instance.png" width=100%><br>Example of a real instance that has 3 periods labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); light green: class label = 0 (Normal Operation) = 1st period; yellow: class label = 102 (Transient: Spurious Closure of DHSV) = 2nd period; red: class label = 2 (Spurious Closure of DHSV) = 3rd period. Only part of the variables are considered in this example.</td>
   </tr>
 </table>
 
@@ -357,7 +351,7 @@ The particularities of the method developed for hand-drawn data are listed below
 
 * Regarding data generation:
     1. Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset;
-    1. Each variable was hand-drawn on its own chart by an expert from Petrobras. An example is shown in Fig. 5;
+    1. Each variable was hand-drawn on its own chart by an expert from Petrobras. An example is shown in Fig. 4;
     1. Automated digitization of time series via scanning graphs printed on paper;
     1. With perfectly periodic time series;
     1. No frozen variables or missing values;
@@ -373,7 +367,7 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 5</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert from Petrobras in the tool developed exclusively for generating instances for the 3W Dataset.</td>
+    <td><b>Fig. 4</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert from Petrobras in the tool developed exclusively for generating instances for the 3W Dataset.</td>
   </tr>
 </table>
 
@@ -406,11 +400,11 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 (0) | 150 (0) | 0 | 207 (0) |
 | Total | 1119 (1025) | 1089 (939) | 20 | 2228 (1984) |
 
-A scatter map with all the real instances is shown in Fig. 6. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+A scatter map with all the real instances is shown in Fig. 5. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 6</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 5</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
@@ -457,9 +451,15 @@ Several features that have been carefully incorporated into the methods describe
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
 * In the hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
 
-The experts mentioned in this section are all from Petrobras.
+The experts mentioned here are all from Petrobras.
 
-The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is composed of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, and specialization monographs. More information on these works can be found in the 3W Project repository [[10]](#10).
+The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is composed of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[10]](#10).
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 6</b><br><img src="images/citation_progress.svg" width=90%><br>The quantitative annual progress of different types of publications that cite the 3W Dataset.</td>
+  </tr>
+</table>
 
 ### Usage Notes ⁉️
 
