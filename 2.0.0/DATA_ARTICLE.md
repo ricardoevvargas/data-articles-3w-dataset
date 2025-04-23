@@ -173,7 +173,7 @@ Fig. 1 contains a diagram representing the considered scenario when designing th
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 1</b><br><img src="images/diagram.svg" width=75%><br>Diagram representing the considered scenario when designing the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 1</b><br><img src="images/scenario_diagram.svg" width=75%><br>Diagram representing the considered scenario when designing the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
@@ -314,7 +314,7 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 2</b><br><img src="images/labeling.png" width=45%><br>Ilustration of the labeling process of real instances.</td>
+    <td><b>Fig. 2</b><br><font color="red">Suggested improvements: replace the file with an svg; replace the term “Instance” with “Instances”; replace the term “Web Tool” with “Petrobras' Web Tool”; replace the rectangle with “PI System” with 2 rectangles with “AVEVA PI System” and 3 dots between them to represent that there are multiple AVEVA PI System environments.</font><br><br><img src="images/labeling_process.png" width=45%><br>Ilustration of the labeling process of real instances.</td>
   </tr>
 </table>
 
