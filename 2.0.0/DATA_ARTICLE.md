@@ -309,13 +309,46 @@ The particularities of the method developed for real data are listed below.
     1. No treatments for frozen variables or missing values;
     1. With conversion to standard measurement units.
 * Regarding labeling:
-    1. By experts using a Petrobras' web system developed exclusively for labeling and exporting real data to the 3W Dataset.
+    1. Historical events are mapped in a Tracking System, which ensures accessibility and traceability for labelers (experts from Petrobras);
+    2. Based on these records, a Labeler carry out the labeling process using a Petrobras' Web Tool developed exclusively for labeling and exporting real data to the 3W Dataset;
+    3. An expert committee (Validator) reviews labeling already carried out to suggest potential adjustments and ultimately validates the assigned labels;
+    4. A Curator (3W Dataset specialist) finalizes the process by updating the tool to mark the validated events (Instances) as labeled, thereby enabling them to be exported and included in the 3W Dataset;
 
-The labeling of real instances begins with the registration of historical events mapped by Petrobras in a tracking system, ensuring accessibility and traceability for the specialists involved. Based on these records, one or more specialists (referred to as labelers) carry out the labeling process using a web-based tool specifically designed for this purpose. Once the initial labeling is completed, a group of specialists (validators) reviews the data to suggest potential adjustments and ultimately validates the assigned labels. After validation, a curator specialist finalizes the process by updating the system to mark the corresponding event as labeled, thereby enabling its subsequent use in the extraction of real data and its final inclusion in the 3W dataset. Fig. 2 illustrates the labeling process conducted for the generation of real instances.
+The labeling of real instances begins with the registration of historical events mapped by Petrobras in a tracking system, ensuring accessibility and traceability for the specialists involved. Based on these records, one or more specialists (referred to as labelers) carry out the labeling process using a web-based tool specifically designed for this purpose. Once the initial labeling is completed, a group of specialists (validators) reviews the data to suggest potential adjustments and ultimately validates the assigned labels. After validation, a curator specialist finalizes the process by updating the system to mark the corresponding event as labeled, thereby enabling its subsequent use in the extraction of real data and its final inclusion in the 3W dataset. Fig. 2 illustrates the labeling process conducted for the generation of real instances. Fig. 3 shows an example of a real instance, of the Spurious Closure of DHSV class, labeled with this process. Fig. 4 shows an example of a normal shut-in instance, where a depressurization operation takes place, as shown by the opening of the PCK and SDV-P during the shutdown event. Fig. 5 shows an example of a Quick Restriction in PCK instance, where the PCK opening is reduced, and increases in pressure are observed in the TPT, PDG and MON-CKP sensors. Fig. 6 shows an example of a Severe Slugging instance, in which pressure oscillations with amplitudes above 10 bar are observed in the PDG and TPT sensors. Lastly, Fig. 7 shows an example of a Hydrate in Production Line instance, which can be identified by the signature pressure increases in the sensors upstream of the production line (PDG and TPT), and a decrease downstream of the production line (MON-CKP and JUS-CKP).
 
 <table align="center" style="margin: 0px auto;">
   <tr>
     <td><b>Fig. 2</b><br><img src="images/labeling.png" width=100%><br>Ilustration of the labeling process for the generation of 3W real instances.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 3</b><br><img src="images/real_instance.png" width=100%><br>Example of a real instance that has 3 periods labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); light green: class label = 0 (Normal Operation) = 1st period; yellow: class label = 102 (Transient: Spurious Closure of DHSV) = 2nd period; red: class label = 2 (Spurious Closure of DHSV) = 3rd period. Only part of the variables are considered in this example.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 4</b><br><img src="images/instance_shutin_normal.png" width=100%><br>Example of a real shut-in instance with normal operation, labeled with a Petrobras' Web Tool. Color correspondences in the upper section of the graph: dark green: state label = 0 (Open); gray: state label = 1 (shut-in); salmon: state label = 8 (Depressurization operation); magenta: state label = 7 (Restart); light green: class label = 0 (Normal Operation). In this example, a depressurization operation is carried out during the well shutdown to remediate hydrate formation risk.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 5</b><br><img src="images/instance_open_restriction_pck.png" width=100%><br>Example of a real instance of a quick restriction in the PCK event, labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); light green: class label = 0 (Normal Operation) = 1st period; yellow: class label = 106 (Transient: Quick Restriction in PCK) = 2nd period; red: class label = 6 (Quick Restriction in PCK event) = 3rd period. Only part of the variables are considered in this example.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 6</b><br><img src="images/instance_open_severe_slugging.png" width=100%><br>Example of a real instance of a severe slugging event, labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); red: class label = 3 (Severe slugging event). Only part of the variables are considered in this example.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 7</b><br><img src="images/instance_open_hydrate_prod.png" width=100%><br>Example of a real instance of a Hydrate in Production Line event, labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); light green: class label = 0 (Normal Operation) = 1st period; yellow: class label = 108 (Transient: Hydrate in Production Line) = 2nd period; red: class label = 8 (Hydrate in Production Line event) = 3rd period. Only part of the variables are considered in this example.</td>
   </tr>
 </table>
 
@@ -351,7 +384,7 @@ The particularities of the method developed for hand-drawn data are listed below
 
 * Regarding data generation:
     1. Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset;
-    1. Each variable hand-drawn on its own chart by a expert. An example is shown in Fig. 3;
+    1. Each variable hand-drawn on its own chart by a expert. An example is shown in Fig. 8;
     1. Automated digitization of time series via scanning graphs printed on paper.
 * Regarding labeling:
     1. From expert markings on the graphs printed on paper.
@@ -364,7 +397,7 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert in the tool developed exclusively for generating instances for the 3W Dataset.</td>
+    <td><b>Fig. 8</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert in the tool developed exclusively for generating instances for the 3W Dataset.</td>
   </tr>
 </table>
 
@@ -397,11 +430,11 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 | 150 | 0 | 207 |
 | Total | 1119 | 1089 | 20 | 2228 |
 
-A scatter map with all the real instances is shown in Fig. 4. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+A scatter map with all the real instances is shown in Fig. 9. The oldest intance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 4</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 9</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
