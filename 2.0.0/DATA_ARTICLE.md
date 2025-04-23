@@ -69,7 +69,9 @@ The following step-by-step is suggested:
 
 > 💡 Titles may not exceed 110 characters, including whitespaces. They should avoid the use of acronyms, abbreviations, and unnecessary punctuation where possible. Colons and parentheses are not permitted.
 
-3W Dataset 2.0.0: a realistic and public dataset with rare undesirable real events in oil wells
+3W Dataset 2.0.0 a realistic and public dataset with rare undesirable real events in oil wells
+
+_Note: The title was revised to comply with formatting guidelines that prohibit the use of colons, parentheses, and unnecessary abbreviations.
 
 _Note: the use of the acronym **3W** in the title is intentional and beneficial. Its meaning will be explained in the Background & Summary Section._
 
@@ -85,11 +87,11 @@ In the oil industry, undesirable events in oil wells can cause economic damage, 
 
 > 👍 Excellent references and final review.
 
-Undesirable events cause different types of damage to the oil industry, including economic damage, environmental accidents, and human casualties [[1]](#1).
+Undesirable events cause different types of damage to the oil industry, including economic damage, environmental accidents, and human casualties [[1]](#1). In this case, the use of sensor-based data monitoring is a common practice, aiming to identify possible anomalies in structures and proactively prevent accidents. A relevant example is presented by [[2]](#2), who reports a case that occurred at the Exploration and Production Operations Unit of Petrobras in Espírito Santo (UO-ES). In that study, it is estimated that, in 2016, production losses reached 1,514,000 barrels due to anomalies in offshore wells operated by natural lift systems. Considering this estimate as an annual average and adopting a price of $50 per barrel, the financial impact of these anomalies on UO-ES amounts to approximately $75.7 million per year.
 
-Abnormal Event Management (AEM) refers to the systematic detection, diagnosis, and mitigation of unexpected or irregular events within complex industrial systems [[2]](#2). In the oil industry, where operational safety, environmental protection, and economic performance are tightly coupled, AEM plays a crucial role in minimizing the impact of undesirable events. The integration of Artificial Intelligence (AI) and Machine Learning (ML) based solutions into AEM have shown promise for Early Detection [[3]](#3) of undesirable events in different industries [[4]](#4). By analyzing vast streams of operational data, such as pressure, temperature, vibration, and flow rates, algorithms can uncover subtle patterns that precede abnormal conditions, allowing early intervention and preventive maintenance strategies [[5]](#5). A requirement that is recognized as essential in this type of approach is the use of high-quality datasets [[6]](#6) [[7]](#7).
+Abnormal Event Management (AEM) refers to the systematic detection, diagnosis, and mitigation of unexpected or irregular events within complex industrial systems [[3]](#3). In the oil industry, where operational safety, environmental protection, and economic performance are tightly coupled, AEM plays a crucial role in minimizing the impact of undesirable events. The integration of Artificial Intelligence (AI) and Machine Learning (ML) based solutions into AEM have shown promise for Early Detection [[4]](#4) of undesirable events in different industries [[5]](#5). By analyzing vast streams of operational data, such as pressure, temperature, vibration, and flow rates, algorithms can uncover subtle patterns that precede abnormal conditions, allowing early intervention and preventive maintenance strategies [[6]](#6). A requirement that is recognized as essential in this type of approach is the use of high-quality datasets [[7]](#7) [[8]](#8).
 
-In 2019, Petrobras — the largest oil company in Brazil, which operates in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy — recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[8]](#8). 
+In 2019, Petrobras — the largest oil company in Brazil, which operates in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy — recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[2]](#2). 
 
 The 3W Dataset is basically a set of Multivariate Time Series (MTS) [[9]](#9)[[10]](#10), also called instances, labeled by experts from Petrobras The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated, and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
 
@@ -132,7 +134,7 @@ In a nutshell, the 3W Dataset 2.0.0 is composed of three types of instances that
 
 #### Mathematical Definition of Multivariate Time Series
 
-The chosen definition for MTS is the same as that used in the article that published the 3W Dataset 1.0.0 [[8]](#8). This definition is reproduced below.
+The chosen definition for MTS is the same as that used in the article that published the 3W Dataset 1.0.0 [[2]](#2). This definition is reproduced below.
 
 A dataset ***DS*** is a set of _m_ MTS (S<sup>_i_</sup> | _i_ = {1, 2, …, _m_}, ∀ _m_ ∈ Z, and _m_ > 1) and is defined as ***DS*** = {***S***<sup>1</sup>, ***S***<sup>2</sup>, …, ***S***<sup>_m_</sup>}. Each MTS _i_ is an instance that is composed of a set of _n_ univariate time series (x<sup>_i_</sup><sub>_j_</sub> | _j_ = {1, 2, …, _n_}, ∀ _n_ ∈ Z, and _n_ > 1) (also referenced as process variable or just variable), and is defined as ***S***<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1</sub>, _x_<sup>_i_</sup><sub>2</sub>, …, _x_<sup>_i_</sup><sub>_n_</sub>}. Each variable _j_ that composes an MTS _i_ is an ordered temporal sequence of _p_<sub>_i_</sub> observations taken at the time _t_ (_x_<sup>_i_</sup><sub>_j,t_</sub> | _t_ = {1, 2, …, _p_<sub>_i_</sub>}, ∀ _p_<sub>_i_</sub> ∈ Z, and _p_<sub>_i_</sub> > 1). Therefore, each MTS _i_ is viewed in this work as a matrix defined as S<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1,1</sub>, _x_<sup>_i_</sup><sub>2,1</sub>, ..., _x_<sup>_i_</sup><sub>_n_,1</sub>; _x_<sup>_i_</sup><sub>1,2</sub>, _x_<sup>_i_</sup><sub>2,2</sub>, ..., _x_<sup>_i_</sup><sub>_n_,2</sub>; _x_<sup>_i_</sup><sub>1,_p_<sub>_i_</sub></sub>, _x_<sup>_i_</sup><sub>2,_p_<sub>_i_</sub></sub>, ..., _x_<sup>_i_</sup><sub>_n_,_p_<sub>_i_</sub></sub>}.
 
@@ -467,7 +469,7 @@ The quantity and the diversity of the works developed and published by the 3W Co
 
 > 👍 Final review.
 
-This data article describes the 3W Dataset 2.0.0, the current publicly available version, and summarizes its evolution with respect to version 1.0.0, which is detailed by Vargas et al. [[8]](#8).
+This data article describes the 3W Dataset 2.0.0, the current publicly available version, and summarizes its evolution with respect to version 1.0.0, which is detailed by Vargas et al. [[2]](#2).
 
 The 3W Dataset 2.0.0 was generated with code written in Python 3.10 [[18]](#18) and the main used resources were from the Pandas 1.5 [[30]](#30) and Pyarrow 19.0 [[28]](#28) packages. 
 
@@ -517,7 +519,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Caio Kattenbach, Felipe Barrocas, João Carneiro, Marcos Benício, Matheus Scramignon, Rodrigo Castello Branco & Vitor Bueno
     <br><font color="red">Full names must be provided.</font><br>
 * Laboratório de Computação Científica e Visualização (LCCV), Federal University of Alagoas (UFAL), Maceió, Brazil
-    * Igor de Melo Nery Oliveira & Lucas Gouveia Omena Lopes
+    * Andressa Celestino Araujo da Silva, Igor de Melo Nery Oliveira & Lucas Gouveia Omena Lopes
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
     * Guiherme Fidelis Peixer
 
@@ -527,7 +529,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that. A.S. added content and reviewed references.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
@@ -550,19 +552,19 @@ The authors declare no competing interests.
 #### 1
 Turley, J. A. (2014). An engineering look at the cause of the 2010 Macondo blowout. Paper presented at the IADC/SPE Drilling Conference and Exhibition, Fort Worth, TX, United States. https://doi.org/10.2118/167970-MS.
 #### 2
-Dash, S., & Venkatasubramanian, V. (2003). Integrated framework for abnormal event management and process hazards analysis. AIChE journal, 49(1), 124-139. https://doi.org/10.1002/aic.690490112.
-#### 3
-Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971.
-#### 4
-Andrade, J., Rocha, C., Silva, R., Viana, J., Bessa, R., Gouveia, C., Almeida, B., Santos, R., Louro, M., Santos, P., & Ribeiro, A. (2022). Data-driven anomaly detection and event log profiling of SCADA alarms. IEEE Access, 10, 1–1. https://doi.org/10.1109/ACCESS.2022.3190398.
-#### 5
-Tran, H. M., Nguyen, T. A., Le, S. T., Huynh, G. V. T., & Lam, T. B. (2022). Two-Phase Defect Detection Using Clustering and Classification Methods. REV Journal on Electronics and Communications, 12(1-2). http://dx.doi.org/10.21553/rev-jec.296.
-#### 6
-Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162. https://doi.org/10.1016/j.infsof.2023.107268.
-#### 7
-Shark, W. (2020). 8.3 Importance of Datasets for ML and DM. Internet of Things and Big Data Applications: Recent Advances and Challenges, 180, 122.
-#### 8
 Vaz Vargas, R. E., Munaro, C. J., Marques Ciarelli, P., Gonçalves Medeiros, A., Guberfain do Amaral, B., Centurion Barrionuevo, D., Dias de Araújo, J. C., Lins Ribeiro, J., & Pierezan Magalhães, L. (2019). A realistic and public dataset with rare undesirable real events in oil wells. Journal of Petroleum Science and Engineering, 181. https://doi.org/10.1016/j.petrol.2019.106223.
+#### 3
+Dash, S., & Venkatasubramanian, V. (2003). Integrated framework for abnormal event management and process hazards analysis. AIChE journal, 49(1), 124-139. https://doi.org/10.1002/aic.690490112.
+#### 4
+Panza, M.A., Pota, M., & Esposito, M. (2023). Anomaly Detection Methods for Industrial Applications: A Comparative Study. Electronics, 12, 3971. https://doi.org/10.3390/electronics12183971.
+#### 5
+Andrade, J., Rocha, C., Silva, R., Viana, J., Bessa, R., Gouveia, C., Almeida, B., Santos, R., Louro, M., Santos, P., & Ribeiro, A. (2022). Data-driven anomaly detection and event log profiling of SCADA alarms. IEEE Access, 10, 1–1. https://doi.org/10.1109/ACCESS.2022.3190398.
+#### 6
+Tran, H. M., Nguyen, T. A., Le, S. T., Huynh, G. V. T., & Lam, T. B. (2022). Two-Phase Defect Detection Using Clustering and Classification Methods. REV Journal on Electronics and Communications, 12(1-2). http://dx.doi.org/10.21553/rev-jec.296.
+#### 7
+Gong, Y., Liu, G., Xue, Y., Li, R., Meng, L. (2023). A survey on dataset quality in machine learning. Information and Software Technology, 162. https://doi.org/10.1016/j.infsof.2023.107268.
+#### 8
+Shark, W. (2020). 8.3 Importance of Datasets for ML and DM. Internet of Things and Big Data Applications: Recent Advances and Challenges, 180, 122.
 #### 9
 Tsay, R. S. (2010). Multivariate time series analysis and its applications. In Analysis of financial time series (pp. 389–465). John Wiley & Sons, Ltd. https://doi.org/10.1002/9780470644560.ch8
 #### 10
