@@ -77,7 +77,7 @@ _Note: the use of the acronym **3W** in the title is intentional and beneficial.
 
 > 💡 We recommend the Abstract should not exceed 170 words. It should not include references and should succinctly describe the data and how it may be used but should not make any claims regarding new scientific findings. We recommend URLs for download, or other details on dataset access, are not included. Please do not use sub-headings to break the Abstract into sections. 
 
-In the oil industry, undesirable events in oil wells can cause economic damage, environmental accidents, and human casualties. Artificial Intelligence and Machine Learning based solutions for Early Detection of such events have proven valuable for diverse applications across industries. In 2019, recognizing the importance and the lack of public datasets related to undesirable events in oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, which is basically a set of Multivariate Time Series labeled by experts. Since then, the 3W Dataset has been developed by Petrobras and has become a foundational reference for numerous works in the field. This data article describes the current publicly available version of the 3W Dataset, which contains structural modifications and additional labeled data. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
+In the oil industry, undesirable events in oil wells can cause economic damage, environmental accidents, and human casualties. Artificial Intelligence and Machine Learning based-solutions for Early Detection of such events have proven valuable for diverse applications across industries. In 2019, recognizing the importance and the lack of public datasets related to undesirable events in oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, which is essentially a set of Multivariate Time Series labeled by experts. Since then, the 3W Dataset has been developed by Petrobras and has become a foundational reference for numerous works in the field. This data article describes the current publicly available version of the 3W Dataset, which contains structural modifications and additional labeled data. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
 
 ### Background & Summary ⁉️
 
@@ -87,7 +87,7 @@ In the oil industry, undesirable events in oil wells can cause economic damage, 
 
 Undesirable events cause different types of damage to the oil industry, including economic damage, environmental accidents, and human casualties [[1]](#1).
 
-Abnormal Event Management (AEM) refers to the systematic detection, diagnosis, and mitigation of unexpected or irregular events within complex industrial systems [[2]](#2). In the oil industry, where operational safety, environmental protection, and economic performance are tightly coupled, AEM plays a crucial role in minimizing the impact of undesirable events. The integration of Artificial Intelligence (AI) and Machine Learning (ML) based solutions into AEM have shown promise for Early Detection [[3]](#3) of undesirable events in different industries [[4]](#4). By analyzing vast streams of operational data, such as pressure, temperature, vibration, and flow rates, algorithms can uncover subtle patterns that precede abnormal conditions, allowing early intervention and preventive maintenance strategies [[5]](#5). A requirement that is recognized as essential in this type of approach is the use of high-quality datasets [[6]](#6) [[7]](#7).
+Abnormal Event Management (AEM) refers to the systematic detection, diagnosis, and mitigation of unexpected or irregular events within complex industrial systems [[2]](#2). In the oil industry, where operational safety, environmental protection, and economic performance are tightly coupled, AEM is crucial for minimizing the impact of undesirable events. The integration of Artificial Intelligence (AI) and Machine Learning (ML)-based solutions into AEM have shown promise for Early Detection [[3]](#3) of undesirable events in different industries [[4]](#4). By analyzing vast streams of operational data, such as pressure, temperature, vibration, and flow rates, algorithms can uncover subtle patterns that precede abnormal conditions, allowing early intervention and preventive maintenance strategies [[5]](#5). A requirement that is recognized as essential in this type of approach is the use of high-quality datasets [[6]](#6) [[7]](#7).
 
 In 2019, Petrobras — the largest oil company in Brazil, which operates in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy — recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[8]](#8). 
 
@@ -128,7 +128,7 @@ This data article describes the 3W Dataset 2.0.0 and summarizes the advances inc
 
 > 👍 Sort description about each class label (after Table 4), excellent references, figure improvements, and final review.
 
-In a nutshell, the 3W Dataset 2.0.0 is composed of three types of instances that were generated by three methods, one per type of instance. These methods are described in this section and are based on the mathematical definition of MTS presented in the following subsection. According to this definition and to support both the 3W Project and this article, a nomenclature was developed and is detailed in the subsequent subsection. The types of instances and the methods associated with them are described in their own subsections. Some characteristics are common to all three methods and are, therefore, detailed in a separate subsection.
+In a summary, the 3W Dataset 2.0.0 is composed of three types of instances that were generated by three methods, one per type of instance. These methods are described in this section and are based on the mathematical definition of MTS presented in the following subsection. According to this definition and to support both the 3W Project and this article, a nomenclature was developed and is detailed in the subsequent subsection. The types of instances and the methods associated with them are described in their own subsections. Some characteristics are common to all three methods and are, therefore, detailed in a separate subsection.
 
 #### Mathematical Definition of Multivariate Time Series
 
@@ -400,7 +400,7 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 (0) | 150 (0) | 0 | 207 (0) |
 | Total | 1119 (1025) | 1089 (939) | 20 | 2228 (1984) |
 
-A scatter map with all the real instances is shown in Fig. 5. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+Figure 5 shows a scatter map of all the real instances. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -445,7 +445,7 @@ All variables and labels are stored in columns of Parquet files, variables as fl
 
 > 👍 Final review.
 
-Several features that have been carefully incorporated into the methods described in the Methods Section ensure that the 3W Dataset 2.0.0 has high technical quality. The main ones are as follows:
+Several carefully incorporated features in the methods described in the Methods Section ensure the high technical quality of the 3W Dataset 2.0.0. The main ones are as follows:
 
 * In the real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
