@@ -465,11 +465,7 @@ The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as 
 
 The operational status of a well (indicated with the state label) has a strong relationship with the values of its variables. Therefore, algorithms can be applied to the 3W Dataset to quantify these relationships or the state label can be used to select data for specific training.
 
-### Code Availability ⁉️
-
-> 💡 For all publications, a statement must be included under the subheading "Code Availability" indicating whether and how and custom code can be accessed, including any restrictions to access. This section can also include information on the versions of any software used, if relevant, and any specific variables or parameters used to generate, test, or process the current dataset if these are not included in the Methods. Please see our policy on code availability for more information. The code availability statement should be placed at the end of the manuscript, immediately before the references. If no custom code has been used then the statement is still required in order to state this. 
-
-> 👍 Final review.
+### Code Availability ✅
 
 The 3W Project also develops and makes publicly available in its Git repository [[15]](#15) the 3W Toolkit, which is a software package written in Python 3 [[18]](#18) and licensed under Apache 2.0 [[31]](#31). Its purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches. It provides a range of features for loading data, visualizing time series, calculating metrics, etc.
 
