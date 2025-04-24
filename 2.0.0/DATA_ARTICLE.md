@@ -359,21 +359,17 @@ The main limitations of this method are:
   </tr>
 </table>
 
-### Data Records ⁉️
-
-> 💡 This section should be used to explain each data record associated with this work, including the repository where this information is stored, and to provide an overview of the data files and their formats and any folder structure. Please do not include extensive summary statistics, which should be limited to less than half a page, with 1-2 tables or figures, if required at all. Note the general expectation is that, if readers wish to scrutinise your dataset's contents, they will download and analyse it for themselves. Unlimited length.
-
-> 👍 Final review.
+### Data Records ✅
 
 The 3W Dataset 2.0.0 is licensed under CC BY 4.0 [[25]](#25) and is publicly available at the following Figshare [[26]](#26) address: https://figshare.com/articles/dataset/3w_v_2.0.0.
 
-An overview (main quantities and statistics) of this dataset is presented in the next subsection. The subsequent subsection details how the data records are structured.
+An overview of this dataset is presented in the next subsection. Essentially, the main quantities and statistics are covered in this overview. The subsequent subsection details how the data records are structured.
 
 #### 3W Dataset 2.0.0 Overview
 
 The quantities of instances that compose the 3W Dataset 2.0.0, by type of instance and by type of event, are presented in Table 6.
 
-**Table 6**<br>Quantities of instances that compose the 3W Dataset 2.0.0. In brackets are the quantities corresponding to version 1.0.0 that are different in the current version.
+**Table 6**<br>Quantities of instances that compose the 3W Dataset 2.0.0. In brackets are the quantities corresponding to version 1.0.0 and that are different in the current version.
 | **Type of Event** | **Real** | **Simulated** | **Hand-Drawn** | **Total** |
 | -------- | ------- | ------- | ------- | ------- |
 | 0 - Normal Operation | 594 (597) | 0 | 0 | 594 (597) |
@@ -388,7 +384,7 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 (0) | 150 (0) | 0 | 207 (0) |
 | Total | 1119 (1025) | 1089 (939) | 20 | 2228 (1984) |
 
-Fig. 5 shows a scatter map with all the real instances. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the occurrences distributions of the instances over time and between wells.
+Fig. 5 shows a scatter map with all the real instances. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the distributions of the instances over time and between wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -396,9 +392,9 @@ Fig. 5 shows a scatter map with all the real instances. The oldest instance occu
   </tr>
 </table>
 
-The 3W dataset's main statistics related to inherent difficulties of actual data are presented in Table 7.
+The 3W dataset's main statistics related to inherent difficulties of real data are presented in Table 7.
 
-**Table 7**<br>The 3W dataset's main statistics related to inherent difficulties of actual data.
+**Table 7**<br>The 3W dataset's main statistics related to inherent difficulties of real data.
 | **Statistic** | **Amount** | **Percentage** |
 | -------- | ------- | ------- |
 | Missing Variables | 41109 | 65.90% of 62384 |
@@ -411,7 +407,7 @@ In the root of the directory containing the dataset, there is a file called data
 
 The data itself in the 3W Dataset 2.0.0 is organized in subdirectories dedicated to each type of event. The name of each directory is the code associated with each type of event (see Table 6).
 
-Each instance is persisted in its own Apache Parquet file [[27]](#27), or simply Parquet file, an open source, column-oriented data file format designed for efficient data storage and retrieval. It provides high performance compression and encoding schemes to handle complex data in bulk and is supported in many programming languages and analytics tools.
+Each instance is persisted in its own Apache Parquet file [[27]](#27), or simply Parquet file, an open source, column-oriented data file format designed for efficient data storage and retrieval. It provides high-performance compression and encoding schemes to handle complex data in bulk and is supported in many programming languages and analytics tools.
 
 The logic used to formulate file names depends on the type of instance.
 
@@ -423,7 +419,7 @@ The name of each hand-drawn instance is composed as follows: DRAWN_[incremental 
 
 All Parquet files are created with the Pyarrow engine [[28]](#28) and the Brotli compression [[29]](#29). These choices were made on the basis of the good compromise between compression ratio and reading time.
 
-The timestamps vector of each instance is used as the index in the corresponding Parquet file. All timestamps are represented in the format 'YYYY-MM-DD HH:MM:SS'.
+The timestamp vector of each instance is used as the index in the corresponding Parquet file. All timestamps are represented in the format 'YYYY-MM-DD HH:MM:SS'.
 
 All variables and labels are stored in columns of Parquet files, variables as float and labels as Int64 (not int64).
 
@@ -433,7 +429,7 @@ All variables and labels are stored in columns of Parquet files, variables as fl
 
 > 👍 Final review.
 
-Several carefully incorporated features in the methods described in the Methods Section ensure the high technical quality of the 3W Dataset 2.0.0. The main ones are as follows:
+Several carefully incorporated features in the methods described in the Methods Section ensure the high-technical quality of the 3W Dataset 2.0.0. The main ones are as follows:
 
 * In the real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
@@ -468,7 +464,7 @@ When comparing results obtained in different works, it is important to note whic
 1. 1 undesirable type of event has been added: Hydrate in Service Line;
 1. The number of real instances has increased by 94;
 1. The number of simulated instances has increased by 150;
-1. The number of actual wells covered has rose from 21 to 42;
+1. The number of real wells covered has rose from 21 to 42;
 1. 1 label has been added: state label;
 1. More labeled data (observations) have been incorporated in several instances;
 1. No simulated or hand-drawn instances have changed significantly. All 20 additional variables were incorporated into these instances with missing values.
