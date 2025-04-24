@@ -441,11 +441,7 @@ The quantity and the diversity of the works developed and published by the 3W Co
   </tr>
 </table>
 
-### Usage Notes ⁉️
-
-> 💡 'Usage Notes' is an optional section that can be used to provide information that may assist other researchers who reuse your data. Most commonly these are additional technical notes about how to access or process the data. Please do not use this section to write a conclusions section, or similar, as we do not publish these. Unlimited length.
-
-> 👍 Final review.
+### Usage Notes ✅
 
 This data article describes the 3W Dataset 2.0.0, the current publicly available version, and summarizes its evolution with respect to version 1.0.0, which is detailed by Vargas et al. [[8]](#8).
 
@@ -453,7 +449,9 @@ The 3W Dataset 2.0.0 was generated with code written in Python 3.10 [[18]](#18) 
 
 The 3W Dataset 2.0.0 was designed to be explored with essentially any programming language (not just Python). Regardless of the language used, the Apache Parquet files [[27]](#27) must be read with the Pyarrow engine [[28]](#28) and the Brotli compression [[29]](#29).
 
-When comparing results obtained in different works, it is important to note which versions of the 3W Dataset were used. Certain comparisons can be complex due to the significant differences between the versions of the 3W Dataset published so far. The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as follows. More details can be found in the release notes available in the 3W Project repository [[15]](#15).
+When comparing results obtained in different works, it is important to note which versions of the 3W Dataset were used. Certain comparisons can be complex due to the significant differences between the versions of the 3W Dataset published so far. 
+
+The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as follows. More details can be found in the release notes available in the 3W Project repository [[15]](#15).
 
 1. Its structure has been considerably modified. Data is now saved in Parquet files, and no longer in CSV files; 
 1. 1 variable has been discontinued (T-JUS-CKGL) and 20 others have been added, resulting in 27 variables in the current version;
@@ -464,6 +462,8 @@ When comparing results obtained in different works, it is important to note whic
 1. 1 label has been added: state label;
 1. More labeled data (observations) have been incorporated in several instances;
 1. No simulated or hand-drawn instances have changed significantly. All 20 additional variables were incorporated into these instances with missing values.
+
+The operational status of a well (indicated with the state label) has a strong relationship with the values of its variables. Therefore, algorithms can be applied to the 3W Dataset to quantify these relationships or the state label can be used to select data for specific training.
 
 ### Code Availability ⁉️
 
