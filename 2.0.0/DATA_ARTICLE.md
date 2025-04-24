@@ -423,11 +423,7 @@ The timestamp vector of each instance is used as the index in the corresponding 
 
 All variables and labels are stored in columns of Parquet files, variables as float and labels as Int64 (not int64).
 
-### Technical Validation ⁉️
-
-> 💡 This section should present any experiments or analyses that are needed to support the technical quality of the dataset. This section may be supported by figures and tables, as needed. Unlimited length.
-
-> 👍 Final review.
+### Technical Validation ✅
 
 Several carefully incorporated features in the methods described in the Methods Section ensure the high-technical quality of the 3W Dataset 2.0.0. The main ones are as follows:
 
@@ -437,7 +433,7 @@ Several carefully incorporated features in the methods described in the Methods 
 
 The experts mentioned here are all from Petrobras and its partners.
 
-The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the technical quality of the 3W Dataset. This scientific framework is composed of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[15]](#15).
+The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the high-technical quality of the 3W Dataset. This scientific framework is composed of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[15]](#15).
 
 <table align="center" style="margin: 0px auto;">
   <tr>
