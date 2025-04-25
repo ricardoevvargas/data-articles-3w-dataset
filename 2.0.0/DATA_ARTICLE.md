@@ -283,20 +283,20 @@ Understanding and correctly identifying these operational status is critical in 
 The particularities of the method developed for real data are listed below.
 
 * Regarding data acquisition:
-    1. From records in Petrobras' PIMS [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments;
-    1. With linear interpolation provided by the AVEVA PI System to simulate fixed acquisition frequency of 1 Hz;
-    1. No treatments for frozen variables and missing values;
-    1. With conversion to standard measurement units.
+    1. Data sourced from records in Petrobras' PIMS [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments;
+    1. Linear interpolation provided by the AVEVA PI System to simulate fixed acquisition frequency of 1 Hz;
+    1. No preprocessing to adress frozen variables or missing values;
+    1. Conversion to standard measurement units.
 * Regarding data labeling:
-    1. Historical records are mapped in a Tracking System, which ensures accessibility and traceability for labelers (experts from Petrobras and its partners);
-    1. Based on these records, a Labeler carry out the labeling process using a Petrobras' Web Tool developed exclusively for labeling and exporting real data to the 3W Dataset;
-    1. An expert committee (Validator) reviews labeling already carried out to suggest potential adjustments and ultimately validates the assigned labels;
+    1. Historical records are mapped in a Tracking System, which ensures accessibility and traceability for Labelers (experts from Petrobras and its partners);
+    1. Based on these records, a Labeler conducts the labeling process using a Petrobras' Web Tool developed exclusively for labeling and exporting real data to the 3W Dataset;
+    1. An expert committee (Validator) reviews completed labeling to suggest potential adjustments and, ultimately, validate the assigned labels;
     1. A Curator (3W Dataset specialist) finalizes the process by updating the tool to mark the validated events (Instances) as labeled, thereby enabling them to be exported and included in the 3W Dataset;
     1. Fig. 2 illustrates this labeling process and Fig. 3 shows an example of a real instance labeled with this process.
 
 The main limitations of this method are:
 
-1. Coverage of only events that took place in real life and had archived records;
+1. Limited to events that occurred in real life and had archived records;
 1. Contextualization (mappings between variables and tags in PIMS) was not verified;
 1. Original measurement units configured in PIMS (before conversions) were not verified.
 
@@ -325,12 +325,12 @@ The particularities of the method developed for simulated data are listed below.
     1. Variables represented with standardized measurement units;
     1. Absence of any noise in the time series.
 * Regarding data labeling:
-    1. Fully automated from simulation results (including transient periods).
+    1. Fully automated labeling from simulation results (including transient periods).
 
 The main limitations of this method are:
 
 1. Use of a single phenomenological model in OLGA associated with a single well;
-1. Use of a simplified simulation strategy. Example: hydrates were simulated using a valve with a linear closing percentage;
+1. Use of a simplified simulation strategy. Example: hydrate formation simulated using a valve with a linear closing percentage;
 1. As some of the variables were not included in the simulations, all their values are considered missing in all the simulated instances.
 
 #### Method Relating to Hand-Drawn Instances
@@ -340,18 +340,18 @@ The particularities of the method developed for hand-drawn data are listed below
 * Regarding data generation:
     1. Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset;
     1. Each variable was hand-drawn on its own chart by an expert from Petrobras. An example is shown in Fig. 4;
-    1. Automated digitization of time series via scanning graphs printed on paper;
-    1. With perfectly periodic time series;
-    1. No frozen variables and missing values;
-    1. With variables already represented with standardized measurement units.
+    1. Automated digitization of time series via scanning paper-printed graphs;
+    1. Perfectly periodic time series;
+    1. No frozen variables or missing values;
+    1. Variables represented using standardized measurement units.
 * Regarding data labeling:
-    1. From the expert markings on the graphs printed on paper (including transient periods).
+    1. Derived from the expert markings on the paper-printed graphs (including transient periods).
 
 The main limitations of this method are:
 
-1. Coverage of only the well-known signatures of the considered undesirable events;
+1. Coverage of only well-known signatures of the considered undesirable events;
 1. Expert bias when drawing and labeling time series;
-1. Expert manual dexterity.
+1. Dependence on the manual dexterity of the experts.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
