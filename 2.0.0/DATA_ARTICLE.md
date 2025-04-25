@@ -493,7 +493,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Caio Kattenbach, Felipe Barrocas, João Carneiro, Marcos Benício, Matheus Scramignon, Rodrigo Castello Branco & Vitor Bueno
     <br><font color="red">Full names must be provided.</font><br>
 * Laboratório de Computação Científica e Visualização (LCCV), Federal University of Alagoas (UFAL), Maceió, Brazil
-    * Igor de Melo Nery Oliveira & Lucas Gouveia Omena Lopes
+    * Eduardo Toledo de Lima Junior, Igor de Melo Nery Oliveira, Lucas Gouveia Omena Lopes & Lucas Pereira de Gouveia
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
     * Guiherme Fidelis Peixer
 
@@ -503,7 +503,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.L. reviewed texts. C.M. added content, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
+R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
