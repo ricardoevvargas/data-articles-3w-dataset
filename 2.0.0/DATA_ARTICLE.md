@@ -71,19 +71,19 @@ The following step-by-step is suggested:
 
 ### Abstract ✅
 
-In the oil industry, undesirable events in oil wells can cause economic losses, environmental accidents, and human casualties. Artificial Intelligence and Machine Learning based solutions for Early Detection of such events have proven valuable for diverse applications across industries. In 2019, recognizing the importance and the lack of public datasets related to undesirable events in oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, which is essentially a set of Multivariate Time Series labeled by experts. Since then, the 3W Dataset has been developed collaboratively and has become a foundational reference for numerous works in the field. This data article describes the current publicly available version of the 3W Dataset, which contains structural modifications and additional labeled data. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
+In the oil industry, undesirable events in oil wells can cause economic losses, environmental accidents, and human casualties. Solutions based on Artificial Intelligence and Machine Learning for Early Detection of such events have proven valuable for diverse applications across industries. In 2019, recognizing the importance and the lack of public datasets related to undesirable events in oil wells, Petrobras developed and publicly released the first version of the 3W Dataset, which is essentially a set of Multivariate Time Series labeled by experts. Since then, the 3W Dataset has been developed collaboratively and has become a foundational reference for numerous works in the field. This data article describes the current publicly available version of the 3W Dataset, which contains structural modifications and additional labeled data. The detailed description provided encourages and supports the 3W community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
 
 ### Background & Summary ✅
 
 Undesirable events cause different types of damage to the oil industry, including economic losses, environmental accidents, and human casualties [[1]](#1).
 
-Abnormal Event Management (AEM) refers to systematic detection, diagnosis, and mitigation of unexpected or irregular events within complex industrial systems [[2]](#2). In the oil industry, where operational safety, environmental protection, and economic performance are tightly coupled, AEM is crucial for minimizing the impact of undesirable events. The integration of Artificial Intelligence (AI) and Machine Learning (ML) based solutions into AEM have shown promise for Early Detection [[3]](#3) of undesirable events in different industries [[4]](#4). By analyzing vast streams of operational data, such as pressure, temperature, vibration, and flow rates, algorithms can uncover subtle patterns that precede abnormal conditions, allowing early intervention and preventive maintenance strategies [[5]](#5). A requirement that is recognized as essential in this type of approach is the use of high-quality datasets [[6]](#6) [[7]](#7).
+Abnormal Event Management (AEM) refers to systematic detection, diagnosis, and mitigation of unexpected or irregular events within complex industrial systems [[2]](#2). In the oil industry, where operational safety, environmental protection, and economic performance are tightly coupled, AEM is crucial for minimizing the impact of undesirable events. The integration of Artificial Intelligence (AI) and Machine Learning (ML) based solutions into AEM have shown promise for Early Detection [[3]](#3) of undesirable events across different industries [[4]](#4). By analyzing large streams of operational data, such as pressure, temperature, vibration, and flow rates, algorithms can identify subtle patterns that precede abnormal conditions, allowing early intervention and preventive maintenance strategies [[5]](#5). An essential requirement for the success of this type of approach is the use of high-quality datasets [[6]](#6) [[7]](#7).
 
-In 2019, Petrobras — the largest oil company in Brazil, which operates in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy — recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[8]](#8). 
+This need was recognized by Petrobras — the largest oil company in Brazil, operating in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy [[32]](#32) — which developed the 3W Dataset and published its first version in 2019, as described in detail by Vargas et al. [[8]](#8). 
 
 The 3W Dataset is essentially a set of Multivariate Time Series (MTS) [[9]](#9)[[10]](#10), also called instances, labeled by experts from Petrobras and its partners. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated, and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
 
-The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates high-quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the variables' behavior during these events.
+The main features of the 3W Dataset are as follows. Its real instances correspond to real industrial environments. Frozen variables, missing variables, outliers, etc. are intentionally left untreated. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of such characteristics can result in datasets that are faithful to real industrial environments and particularly useful [[33]](#33). Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the variables' behavior during these events.
 
 Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks [[11]](#11). This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related challenge, particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in Deep Learning Applications [[12]](#12), especially those requiring large amounts of training data.
 
@@ -93,7 +93,7 @@ Since its first publication, the 3W Dataset has been explored by several people 
 
 Several works that have been developed and published by the 3W Community has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[15]](#15).
 
-In 2022, Petrobras created the 3W Project as the first pilot of the Open Lab Module of the Connections Program for Innovation [[16]](#16). The purpose of this module is to encourage open and collaborative project developments on the Internet, more specifically through GitHub [[17]](#17). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[15]](#15) on GitHub.
+In 2022, Petrobras created the 3W Project as the first pilot of the Open Lab Module of the *Connections Program for Innovation* [[16]](#16). The purpose of this module is to encourage open and collaborative project developments on the Internet, more specifically through GitHub [[17]](#17). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[15]](#15) on GitHub.
 
 In this same Git repository and as part of the 3W Project, there is also the 3W Toolkit, which is a software package written in Python 3 [[18]](#18) whose purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches.
 
@@ -317,13 +317,13 @@ The main limitations of this method are:
 The particularities of the method developed for simulated data are listed below.
 
 * Regarding data generation:
-    1. By planning a matrix of simulations with OLGA [[21]](#21), gradually varying the main parameters of the considered scenario;
-    1. Running simulations and filtering out those whose results did not converge (well did not produce normally);
+    1. Planning a matrix of simulations with OLGA [[21]](#21), gradually varying the main parameters of the considered scenario;
+    1. Running simulations and filtering out those whose results did not converge (wells that did not produce normally);
     1. Automated extraction of time series from TPL files generated by OLGA and relating to successful simulations;
-    1. With perfectly periodic time series;
+    1. Perfectly periodic time series;
     1. No frozen variables and missing values;
-    1. With variables already represented with standardized measurement units;
-    1. Without any noise in the time series.
+    1. Variables represented with standardized measurement units;
+    1. Absence of any noise in the time series.
 * Regarding data labeling:
     1. Fully automated from simulation results (including transient periods).
 
@@ -384,7 +384,7 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 (0) | 150 (0) | 0 | 207 (0) |
 | Total | 1119 (1025) | 1089 (939) | 20 | 2228 (1984) |
 
-Fig. 5 shows a scatter map with all the real instances. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the distributions of the instances over time and between wells.
+Fig. 5 shows a scatter map with all the real instances. The oldest instance occurred in the middle of 2011 and the most recent in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the distributions of the instances over time and across wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -425,9 +425,9 @@ All variables and labels are stored in columns of Parquet files, variables as fl
 
 ### Technical Validation ✅
 
-Several carefully incorporated features in the methods described in the Methods Section ensure the high-technical quality of the 3W Dataset 2.0.0. The main ones are as follows:
+Several carefully incorporated features in the methods described in the Methods Section ensure the high-technical quality of the 3W Dataset 2.0.0. The most relevant are the following:
 
-* In the real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
+* In the real instances: preservation of real data characteristics, labeling by experts, and validation by expert committee;
 * In the simulated instances: simulation models calibrated by experts, and systematized labeling;
 * In the hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
 
@@ -454,12 +454,12 @@ When comparing results obtained in different works, it is important to note whic
 The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as follows. More details can be found in the release notes available in the 3W Project repository [[15]](#15).
 
 1. Its structure has been considerably modified. Data is now saved in Parquet files, and no longer in CSV files; 
-1. 1 variable has been discontinued (T-JUS-CKGL) and 20 others have been added, resulting in 27 variables in the current version;
-1. 1 undesirable type of event has been added: Hydrate in Service Line;
+1. One variable has been discontinued (T-JUS-CKGL) and 20 others have been added, resulting in 27 variables in the current version;
+1. One undesirable type of event has been added: Hydrate in Service Line;
 1. The number of real instances has increased by 94;
 1. The number of simulated instances has increased by 150;
-1. The number of real wells covered has rose from 21 to 42;
-1. 1 label has been added: state label;
+1. The number of real wells covered has increased from 21 to 42;
+1. One label has been added: state label;
 1. More labeled data (observations) have been incorporated in several instances;
 1. No simulated or hand-drawn instances have changed significantly. All 20 additional variables were incorporated into these instances with missing values.
 
@@ -581,3 +581,7 @@ J. Alakuijala & Z. Szabadka (2016). Brotli Compressed Data Format. Internet Engi
 The pandas development team (2020). pandas-dev/pandas: Pandas. https://doi.org/10.5281/zenodo.3509134.
 #### 31
 Apache Software Foundation (2004). Apache License Version 2.0. https://www.apache.org/licenses/LICENSE-2.0.txt.
+#### 32
+Petróleo Brasileiro S.A. (Petrobras) (2025). Petrobras. https://petrobras.com.br/en/.
+#### 33
+Thebelt, A., Wiebe, J., Kronqvist, J., Tsay, C., Misener, R. (2022). Maximizing information from chemical engineering data sets: Applications to machine learning. Chemical Engineering Science, 252, pp. 117469. https://doi.org/10.1016/j.ces.2022.117469.
