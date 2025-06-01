@@ -219,7 +219,7 @@ The codes corresponding to the class labels are detailed in Table 4. Any of thes
 
 **Table 4** <br>Class labels and their codes.
 
-| **Class Label**                        | **Steady State Code** | **Transient Code**                  |
+| **Class Label**                        | **Steady State Code** | **Transient Condition Code**        |
 |----------------------------------------|-----------------------|-------------------------------------|
 | Normal Operation                       | 0                     | -                                   |
 | Abrupt Increase of BSW                 | 1                     | 101                                 |
@@ -300,7 +300,8 @@ The particularities of the method developed for real data are listed below.
     1. Labelers use a Petrobras' Web Tool developed to label and export real data to the 3W Dataset;
     1. An expert committee (Validators) reviews the labeling, suggests potential adjustments, and validates the assigned labels;
     1. A Curator (a 3W Dataset specialist) finalizes the labeling process by updating the tool to mark validated events (instances) as labeled, enabling their exportation and inclusion in the 3W Dataset;
-    1. Fig. 2 illustrates this labeling process and Fig. 3 provides an example of a labeled real instance.
+    1. Fig. 2 illustrates this labeling process; 
+    1. Figs. 3 to 7 provide examples of labeled real instances. In these examples, only part of the variables are presented (before any standardization of measurement unit).
 
 The main limitations of this method are:
 
@@ -316,10 +317,34 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/real_instance.png" width=100%><br>Example of a real instance that has 3 periods labeled with a Petrobras' Web Tool. Color correspondences: dark green: state label = 0 (Open); light green: class label = 0 (Normal Operation) = 1st period; yellow: class label = 102 (Transient: Spurious Closure of DHSV) = 2nd period; red: class label = 2 (Spurious Closure of DHSV) = 3rd period. Only part of the variables are considered in this example.</td>
+    <td><b>Fig. 3</b><br><img src="images/real_spurious_closure_dhsv_instance.png" width=75%><br>Example of a real Spurious Closure of DHSV instance in which pressure increase is observed in sensors located upstream of the DHSV (PDG) and pressure decreases are observed in sensores located downstream of the DHSV (TPT and MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 102; red (3rd period = Steady State): class label = 2; dark green (Open): state label = 0.</td>
   </tr>
 </table>
 
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 4</b><br><img src="images/real_quick_restriction_pck_instance.png" width=75%><br>Example of a real Quick Restriction in PCK instance in which pressure increases are observed in sensors located in TPT, PDG, and MON-CKP. This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 106; red (3rd period = Steady State): class label = 6; dark green (Open): state label = 0.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 5</b><br><img src="images/real_hydrate_production_line_instance.png" width=75%><br>Example of a real Hydrate in Production Line instance in which pressure increases are observed in sensors located upstream of the production line (PDG and TPT) and pressure decrease is observed in sensor located downstream of the production line (MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 108; red (3rd period = Steady State): class label = 8; dark green (Open): state label = 0.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 6</b><br><img src="images/real_severe_lugging_instance.png" width=75%><br>Example of a real Severe Slugging instance in which pressure oscillations with amplitudes above 10 bar are observed in sensors located in PDG and TPT. This example has 1 period which was labeled with the Petrobras' Web Tool as follows: red (1st period = Steady State): class label = 3; dark green (Open): state label = 0.</td>
+  </tr>
+</table>
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><b>Fig. 7</b><br><img src="images/real_normal_operation_instance.png" width=75%><br>Example of a real Normal Operation instance in which depressurization has been carried out during a well shutdown, as shown by the opening of the PCK and SDV-P. This example has 1 period which was labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; dark green (Open): state label = 0; gray (Shut-In): state label = 1; salmon (Depressurization): state label = 8; magenta (Restart): state label = 7.</td>
+  </tr>
+</table>
+ 
 #### Method Relating to Simulated Instances
 
 The particularities of the method developed for simulated data are listed below.
@@ -333,7 +358,7 @@ The particularities of the method developed for simulated data are listed below.
     1. Variables are represented with standardized measurement units;
     1. No noise is introduced in the time series.
 * Data labeling:
-    1. Labeling is fully automated based on simulation results, including transient periods.
+    1. Labeling is fully automated based on simulation results, including transient condition periods.
 
 The main limitations of this method are:
 
@@ -347,13 +372,13 @@ The particularities of the method developed for hand-drawn data are listed below
 
 * Data generation:
     1. A proprietary tool based on image processing was developed exclusively for generating hand-drawn data for the 3W Dataset;
-    1. Each variable was hand-drawn on its own chart by an expert from Petrobras. An example is shown in Fig. 4;
+    1. Each variable was hand-drawn on its own chart by an expert from Petrobras. An example is shown in Fig. 8;
     1. Time series were automatically digitized by scanning paper-printed graphs;
     1. Time series are perfectly periodic;
     1. No frozen variables or missing values are present;
     1. Variables are represented with standardized measurement units.
 * Data labeling:
-    1. Labels were derived from expert markings on paper-printed graphs, including transient periods.
+    1. Labels were derived from expert markings on paper-printed graphs, including transient condition periods.
 
 The main limitations of this method are:
 
@@ -363,7 +388,7 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 4</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert from Petrobras in the tool developed exclusively for generating instances for the 3W Dataset.</td>
+    <td><b>Fig. 8</b><br><img src="images/hand-drawn_variable.png" width=100%><br>Example of a variable drawn and labeled by hand by an expert from Petrobras in the tool developed exclusively for generating instances for the 3W Dataset.</td>
   </tr>
 </table>
 
@@ -392,11 +417,11 @@ The quantities of instances that compose the 3W Dataset 2.0.0, categorized by ty
 | 9 - Hydrate in Service Line | 57 (0) | 150 (0) | 0 | 207 (0) |
 | Total | 1119 (1025) | 1089 (939) | 20 | 2228 (1984) |
 
-Fig. 5 shows a scatter map containing all the real instances. The oldest instance occurred in mid-2011, while the most recent occurred in mid-2023. In addition to the total number of wells considered (42), this map provides an overview of the distribution of instances over time and across wells.
+Fig. 9 shows a scatter map containing all the real instances. The oldest instance occurred in mid-2011, while the most recent occurred in mid-2023. In addition to the total number of wells considered (42), this map provides an overview of the distribution of instances over time and across wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 5</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
+    <td><b>Fig. 9</b><br><img src="images/scatter_map.svg" width=100%><br>Scatter map with all the real instances in the 3W Dataset 2.0.0.</td>
   </tr>
 </table>
 
@@ -445,11 +470,11 @@ Several carefully incorporated features in the methods described in the Methods 
 
 The experts mentioned here are all from Petrobras and its partners.
 
-The quantity and the diversity of the works developed and published by the 3W Community demonstrate the relevance and the high-technical quality of the 3W Dataset. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[17]](#17).
+The quantity and the diversity of the works developed and published by the 3W Community demonstrate the relevance and the high-technical quality of the 3W Dataset. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 10. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[17]](#17).
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 6</b><br><img src="images/citation_progress.svg" width=90%><br>The quantitative annual progress of different types of publications that cite the 3W Dataset.</td>
+    <td><b>Fig. 10</b><br><img src="images/citation_progress.svg" width=90%><br>The quantitative annual progress of different types of publications that cite the 3W Dataset.</td>
   </tr>
 </table>
 
@@ -500,8 +525,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 * Department of Informatics, Federal University of Espírito Santo (UFES), Vitória, Brazil
     * Flávio Miguel Varejão
 * HybridAI, Rio de Janeiro, Brazil
-    * Caio Kattenbach, Felipe Barrocas, João Carneiro, Marcos Benício, Matheus Scramignon, Rodrigo Castello Branco & Vitor Bueno
-    <br><font color="red">Full names must be provided.</font><br>
+    * Felipe Muntzberg Barrocas, João Neuenschwander Escosteguy Carneiro, Matheus Lima Scramignon & Rodrigo Castello Branco
 * Laboratório de Computação Científica e Visualização (LCCV), Federal University of Alagoas (UFAL), Maceió, Brazil
     * Eduardo Toledo de Lima Junior, Igor de Melo Nery Oliveira, Lucas Gouveia Omena Lopes & Lucas Pereira de Gouveia
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
@@ -513,7 +537,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts.
+R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. F.B. labeled data, added content, created figures, provided references, and reviewed texts. J.C. labeled data, added content, created figures, provided references, and reviewed texts. M.S. labeled data, added content, created figures, provided references, and reviewed texts. R.B. labeled data, added content, created figures, provided references, and reviewed texts.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
