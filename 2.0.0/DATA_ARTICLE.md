@@ -188,15 +188,15 @@ The 3W Dataset 2.0.0 contains 27 variables present in all instances. Following t
 | P-MON-CKGL | Upstream pressure of the GLCK | 1.3 |
 | P-MON-CKP | Upstream pressure of the PCK | 2.3 |
 | P-MON-SDV-P | Upstream pressure of the production SDV | 8.2 |
-| P-PDG | Pressure at the PDG (permanent downhole gauge) | 14.1 |
-| PT-P | Downstream pressure of the PWV in the production tube | 4.2 |
-| P-TPT | Pressure at the TPT (temperature and pressure transducer) | 15.1 |
+| P-PDG | Downhole pressure at the PDG (permanent downhole gauge) | 14.1 |
+| PT-P | Subsea Xmas-tree pressure downstream of the PWV in the production line | 4.2 |
+| P-TPT | Subsea Xmas-tree pressure at the TPT (temperature and pressure transducer) | 15.1 |
 | QBS | Flow rate at the SP | 13.2 |
 | QGL | Gas lift flow rate | 13.3 |
 | T-JUS-CKP | Downstream temperature of the PCK | 2.4 |
 | T-MON-CKP | Upstream temperature of the PCK | 2.5 |
-| T-PDG | Temperature at the PDG | 14.2 |
-| T-TPT | Temperature at the TPT | 15.2 |
+| T-PDG | Downhole temperature at the PDG | 14.2 |
+| T-TPT | Subsea Xmas-tree temperature at the TPT | 15.2 |
 
 Note that some variable names contain terms or acronyms in Portuguese. For example: ABER = abertura = opening; CKGL = GLCK; CKP = PCK; ESTADO = state; ANULAR = annulus; JUS = jusante = downstream; and MON = montante = upstream. Translating all these names into English is a pending issue that will be resolved in future versions of 3W Dataset.
 
@@ -265,22 +265,22 @@ The codes associated with the state labels are detailed in Table 5. These codes 
 
 Each operational status is defined based on the configuration of the valves and the nature of recent and/or ongoing operations. In summary, the statuses are as follows:
 
-- Open: all production valves (M1, W1, SDV-P, and PCK) are open, and auxiliary valves (PXO, and XO) are closed;
-- Shut-in: at least one valve in the production path is closed;
-- Flushing Diesel: at least one wellhead valve is closed, PXO or XO is open, and diesel is injected;
-- Flushing Gas: at least one wellhead valve is closed, PXO or XO is open, and gas is injected;
-- Bullheading: all production valves are open, and diesel is injected from the topside through the production line;
-- Closed With Diesel: at least one production valve is closed, and the previous state was Flushing Diesel or Bullheading;
-- Closed With Gas: at least one production valve is closed, and the previous state was Flushing Gas;
-- Restart: following a shut-in, all production valves are reopened;
-- Depressurization: following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed.
+- Open: all production valves (M1, W1, SDV-P, and PCK) are open, and auxiliary valves (PXO, and XO) are closed. The well is producing under regular condition;
+- Shut-in: at least one valve in the production path is closed. The well is closed, so it is not producing;
+- Flushing Diesel: at least one wellhead valve is closed, PXO or XO is open, and diesel is injected. The well is closed and diesel circulation operation from service line to production line is being executed;
+- Flushing Gas: at least one wellhead valve is closed, PXO or XO is open, and gas is injected. The well is closed and gas circulation operation from service line to production line is being executed;
+- Bullheading: all production valves are open, and diesel or gas is injected from the topside through the production line. The well is closed and production line is being pressurized from topside by diesel or gas to push down all the production fluids back into the well;
+- Closed With Diesel: at least one production valve is closed, and the previous state was Flushing Diesel or Bullheading. The well is closed and the majority of the production line is filled with diesel. This condition mitigates hydrates risk from occurance;
+- Closed With Gas: at least one production valve is closed, and the previous state was Flushing Gas. The well is closed and the majority of the production line is filled with natural gas. This condition mitigates hydrates risk from occurance;
+- Restart: following a shut-in, all production valves are reopened. The well is recently opened, so it is in a transient period before it gets to the Open operational status;
+- Depressurization: following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed. Procution line is depressurized in order to mitigate hydrate risk from occurance.
 
 Understanding and correctly identifying these operational status is critical in monitoring and preventing undesirable events. Some important additional explanations are as follows:
 
 - Open state denotes continuous production with all key production path valves open and no auxiliary operations ongoing;
 - All operational status other than Open are associated with well Shut-in procedures;
 - Closed With Diesel state occurs following successful Flushing Diesel or Bullheading, during which the well is filled with diesel (a condition in which hydrate formation is highly unlikely);
-- Bullheading is performed by injecting fluid (diesel) directly from the topside into the production line under pressure, pushing the wellbore fluids back into the reservoir. This operation is used to ensure that a non-hydrate-forming fluid fills the system, often as a preventive action against hydrate plugs;
+- Bullheading is performed by injecting fluid (diesel or gas) directly from the topside into the production line under pressure, pushing the wellbore fluids back into the reservoir. This operation is used to ensure that a non-hydrate-forming fluid fills the system, often as a preventive action against hydrate plugs;
 - Flushing Diesel, in contrast, is performed by circulating diesel through the service line and into the production flowline, displacing the original production fluids along the flowline path, typically toward the topside facilities. This operation ensures that hydrate-prone fluids are replaced with a more stable medium, reducing the chances of hydrate formation during shut-in;
 - Closed With Gas state occurs following a Flushing Gas operation, which is performed by injecting and circulating gas (usually dry gas) via the service line into the production line. This operation also serves to remove liquid hydrocarbons or water that could contribute to hydrate formation, creating a drier environment inside the pipeline;
 - Additionally, historical operational context can be valuable; for instance, depressurizing the production system is a typical measure performed shortly after the well is shut-in, in order to seek for thermodynamic conditions less favorable to the formation of hydrates;
@@ -519,7 +519,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 > 💡 Author affiliations should provide enough detail for the author to be reached, including the department, institution and country wherever possible. Full postal addresses are not required. Affiliations should be cited in numerical order within the author list, starting with the affiliations of the first author. Email addresses should be provided for corresponding authors.
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
-    * Ricardo Emanuel Vaz Vargas, Afrânio José de Melo Junior, Cláudio Benevenuto de Campos Lima, Jean Carlos Dias de Araújo & Mateus de Araujo Fernandes
+    * Ricardo Emanuel Vaz Vargas, Afrânio José de Melo Junior, Cláudio Benevenuto de Campos Lima, Jean Carlos Dias de Araújo, Mateus de Araujo Fernandes & Rogério Leite Alves Pinto
 * Department of Electrical Engineering, Federal University of Espírito Santo (UFES), Vitória, Brazil
     * Celso José Munaro & Patrick Marques Ciarelli
 * Department of Informatics, Federal University of Espírito Santo (UFES), Vitória, Brazil
