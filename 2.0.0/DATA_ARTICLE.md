@@ -48,7 +48,7 @@ All the sections of this file should be duly revised during the development of t
 
 ### Meaning of the Emojis
 
-* 💡 Highlights the purposes of the existens sections in the [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1);
+* 💡 Highlights the purposes of the existing sections in the [Data Descriptor](https://www.nature.com/sdata/publish/submission-guidelines#sec-1);
 * ✅ Indicates that the section is considered ready to be submitted for review;
 * ⁉️ Indicates that the section has content listed or drafted, but that it is not yet ready to be submitted for review;
 * 👍 Indicates expected contributions in a given section;
@@ -83,7 +83,7 @@ This need was recognized by Petrobras — the largest oil company in Brazil, ope
 
 The 3W Dataset is a collection of Multivariate Time Series (MTS) [[10]](#10)[[11]](#11), referred to as instances, which have been labeled by experts from Petrobras and its partners. The name ***3W*** was chosen because this dataset comprises instances derived from ***3*** different sources (real, simulated, and hand-drawn) which contains undesirable events that occur in oil ***W***ells. Each instance may either represent 100% of the data associated with normal operating conditions or contain data partially related to a specific type of undesirable event. The core idea behind this dataset is to enable the learning (modeling) of temporal patterns or signatures across multiple variables, distinguishing between normal conditions and various types of undesirable events.
 
-The main features of the 3W Dataset are as follows. Its real instances correspond to data collected directly from real industrial environments. Characteristics such as frozen variables, missing variables, and outliers are intentionally left untreated. Ths approach aims to encourage and enable the development of methodologies and digital products capable of dealing with real-world challenges. By preserving these typical characteristics, a high-quality and useful dataset is generated [[12]](#12). Simulated instances have been added because some types of undesirable events are rare in real-world operations. Hand-drawn instances have been added to address events that are not only rare but also challenging to simulate. Experts can use their understanding of variable behaviors during such events to manually create these instances to mirror real-world conditions as closely as possible.
+The main features of the 3W Dataset are as follows. Its real instances correspond to data collected directly from real industrial environments. Characteristics such as frozen variables, missing variables, and outliers are intentionally left untreated. This approach aims to encourage and enable the development of methodologies and digital products capable of dealing with real-world challenges. By preserving these typical characteristics, a high-quality and useful dataset is generated [[12]](#12). Simulated instances have been added because some types of undesirable events are rare in real-world operations. Hand-drawn instances have been added to address events that are not only rare but also challenging to simulate. Experts can use their understanding of variable behaviors during such events to manually create these instances to mirror real-world conditions as closely as possible.
 
 Due to its features, the 3W Dataset can also serve as a foundational resource for training basic models in Transfer Learning frameworks [[13]](#13). These frameworks rely on a large and generalized dataset as a reference or starting point for training models to address different but related challenges, particularly when an adequate training dataset for the target task is unavailable. This approach is widely used in Deep Learning [[14]](#14), especially in scenarios requiring large amounts of training data.
 
@@ -95,7 +95,7 @@ The 3W Community has contributed to the development and publication of numerous 
 
 In 2022, Petrobras officially launched the 3W Project as the inaugural pilot of the Open Lab Module within the Connections for Innovation Program [[18]](#18). The purpose of this module is to encourage open and collaborative project development on the Internet, particularly through the GitHub platform [[19]](#19). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[17]](#17) on GitHub.
 
-As part of the 3W Project, the same Git repository also hosts the 3W Toolkit, a software package developed in Python 3 [[20]](#20). The purpose of this toolkit is facilitate and encourage the exploration of the 3W Dataset, as well as the development and comparison of different methodological approaches.
+As part of the 3W Project, the same Git repository also hosts the 3W Toolkit, a software package developed in Python 3 [[20]](#20). The purpose of this toolkit is to facilitate and encourage the exploration of the 3W Dataset, as well as the development and comparison of different methodological approaches.
 
 In addition to its two main resources — the 3W Dataset and the 3W Toolkit — the 3W Project repository also provides:
 
@@ -110,7 +110,7 @@ In addition to its two main resources — the 3W Dataset and the 3W Toolkit — 
 
 Since 2022, the 3W Dataset has been evolved under Petrobras' leadership, and its current publicly available version designated as 2.0.0.
 
-This data article describes the 3W Dataset 2.0.0 and summarizes the advancements  incorporated since version 1.0.0. The detailed description is intended to encourage and support the established 3W Community and also new users to improve previously published results and develop innovative methodologies, digital products and services. These advancements aim to enable Early Detection of undesirable events in oil wells, allowing for timely corrective or mitigating actions.
+This data article describes the 3W Dataset 2.0.0 and summarizes the advancements incorporated since version 1.0.0. The detailed description is intended to encourage and support the established 3W Community and also new users to improve previously published results and develop innovative methodologies, digital products and services. These advancements aim to enable Early Detection of undesirable events in oil wells, allowing for timely corrective or mitigating actions.
 
 ### Methods ⁉️
 
@@ -140,7 +140,7 @@ The nomenclature used in this work is derived from the definition of MTS present
 | Class label | Annotation provided by an expert regarding the well condition in terms of normality or the occurrence of an undesirable event. See additional explanation in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
 | State label | Annotation provided by an expert regarding the well condition in terms of operational status. See additional explanation in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
 | Sample | Part of an MTS, including all _n_ variables and all observations between two timestamps |
-| Period | A sample that respects the following two conditions: all its observations are labeled with the same class label and it is not contained in another temporally larger sample with all observations labeled with the same class label. In other words, a period is the largest possible sample whose observations are labeled with the same class label |
+| Period | A sample that respects the following two conditions: all its observations are labeled with the same class label, and it is not contained in another temporally larger sample with all observations labeled with the same class label. In other words, a period is the largest possible sample whose observations are labeled with the same class label |
 | Instance | Collection of temporally sequential periods associated with a specific well |
 | Type of event | Operational state in which a well can be found, including normality, failures, and undesired states |
 | Dataset | Set of instances with multiple types of events |
@@ -211,7 +211,7 @@ All variables corresponding to a given physical quantity (type of variable) are 
 | Flow rate | m<sup>3</sup>/s | 
 | Pressure | Pa |
 | Temperature | ºC |
-| Valve state | Adimensional: 0 for closed, 1 for open, and 0.5 for any other state |
+| Valve state | Non-dimensional: 0 for closed, 1 for open, and 0.5 for any other state |
 
 The labeling process applied to all instances of the 3W Dataset 2.0.0 resulted in two types of labels: class labels and state labels. Class labels are associated with normal conditions or the occurrence of undesirable events, while state labels are related to the operational status of the respective well.
 
@@ -267,15 +267,15 @@ Each operational status is defined based on the configuration of the valves and 
 
 - Open: all production valves (M1, W1, SDV-P, and PCK) are open, and auxiliary valves (PXO, and XO) are closed. The well is producing under regular condition;
 - Shut-in: at least one valve in the production path is closed. The well is closed, so it is not producing;
-- Flushing Diesel: at least one wellhead valve is closed, PXO or XO is open, and diesel is injected. The well is closed and diesel circulation operation from service line to production line is being executed;
-- Flushing Gas: at least one wellhead valve is closed, PXO or XO is open, and gas is injected. The well is closed and gas circulation operation from service line to production line is being executed;
-- Bullheading: all production valves are open, and diesel or gas is injected from the topside through the production line. The well is closed and production line is being pressurized from topside by diesel or gas to push down all the production fluids back into the well;
-- Closed With Diesel: at least one production valve is closed, and the previous state was Flushing Diesel or Bullheading. The well is closed and the majority of the production line is filled with diesel. This condition mitigates hydrates risk from occurance;
-- Closed With Gas: at least one production valve is closed, and the previous state was Flushing Gas. The well is closed and the majority of the production line is filled with natural gas. This condition mitigates hydrates risk from occurance;
+- Flushing Diesel: at least one wellhead valve is closed, PXO or XO is open, and diesel is injected. The well is closed, and diesel circulation operation from service line to production line is being executed;
+- Flushing Gas: at least one wellhead valve is closed, PXO or XO is open, and gas is injected. The well is closed, and gas circulation operation from service line to production line is being executed;
+- Bullheading: all production valves are open, and diesel or gas is injected from the topside through the production line. The well is closed, and production line is being pressurized from topside by diesel or gas to push down all the production fluids back into the well;
+- Closed With Diesel: at least one production valve is closed, and the previous state was Flushing Diesel or Bullheading. The well is closed, and the majority of the production line is filled with diesel. This condition mitigates hydrates risk from occurrence;
+- Closed With Gas: at least one production valve is closed, and the previous state was Flushing Gas. The well is closed, and the majority of the production line is filled with natural gas. This condition mitigates hydrates risk from occurrence;
 - Restart: following a shut-in, all production valves are reopened. The well is recently opened, so it is in a transient period before it gets to the Open operational status;
-- Depressurization: following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed. Procution line is depressurized in order to mitigate hydrate risk from occurance.
+- Depressurization: following a shut-in, SDV-P and PCK are open, while M1, W1, PXO, and XO remain closed. Production line is depressurized in order to mitigate hydrate risk from occurrence.
 
-Understanding and correctly identifying these operational status is critical in monitoring and preventing undesirable events. Some important additional explanations are as follows:
+Understanding and correctly identifying these operational statuses is critical in monitoring and preventing undesirable events. Some important additional explanations are as follows:
 
 - Open state denotes continuous production with all key production path valves open and no auxiliary operations ongoing;
 - All operational status other than Open are associated with well Shut-in procedures;
@@ -311,13 +311,13 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 2</b><br><font color="red">Suggested improvements: replace the file with an svg; replace the term “Instance” with “Instances”; replace the term “Web Tool” with “Petrobras' Web Tool”; replace the rectangle with “PI System” with 2 rectangles with “AVEVA PI System” and 3 dots between them to represent that there are multiple AVEVA PI System environments.</font><br><br><img src="images/labeling_process.png" width=45%><br>Ilustration of the labeling process of real instances.</td>
+    <td><b>Fig. 2</b><br><font color="red">Suggested improvements: replace the file with an svg; replace the term “Instance” with “Instances”; replace the term “Web Tool” with “Petrobras' Web Tool”; replace the rectangle with “PI System” with 2 rectangles with “AVEVA PI System” and 3 dots between them to represent that there are multiple AVEVA PI System environments.</font><br><br><img src="images/labeling_process.png" width=45%><br>Illustration of the labeling process of real instances.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/real_spurious_closure_dhsv_instance.png" width=75%><br>Example of a real Spurious Closure of DHSV instance in which pressure increase is observed in sensors located upstream of the DHSV (PDG) and pressure decreases are observed in sensores located downstream of the DHSV (TPT and MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 102; red (3rd period = Steady State): class label = 2; dark green (Open): state label = 0.</td>
+    <td><b>Fig. 3</b><br><img src="images/real_spurious_closure_dhsv_instance.png" width=75%><br>Example of a real Spurious Closure of DHSV instance in which pressure increase is observed in sensors located upstream of the DHSV (PDG) and pressure decreases are observed in sensors located downstream of the DHSV (TPT and MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 102; red (3rd period = Steady State): class label = 2; dark green (Open): state label = 0.</td>
   </tr>
 </table>
 
@@ -491,7 +491,7 @@ When comparing results obtained in different works, it is important to distingui
 The main updates introduced in version 2.0.0 compared to version 1.0.0 are summarized below. More details can be found in the release notes available in the 3W Project repository [[17]](#17).
 
 1. The dataset structure has been significantly revised. Data is now stored in Parquet files instead of CSV files;
-1. One variable (T-JUS-CKGL) has been discontinued and 20 others have been added, resulting in 27 variables in the current version;
+1. One variable (T-JUS-CKGL) has been discontinued, and 20 others have been added, resulting in 27 variables in the current version;
 1. One new type of undesirable event has been added: Hydrate in Service Line;
 1. The number of real instances has increased by 94;
 1. The number of simulated instances has increased by 150;
@@ -500,7 +500,7 @@ The main updates introduced in version 2.0.0 compared to version 1.0.0 are summa
 1. More labeled observations have been incorporated across several instances;
 1. No significant changes have been made to simulated or hand-drawn instances. All 20 new variables were incorporated into these instances with missing values.
 
-The operational status of a well, represented by the state label, is strongly correlated with the values of its variables. This allows algorithms to be applied to the 3W Dataset for quantifying these relationships. Additionaly, the state label can be used to select data for specific training purposes.
+The operational status of a well, represented by the state label, is strongly correlated with the values of its variables. This allows algorithms to be applied to the 3W Dataset for quantifying these relationships. Additionally, the state label can be used to select data for specific training purposes.
 
 ### Code Availability ✅
 
@@ -551,7 +551,7 @@ The authors declare no competing interests.
 
 ### References 🚧
 
-> 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript.Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
+> 💡 All references should be numbered sequentially, first throughout the text, then in tables, followed by figures and, finally, boxes; that is, references that only appear in tables, figures or boxes should be last in the reference list. Only one publication is given for each number. Only papers that have been published or accepted by a named publication or recognized preprint server should be in the numbered list; preprints of accepted papers in the reference list should be submitted with the manuscript. Grant details and acknowledgments are not permitted as numbered references. Footnotes are not used. Scientific Data suggests the use of the standard Nature referencing style. See examples [here](https://www.nature.com/sdata/publish/submission-guidelines#sec-4). In addition, we encourage the use of DOIs for all items that have them, as the easiest method for readers to find content. These may be appended to the end of any reference in URL format (https://doi.org/DOI, where DOI is the relevant number). 
 
 #### 1
 Turley, J. A. (2014). An engineering look at the cause of the 2010 Macondo blowout. Paper presented at the IADC/SPE Drilling Conference and Exhibition, Fort Worth, TX, United States. https://doi.org/10.2118/167970-MS.
