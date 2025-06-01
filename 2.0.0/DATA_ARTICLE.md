@@ -81,40 +81,40 @@ Abnormal Event Management (AEM) refers to systematic detection, diagnosis, and m
 
 In 2019, Petrobras — the largest oil company in Brazil, which operates in the exploration, production, refining, marketing, and transportation of oil, natural gas, and energy — recognized this need and then developed and published the first version of the 3W Dataset, which is described in detail by Vargas et al. [[8]](#8). 
 
-The 3W Dataset is essentially a set of Multivariate Time Series (MTS) [[9]](#9)[[10]](#10), also called instances, labeled by experts from Petrobras and its partners. The name 3W was chosen because this dataset is composed of instances from ***3*** different sources (real, simulated, and hand-drawn) and which contain undesirable events that occur in oil ***W***ells. Each instance can contain 100% of the data relating to normality or part of the data relating to a single type of undesirable event. The basic idea is that temporal signatures between multiple variables of each type of event and normality can be learned (modeled) from a set of MTS.
+The 3W Dataset is a collection of Multivariate Time Series (MTS) [[9]](#9)[[10]](#10), referred to as instances, which have been labeled by experts from Petrobras and its partners. The name ***3W*** was chosen because this dataset comprises instances derived from ***3*** different sources (real, simulated, and hand-drawn) which contains undesirable events that occur in oil ***W***ells. Each instance may either represent 100% of the data associated with normal operating conditions or contain data partially related to a specific type of undesirable event. The core idea behind this dataset is to enable the learning (modeling) of temporal patterns or signatures across multiple variables, distinguishing between normal conditions and various types of undesirable events.
 
-The main features of the 3W Dataset are as follows. Its real instances correspond to the real industrial environment. Frozen variables, missing variables, outliers, etc. are not treated intentionally. The idea is to encourage and enable the development of methodologies and digital products capable of dealing with real adversities. Therefore, it has been advocated that the preservation of characteristics typical of the real industrial environment generates high-quality datasets. Simulated instances have been added because some types of undesirable events are rare in real life. Hand-drawn instances have been added because some rare events are complicated to simulate and experts are familiar with the variables' behavior during these events.
+The main features of the 3W Dataset are as follows. Its real instances correspond to data collected directly from real industrial environments. Characteristics such as frozen variables, missing variables, and outliers are intentionally left untreated. Ths approach aims to encourage and enable the development of methodologies and digital products capable of dealing with real-world challenges. By preserving these typical characteristics, this dataset maintains a high level of quality and realism. Simulated instances have been added because some types of undesirable events are rare in real-world operations. Hand-drawn instances have been added to address events that are not only rare but also challenging to simulate. Experts can use their understanding of variable behaviors during such events to manually create these instances to mirror real-world conditions as closely as possible.
 
-Due to its features, the 3W Dataset can also be used to train basic models in Transfer Learning Frameworks [[11]](#11). This kind of framework rely on a large and general dataset as a reference or starting point for training a model to solve a different but related challenge, particularly when an adequate training dataset of its own is unavailable. This approach is commonly used in Deep Learning Applications [[12]](#12), especially those requiring large amounts of training data.
+Due to its features, the 3W Dataset can also serve as a foundational resource for training basic models in Transfer Learning frameworks [[11]](#11). These frameworks rely on a large and generalized dataset as a reference or starting point for training models to address different but related challenges, particularly when an adequate training dataset for the target task is unavailable. This approach is widely used in Deep Learning [[12]](#12), especially in scenarios requiring large amounts of training data.
 
-As the 3W Dataset has been managed with Semantic Versioning [[13]](#13), its first version is identified by the code 1.0.0.
+The 3W Dataset is managed using Semantic Versioning [[13]](#13), with its initial release designated as version 1.0.0.
 
-Since its first publication, the 3W Dataset has been explored by several people who make up the 3W Community [[14]](#14), including independent professionals and representatives of research institutions, startups, companies, and oil operators from different countries. 
+Since its initial release, the 3W Dataset has been explored by several people who make up the 3W Community [[14]](#14), including independent professionals and representatives of research institutions, startups, companies, and oil operators from different countries. 
 
-Several works that have been developed and published by the 3W Community has formed a considerable scientific framework related to Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[15]](#15).
+The 3W Community has contributed to the development and publication of numerous works, forming a substantial scientific framework focused on the Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[15]](#15).
 
-In 2022, Petrobras created the 3W Project as the first pilot of the Open Lab Module of the Connections Program for Innovation [[16]](#16). The purpose of this module is to encourage open and collaborative project developments on the Internet, more specifically through GitHub [[17]](#17). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[15]](#15) on GitHub.
+In 2022, Petrobras officially launched the 3W Project as the inaugural pilot of the Open Lab Module within the Connections for Innovation Program [[16]](#16). The purpose of this module is to encourage open and collaborative project development on the Internet, particularly through the GitHub platform [[17]](#17). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[15]](#15) on GitHub.
 
-In this same Git repository and as part of the 3W Project, there is also the 3W Toolkit, which is a software package written in Python 3 [[18]](#18) whose purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches.
+As part of the 3W Project, the same Git repository also hosts the 3W Toolkit, a software package developed in Python 3 [[18]](#18). The purpose of this toolkit is facilitate and encourage the exploration of the 3W Dataset, as well as the development and comparison of different methodological approaches.
 
-In addition to these two main resources, 3W Dataset and 3W Toolkit, the 3W Project repository also provides:
+In addition to its two main resources — the 3W Dataset and the 3W Toolkit — the 3W Project repository also provides:
 
-- Detailed description of the motivation, strategy, ambition, governance, and other aspects of the 3W Project;
-- Lists with at least 100 published works that cite the 3W Dataset;
-- Specification of priority challenges (benchmarks);
+- A detailed description of the motivation, strategy, ambition, governance, and other aspects of the 3W Project;
+- A list of at least 100 published works that cite the 3W Dataset;
+- Specifications of priority challenges (benchmarks);
 - The 3W Project contributing guide;
 - Information about the 3W Community;
-- 3W Dataset overviews developed by the 3W Community;
+- Overviews of the 3W Dataset developed by the 3W Community;
 - The 3W Community code of conduct;
 - Release notes for the published versions of the 3W Dataset.
 
-Since 2022, the 3W Dataset has been evolved under Petrobras' leadership, and its current publicly available version is identified by the code 2.0.0.
+Since 2022, the 3W Dataset has been evolved under Petrobras' leadership, and its current publicly available version designated as 2.0.0.
 
-This data article describes the 3W Dataset 2.0.0 and summarizes the advances incorporated into this version since version 1.0.0. The detailed description provided encourages and supports the 3W Community and new 3W users to improve previous published results and to develop new robust methodologies, digital products and services capable of detecting undesirable events in oil wells with enough anticipation to enable corrective or mitigating actions.
+This data article describes the 3W Dataset 2.0.0 and summarizes the advancements  incorporated since version 1.0.0. The detailed description is intended to encourage and support the established 3W Community and also new users to improve previously published results and develop innovative methodologies, digital products and services. These advancements aim to enable Early Detection of undesirable events in oil wells, allowing for timely corrective or mitigating actions.
 
 ### Methods ⁉️
 
-> 👍 Short description about each class label (after Table 4), and figure improvements.
+> 👍 Figure improvements.
 
 In summary, the 3W Dataset 2.0.0 is composed of three types of instances generated by three methods, one per type of instance. These methods are described in this section and are based on the mathematical definition of MTS presented in the following subsection. According to this definition and to support both the 3W Project and this article, a nomenclature was developed and is detailed in the subsequent subsection. The types of instances and the methods associated with them are described in their own subsections. Some characteristics are common to the three methods and are, therefore, detailed in a separate subsection.
 
@@ -122,42 +122,42 @@ In summary, the 3W Dataset 2.0.0 is composed of three types of instances generat
 
 The chosen definition for MTS is the same as that used in the article that published the 3W Dataset 1.0.0 [[8]](#8). This definition is reproduced below.
 
-A dataset ***DS*** is a set of _m_ MTS (S<sup>_i_</sup> | _i_ = {1, 2, …, _m_}, ∀ _m_ ∈ Z, and _m_ > 1) and is defined as ***DS*** = {***S***<sup>1</sup>, ***S***<sup>2</sup>, …, ***S***<sup>_m_</sup>}. Each MTS _i_ is an instance that is composed of a set of _n_ univariate time series (x<sup>_i_</sup><sub>_j_</sub> | _j_ = {1, 2, …, _n_}, ∀ _n_ ∈ Z, and _n_ > 1) (also referenced as process variable or just variable), and is defined as ***S***<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1</sub>, _x_<sup>_i_</sup><sub>2</sub>, …, _x_<sup>_i_</sup><sub>_n_</sub>}. Each variable _j_ that composes an MTS _i_ is an ordered temporal sequence of _p_<sub>_i_</sub> observations taken at the time _t_ (_x_<sup>_i_</sup><sub>_j,t_</sub> | _t_ = {1, 2, …, _p_<sub>_i_</sub>}, ∀ _p_<sub>_i_</sub> ∈ Z, and _p_<sub>_i_</sub> > 1). Therefore, each MTS _i_ is viewed in this work as a matrix defined as S<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1,1</sub>, _x_<sup>_i_</sup><sub>2,1</sub>, ..., _x_<sup>_i_</sup><sub>_n_,1</sub>; _x_<sup>_i_</sup><sub>1,2</sub>, _x_<sup>_i_</sup><sub>2,2</sub>, ..., _x_<sup>_i_</sup><sub>_n_,2</sub>; _x_<sup>_i_</sup><sub>1,_p_<sub>_i_</sub></sub>, _x_<sup>_i_</sup><sub>2,_p_<sub>_i_</sub></sub>, ..., _x_<sup>_i_</sup><sub>_n_,_p_<sub>_i_</sub></sub>}.
+A dataset ***DS*** is a set of _m_ MTS (S<sup>_i_</sup> | _i_ = {1, 2, …, _m_}, ∀ _m_ ∈ Z, and _m_ > 1) and is defined as ***DS*** = {***S***<sup>1</sup>, ***S***<sup>2</sup>, …, ***S***<sup>_m_</sup>}. Each MTS _i_ is an instance composed of a set of _n_ univariate time series (x<sup>_i_</sup><sub>_j_</sub> | _j_ = {1, 2, …, _n_}, ∀ _n_ ∈ Z, and _n_ > 1) (also referenced as process variable or just variable), and is defined as ***S***<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1</sub>, _x_<sup>_i_</sup><sub>2</sub>, …, _x_<sup>_i_</sup><sub>_n_</sub>}. Each variable _j_ that composes an MTS _i_ is an ordered temporal sequence of _p_<sub>_i_</sub> observations taken at the time _t_ (_x_<sup>_i_</sup><sub>_j,t_</sub> | _t_ = {1, 2, …, _p_<sub>_i_</sub>}, ∀ _p_<sub>_i_</sub> ∈ Z, and _p_<sub>_i_</sub> > 1). Therefore, each MTS _i_ is considered in this work as a matrix defined as S<sup>_i_</sup> = {_x_<sup>_i_</sup><sub>1,1</sub>, _x_<sup>_i_</sup><sub>2,1</sub>, ..., _x_<sup>_i_</sup><sub>_n_,1</sub>; _x_<sup>_i_</sup><sub>1,2</sub>, _x_<sup>_i_</sup><sub>2,2</sub>, ..., _x_<sup>_i_</sup><sub>_n_,2</sub>; _x_<sup>_i_</sup><sub>1,_p_<sub>_i_</sub></sub>, _x_<sup>_i_</sup><sub>2,_p_<sub>_i_</sub></sub>, ..., _x_<sup>_i_</sup><sub>_n_,_p_<sub>_i_</sub></sub>}.
 
-Note that all instances have a fixed number of variables _n_; all instances are composed of the same _n_ variables; each instance can be composed of any number of observations _p_<sub>_i_</sub>; all _n_ variables of an instance _i_ have a fixed number of observations _p_<sub>_i_</sub>; and different instances can be composed of different number of observations.
+Note that all instances have a fixed number of variables _n_; all instances are composed of the same _n_ variables; each instance can be composed of any number of observations _p_<sub>_i_</sub>; all _n_ variables of an instance _i_ have a fixed number of observations _p_<sub>_i_</sub>; and different instances can be composed of different numbers of observations.
 
-#### The Developed Nomenclature
+#### Nomenclature
 
-The terms that make up the nomenclature used in this work are derived from the definition of MTS presented in the previous subsection. These terms are presented in Table 1.
+The nomenclature used in this work is derived from the definition of MTS presented in the previous subsection. The specific terms and their descriptions are presented in Table 1.
 
 **Table 1**<br>Terms that make up the nomenclature used in this work.
 | **Term** | **Meaning** |
 | -------- | ------- |
-| Variable | Physical quantity at a specific point in the production system of a specific well from which values are acquired to generate a univariable time series _j_: _x_<sub>_j_</sub> |
+| Variable | A physical quantity at a specific point in the production system of a particular well, from which measurements are acquired to produce a univariate time series _j_: _x_<sub>_j_</sub> |
 | Timestamp | Instant _t_ (date + time) at which values are acquired or generated and then associated with variables: YYYY-MM-DD HH:MM:SS |
 | Observation | Vector with values from _n_ variables of a single instance _i_ acquired at a timestamp _t_: {_x_<sup>_i_</sup><sub>1,t</sub>, _x_<sup>_i_</sup><sub>2,t</sub>, ..., _x_<sup>_i_</sup><sub>_n_,t</sub>} |
-| Label | Marking determined by an expert regarding the well condition in terms of a particular property. The 3W Dataset 2.0.0 has two labels which are defined below: class label and state label. The labeling process is explained in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
-| Class label | Marking determined by an expert regarding the well condition in terms of occurrence of an undesirable event or normality. See additional explanation in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
-| State label | Marking determined by an expert regarding the well condition in terms of operational status. See additional explanation in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
+| Label | Annotation provided by an expert regarding the well condition in terms of a particular property. The 3W Dataset 2.0.0 includes two types of labels which are defined below: class label and state label. The labeling process is explained in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
+| Class label | Annotation provided by an expert regarding the well condition in terms of normality or the occurrence of an undesirable event. See additional explanation in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
+| State label | Annotation provided by an expert regarding the well condition in terms of operational status. See additional explanation in [Common Characteristics Among the Methods](#common-characteristics-among-the-methods) Subsection |
 | Sample | Part of an MTS, including all _n_ variables and all observations between two timestamps |
 | Period | A sample that respects the following two conditions: all its observations are labeled with the same class label and it is not contained in another temporally larger sample with all observations labeled with the same class label. In other words, a period is the largest possible sample whose observations are labeled with the same class label |
 | Instance | Collection of temporally sequential periods associated with a specific well |
-| Type of event | Operational state in which a well can find itself, including normality, failures, and undesired states |
+| Type of event | Operational state in which a well can be found, including normality, failures, and undesired states |
 | Dataset | Set of instances with multiple types of events |
 
 #### Types of Instances
 
-As mentioned at the beginning of this section, the 3W Dataset 2.0.0 is composed of three types of instances, called real, simulated, and hand-drawn.
+As mentioned at the beginning of this section, the 3W Dataset 2.0.0 is composed of three types of instances, denoted as real, simulated, and hand-drawn.
 
-Each of these types of instances has been fundamentally defined according to the origin of its data. Data from real instances were obtained from different Petrobras' Plant Information Management Systems (PIMS) [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments. Data from simulated instances were generated with OLGA [[21]](#21), a dynamic multiphase flow simulator adopted by several oil companies around the globe. Data from hand-drawn instances were literally drawn by experts from Petrobras and extracted with a digital tool developed exclusively for this purpose.
+Each type of instance has been defined based on the origin of its data. Real instances were sourced from different Petrobras' Plant Information Management Systems (PIMS) [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments. Data from simulated instances were generated with OLGA [[21]](#21), a dynamic multiphase flow simulator widely adopted by oil companies worldwide. Data from hand-drawn instances were created by Petrobras experts using a digital tool developed exclusively for this purpose.
 
 Each type of instance, and therefore each data source, required the development of its own method for acquiring and labeling data. The common characteristics among the three developed methods are described in the following subsection. The particularities of each method are detailed in the subsequent subsections.
 
 #### Common Characteristics Among the Methods
 
-All instances, regardless of their type, are related to satellite-type offshore oil-producing wells without manifold [[22]](#22). This type of well can be operated with different lifting methods [[23]](#23) interspersed over time: sometimes with the natural method and sometimes with an artificial lifting method. The natural method can only be used when the reservoir pressure is sufficient to produce hydrocarbons at a commercial rate without requiring any additional energy. Otherwise, some artificial lifting method is required precisely so that extra energy can be added to the system.
+All instances, regardless of their type, are related to satellite-type offshore oil-producing wells that operate without manifold [[22]](#22). These wells can alternate between different lifting methods [[23]](#23) over time, utilizing either the natural method or an artificial lifting method. The natural method is employed when the reservoir pressure is sufficient to produce hydrocarbons at a commercially viable rate without the need for additional energy. When reservoir pressure is insufficient, an artificial lifting method is required to introduce extra energy into the system and maintain production.
 
-Fig. 1 contains a diagram representing the considered scenario when designing the 3W Dataset 2.0.0. This diagram only covers the components necessary for a good understanding of how the 3W Dataset 2.0.0 was conceived. In summary, this diagram shows the production platform, the well itself, the subsea Christmas tree [[24]](#24), the production and service lines, the electro-hydraulic umbilical, as well as sensors and valves.
+Fig. 1 presents a diagram illustrating the scenario considered during the design of the 3W Dataset 2.0.0. This diagram covers only the components necessary for a good understanding of how this dataset was conceived. In summary, it depicts the production platform, the well, the subsea Christmas tree [[24]](#24), the production and service lines, the electro-hydraulic umbilical, as well as sensors and valves.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -165,7 +165,7 @@ Fig. 1 contains a diagram representing the considered scenario when designing th
   </tr>
 </table>
 
-There are 27 variables present in all instances of the 3W Dataset 2.0.0. According to the adopted definition of MTS, even if data has not been obtained or generated for a certain variable in a certain instance, that variable is part of that instance. The name of each of these variables, what it represents and its physical position in the considered scenario (see Fig. 1) are presented in Table 2.
+The 3W Dataset 2.0.0 contains 27 variables present in all instances. Following the adopted definition of MTS, each variable is included in an instance even if no data has been obtained or generated for that variable in a specific instance. Table 2 provides the name of each variable, its representation, and its physical position within the scenario depicted in Fig. 1.
 
 **Table 2**<br>Details of the variables in the 3W Dataset 2.0.0.
 | **Name** | **Description** | **Position** |
@@ -200,9 +200,9 @@ There are 27 variables present in all instances of the 3W Dataset 2.0.0. Accordi
 
 Note that some variable names contain terms or acronyms in Portuguese. For example: ABER = abertura = opening; CKGL = GLCK; CKP = PCK; ESTADO = state; ANULAR = annulus; JUS = jusante = downstream; and MON = montante = upstream. Translating all these names into English is a pending issue that will be resolved in future versions of 3W Dataset.
 
-All instances were generated with observations taken every 1 second. In other words, the sampling frequency in all instances is fixed at 1 Hz.
+All instances were generated with observations recorded every 1 second, resulting in a fixed sampling frequency of 1 Hz.
 
-All the variables associated with each physical quantity (type of variable) are represented with the same measurement unit according to Table 3.
+All variables corresponding to a given physical quantity (type of variable) are expressed using the same measurement unit, as specified in Table 3.
 
 **Table 3**<br>Physical quantities and their measurement units.
 | **Physical Quantity** | **Measurement Unit** |
@@ -213,49 +213,57 @@ All the variables associated with each physical quantity (type of variable) are 
 | Temperature | ºC |
 | Valve state | Adimensional: 0 for closed, 1 for open, and 0.5 for any other state |
 
-The labeling process applied to all instances of the 3W Dataset 2.0.0 resulted in two types of labels, called class labels and state labels. The class labels are directly related to normality or to some undesirable event. The state labels are directly related to the operational status of the well in question. 
+The labeling process applied to all instances of the 3W Dataset 2.0.0 resulted in two types of labels: class labels and state labels. Class labels are associated with normal conditions or the occurrence of undesirable events, while state labels are related to the operational status of the respective well.
 
-The codes associated with the class labels are detailed in Table 4. Any of these codes can be associated with any observation from any instance. Codes 101 to 109 represent transient conditions between normality and steady states referring to undesirable events. It is important to note that not all undesirable events have transient conditions associated with them. When the well condition in terms of the occurrence of an undesirable event or normality is unknown at any time, the associated observation is labeled with the class label Unknown (code = NaN = Not a Number). Each instance as a whole is associated with the only steady state code (1 to 9) to which at least part of its observations have been associated. This code is referenced as type of event.
+The codes corresponding to the class labels are detailed in Table 4. Any of these codes can be assigned to any observation from any instance. Codes 101 to 109 represent transient conditions between normal operation and steady states associated with undesirable events. It is important to note that not all undesirable events have corresponding transient conditions. When the well condition in terms of normality or the occurrence of an undesirable event is unknown at any time, the associated observation is labeled with the class label Unknown (code = NaN = Not a Number). Additionally, each instance, as a whole, is associated with a single steady state code (from 1 to 9) that corresponds to at least part of its observations. This code is referred to as the type of event.
 
-**Table 4**<br>Class labels and their codes.
-| **Code** | **Class Label** |
-| -------- | ------- |
-| 0 | Normal Operation |
-| 1 | Abrupt Increase of BSW |
-| 2 | Spurious Closure of DHSV |
-| 3 | Severe Slugging |
-| 4 | Flow Instability |
-| 5 | Rapid Productivity Loss |
-| 6 | Quick Restriction in PCK |
-| 7 | Scaling in PCK |
-| 8 | Hydrate in Production Line |
-| 9 | Hydrate in Service Line |
-| 101 | Transient: Abruption Increase of BSW |
-| 102 | Transient: Spurious Closure of DHSV |
-| 105 | Transient: Rapid Productivity Loss |
-| 106 | Transient: Quick Restriction in PCK |
-| 107 | Transient: Scaling in PCK |
-| 108 | Transient: Hydrate in Production Line |
-| 109 | Transient: Hydrate in Service Line |
-| NaN | Unknown |
+**Table 4** <br>Class labels and their codes.
 
-The codes associated with the state labels are detailed in Table 5. Any of these codes can also be associated with any observation from any instance. None of these codes are associated with any instance as a whole. When the well operating condition is unknown at any time, the associated observation is labeled with the state label Unknown (code = NaN).
+| **Class Label**                        | **Steady State Code** | **Transient Code**                  |
+|----------------------------------------|-----------------------|-------------------------------------|
+| Normal Operation                       | 0                     | -                                   |
+| Abrupt Increase of BSW                 | 1                     | 101                                 |
+| Spurious Closure of DHSV               | 2                     | 102                                 |
+| Severe Slugging                        | 3                     | -                                   |
+| Flow Instability                       | 4                     | -                                   |
+| Rapid Productivity Loss                | 5                     | 105                                 |
+| Quick Restriction in PCK               | 6                     | 106                                 |
+| Scaling in PCK                         | 7                     | 107                                 |
+| Hydrate in Production Line             | 8                     | 108                                 |
+| Hydrate in Service Line                | 9                     | 109                                 |
+| Unknown                                | NaN                   | -                                   |
 
-**Table 5**<br>State labels and their codes.
-| **Code** | **State Label** |
-| -------- | ------- |
-| 0 | Open |
-| 1 | Shut-In |
-| 2 | Flushing Diesel |
-| 3 | Flushing Gas |
-| 4 | Bullheading |
-| 5 | Closed With Diesel |
-| 6 | Closed With Gas |
-| 7 | Restart |
-| 8 | Depressurization |
-| NaN | Unknown |
+The following are succinct descriptions of each type of event:
 
-Each operational status is defined according to valve configurations and the nature of recent and/or ongoing operations. In summary, we have the following:
+- Abrupt Increase of BSW: a sudden rise in Basic Sediment and Water ratio, potentially leading to flow assurance issues, reduced oil production, and operational challenges;
+- Spurious Closure of DHSV: an unexpected closure of Downhole Safety Valve, risking production losses;
+- Severe Slugging: periodic and intense flow instability that can damage equipment and disrupt operations;
+- Flow Instability: non-periodic flow disturbances that, if unaddressed, may escalate into severe slugging;
+- Rapid Productivity Loss: a sudden decrease in well productivity, often driven by changes in system properties;
+- Quick Restriction in PCK: a rapid and significant restriction in the production choke valve, typically caused by operational challenges;
+- Scaling in PCK: formation of inorganic deposits in the production choke valve, reducing oil and gas production;
+- Hydrate in Production Line: formation of crystalline compounds (hydrates) that can block pipelines, leading to significant production losses and high unblocking costs;
+- Hydrate in Service Line: similar to Hydrate in Production Line, but occurring in the service line, leading to distinct signature patterns in operational data.
+
+For further details on these events, please refer to Vargas et al. [[8]](#8).
+
+The codes associated with the state labels are detailed in Table 5. These codes can be associated with any observation from any instance, but they are not associated with any instance as a whole. If the well's operating condition is unknown at any given time, the respective observation is assigned the state label Unknown (code = NaN).
+
+**Table 5** <br>State labels and their codes.
+| **State Label** | **Code** |
+|---------|--------|
+| Open | 0 |
+| Shut-In | 1 |
+| Flushing Diesel | 2 |
+| Flushing Gas | 3 |
+| Bullheading | 4 |
+| Closed With Diesel | 5 |
+| Closed With Gas | 6 |
+| Restart | 7 |
+| Depressurization | 8 |
+| Unknown | NaN |
+
+Each operational status is defined based on the configuration of the valves and the nature of recent and/or ongoing operations. In summary, the statuses are as follows:
 
 - Open: all production valves (M1, W1, SDV-P, and PCK) are open, and auxiliary valves (PXO, and XO) are closed;
 - Shut-in: at least one valve in the production path is closed;
@@ -282,21 +290,21 @@ Understanding and correctly identifying these operational status is critical in 
 
 The particularities of the method developed for real data are listed below.
 
-* Regarding data acquisition:
-    1. From records in Petrobras' PIMS [[19]](#19), more precisely different AVEVA PI System [[20]](#20) environments;
-    1. With linear interpolation provided by the AVEVA PI System to simulate fixed acquisition frequency of 1 Hz;
-    1. No treatments for frozen variables and missing values;
-    1. With conversion to standard measurement units.
-* Regarding data labeling:
-    1. Historical records are mapped in a Tracking System, which ensures accessibility and traceability for labelers (experts from Petrobras and its partners);
-    1. Based on these records, a Labeler carry out the labeling process using a Petrobras' Web Tool developed exclusively for labeling and exporting real data to the 3W Dataset;
-    1. An expert committee (Validator) reviews labeling already carried out to suggest potential adjustments and ultimately validates the assigned labels;
-    1. A Curator (3W Dataset specialist) finalizes the process by updating the tool to mark the validated events (Instances) as labeled, thereby enabling them to be exported and included in the 3W Dataset;
-    1. Fig. 2 illustrates this labeling process and Fig. 3 shows an example of a real instance labeled with this process.
+* Data acquisition:
+    1. Data is sourced from Petrobras' PIMS [[19]](#19), specifically from different AVEVA PI System [[20]](#20) environments;
+    1. Linear interpolation provided by the AVEVA PI System is applied to simulate a fixed acquisition frequency of 1 Hz;
+    1. No treatment is performed for frozen variables or missing values;
+    1. Data is converted to standard measurement units.
+* Data labeling:
+    1. Historical records are mapped in a Tracking System to ensure accessibility and traceability for labelers (experts from Petrobras and its partners);
+    1. Labelers use a Petrobras' Web Tool developed to label and export real data to the 3W Dataset;
+    1. An expert committee (Validators) reviews the labeling, suggests potential adjustments, and validates the assigned labels;
+    1. A Curator (a 3W Dataset specialist) finalizes the labeling process by updating the tool to mark validated events (instances) as labeled, enabling their exportation and inclusion in the 3W Dataset;
+    1. Fig. 2 illustrates this labeling process and Fig. 3 provides an example of a labeled real instance.
 
 The main limitations of this method are:
 
-1. Coverage of only events that took place in real life and had archived records;
+1. It covers only events that occurred in real life and had archived records;
 1. Contextualization (mappings between variables and tags in PIMS) was not verified;
 1. Original measurement units configured in PIMS (before conversions) were not verified.
 
@@ -316,42 +324,42 @@ The main limitations of this method are:
 
 The particularities of the method developed for simulated data are listed below.
 
-* Regarding data generation:
-    1. By planning a matrix of simulations with OLGA [[21]](#21), gradually varying the main parameters of the considered scenario;
-    1. Running simulations and filtering out those whose results did not converge (well did not produce normally);
-    1. Automated extraction of time series from TPL files generated by OLGA and relating to successful simulations;
-    1. With perfectly periodic time series;
-    1. No frozen variables and missing values;
-    1. With variables already represented with standardized measurement units;
-    1. Without any noise in the time series.
-* Regarding data labeling:
-    1. Fully automated from simulation results (including transient periods).
+* Data generation:
+    1. A matrix was designed for simulations with OLGA [[21]](#21), gradually varying the main parameters of the considered scenario;
+    1. Simulations were run, and results that did not converge (e.g., wells that did not produce normally) were filtered out;
+    1. Time series were automatically extracted from TPL files generated by OLGA, corresponding to successful simulations;
+    1. Time series are perfectly periodic;
+    1. No frozen variables or missing values are present;
+    1. Variables are represented with standardized measurement units;
+    1. No noise is introduced in the time series.
+* Data labeling:
+    1. Labeling is fully automated based on simulation results, including transient periods.
 
 The main limitations of this method are:
 
-1. Use of a single phenomenological model in OLGA associated with a single well;
-1. Use of a simplified simulation strategy. Example: hydrates were simulated using a valve with a linear closing percentage;
-1. As some of the variables were not included in the simulations, all their values are considered missing in all the simulated instances.
+1. The method uses a single phenomenological model in OLGA associated with a single well;
+1. A simplified simulation strategy was employed. For example: hydrates were simulated using a valve with a linear closing percentage;
+1. Some variables were not included in the simulations, resulting in all their values being considered missing across all simulated instances.
 
 #### Method Relating to Hand-Drawn Instances
 
 The particularities of the method developed for hand-drawn data are listed below.
 
-* Regarding data generation:
-    1. Proprietary tool based on image processing developed exclusively for generating hand-drawn data for the 3W Dataset;
+* Data generation:
+    1. A proprietary tool based on image processing was developed exclusively for generating hand-drawn data for the 3W Dataset;
     1. Each variable was hand-drawn on its own chart by an expert from Petrobras. An example is shown in Fig. 4;
-    1. Automated digitization of time series via scanning graphs printed on paper;
-    1. With perfectly periodic time series;
-    1. No frozen variables and missing values;
-    1. With variables already represented with standardized measurement units.
-* Regarding data labeling:
-    1. From the expert markings on the graphs printed on paper (including transient periods).
+    1. Time series were automatically digitized by scanning graphs printed on paper;
+    1. Time series are perfectly periodic;
+    1. No frozen variables or missing values are present;
+    1. Variables are represented with standardized measurement units.
+* Data labeling:
+    1. Labels were derived from expert markings on the graphs printed on paper, including transient periods.
 
 The main limitations of this method are:
 
-1. Coverage of only the well-known signatures of the considered undesirable events;
-1. Expert bias when drawing and labeling time series;
-1. Expert manual dexterity.
+1. The method covers only well-known signatures of the considered undesirable events;
+1. There is potential for expert bias when drawing and labeling time series;
+1. The process depends on the expert's manual dexterity.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -363,13 +371,13 @@ The main limitations of this method are:
 
 The 3W Dataset 2.0.0 is licensed under CC BY 4.0 [[25]](#25) and is publicly available at the following Figshare [[26]](#26) address: https://figshare.com/articles/dataset/3w_v_2.0.0.
 
-An overview of this dataset is presented in the next subsection. Essentially, the main quantities and statistics are covered in this overview. The subsequent subsection details how the data records are structured.
+An overview of this dataset is presented in the next subsection, which covers the main quantities and statistics. The subsequent subsection details how the data records are structured.
 
 #### 3W Dataset 2.0.0 Overview
 
-The quantities of instances that compose the 3W Dataset 2.0.0, by type of instance and by type of event, are presented in Table 6.
+The quantities of instances that compose the 3W Dataset 2.0.0, categorized by type of instance and type of event, are presented in Table 6.
 
-**Table 6**<br>Quantities of instances that compose the 3W Dataset 2.0.0. In brackets are the quantities corresponding to version 1.0.0 and that are different in the current version.
+**Table 6**<br>Quantities of instances that compose the 3W Dataset 2.0.0. Values in brackets represent the quantities from version 1.0.0 that differ in the current version.
 | **Type of Event** | **Real** | **Simulated** | **Hand-Drawn** | **Total** |
 | -------- | ------- | ------- | ------- | ------- |
 | 0 - Normal Operation | 594 (597) | 0 | 0 | 594 (597) |
@@ -384,7 +392,7 @@ The quantities of instances that compose the 3W Dataset 2.0.0, by type of instan
 | 9 - Hydrate in Service Line | 57 (0) | 150 (0) | 0 | 207 (0) |
 | Total | 1119 (1025) | 1089 (939) | 20 | 2228 (1984) |
 
-Fig. 5 shows a scatter map with all the real instances. The oldest instance occurred in the middle of 2011 and the most recent one in the middle of 2023. In addition to the total number of considered wells (42), this map provides an overview of the distributions of the instances over time and between wells.
+Fig. 5 shows a scatter map containing all the real instances. The oldest instance occurred in mid-2011, while the most recent occurred in mid-2023. In addition to the total number of wells considered (42), this map provides an overview of the distribution of instances over time and across wells.
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -405,35 +413,39 @@ The 3W dataset's main statistics related to inherent difficulties of real data a
 
 In the root of the directory containing the dataset, there is a file called dataset.ini, which specifies properties of the 3W Dataset 2.0.0. The proposal is that all users concentrate their searches for these properties in this file.
 
-The data itself in the 3W Dataset 2.0.0 is organized in subdirectories dedicated to each type of event. The name of each directory is the code associated with each type of event (see Table 6).
+The data itself is organized into subdirectories dedicated to each type of event. The name of each directory corresponds to the code associated with each type of event (see Table 6).
 
-Each instance is persisted in its own Apache Parquet file [[27]](#27), or simply Parquet file, an open source, column-oriented data file format designed for efficient data storage and retrieval. It provides high-performance compression and encoding schemes to handle complex data in bulk and is supported in many programming languages and analytics tools.
+Each instance is stored in its own Apache Parquet file [[27]](#27), or simply Parquet file. Parquet is an open source, column-oriented data file format designed for efficient data storage and retrieval. It supports high-performance compression and encoding schemes, allowing it to handle complex data in bulk. It is also supported in many programming languages and analytics tools.
 
 The logic used to formulate file names depends on the type of instance.
 
-The name of each real instance is composed as follows: WELL-[incremental id]_[timestamp of oldest observation].parquet. Example: WELL-00014_20170917140000.parquet. Each real well is associated with a unique id, regardless of the type of event (subdirectory). As each real well can give rise to one or multiple instances, the [timestamp of oldest observation] part is needed to uniquely identify them.
+- **Real Instances:**  
+    - File names follow the format WELL-[incremental ID]_[timestamp of oldest observation].parquet. Example: WELL-00014_20170917140000.parquet;
+    - Each real well is associated with a unique ID, regardless of the type of event (subdirectory). As each real well can give rise to one or multiple instances, the [timestamp of oldest observation] ensures unique identification.
+- **Simulated Instances:**  
+    - File names follow the format SIMULATED_[incremental ID].parquet. Example: SIMULATED_00072.parquet;
+    - The incremental ID starts at 1 for each type of event (subdirectory) and is sufficient to uniquely identify all simulated instances.
+- **Hand-Drawn Instances:**  
+    - File names follow the format DRAWN_[incremental ID].parquet. Example: DRAWN_00007.parquet;
+    - The incremental ID starts at 1 for each type of event (subdirectory) and is sufficient to uniquely identify all hand-drawn instances.
 
-The name of each simulated instance is composed as follows: SIMULATED_[incremental id].parquet. Example: SIMULATED_00072.parquet. The incremental id is initialized from 1 for each type of event (subdirectory) and is sufficient to uniquely identify all its simulated instances.
-
-The name of each hand-drawn instance is composed as follows: DRAWN_[incremental id].parquet. Example: DRAWN_00007.parquet. The incremental id is initialized from 1 for each type of event (subdirectory) and is sufficient to uniquely identify all its hand-drawn instances.
-
-All Parquet files are created with the Pyarrow engine [[28]](#28) and the Brotli compression [[29]](#29). These choices were made on the basis of the good compromise between compression ratio and reading time.
+All Parquet files are created with the Pyarrow engine [[28]](#28) and the Brotli compression [[29]](#29). These choices provide a good compromise between compression ratio and read performance.
 
 The timestamp vector of each instance is used as the index in the corresponding Parquet file. All timestamps are represented in the format 'YYYY-MM-DD HH:MM:SS'.
 
-All variables and labels are stored in columns of Parquet files, variables as float and labels as Int64 (not int64).
+All variables and labels are stored as columns in the Parquet files, variables as float and labels as Int64 (not int64).
 
 ### Technical Validation ✅
 
-Several carefully incorporated features in the methods described in the Methods Section ensure the high-technical quality of the 3W Dataset 2.0.0. The main ones are as follows:
+Several carefully incorporated features in the methods described in the Methods Section ensure the high-technical quality of the 3W Dataset 2.0.0. The main features are as follows:
 
-* In the real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
-* In the simulated instances: simulation models calibrated by experts, and systematized labeling;
-* In the hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
+* Real instances: maintenance of real data characteristics, labeling by experts, and validation by expert committee;
+* Simulated instances: simulation models calibrated by experts, and systematized labeling;
+* Hand-drawn instances: hand-drawn graphs by experts, and systematized labeling.
 
 The experts mentioned here are all from Petrobras and its partners.
 
-The quantity and the diversity of the works developed and published by the 3W Community show the relevance and the high-technical quality of the 3W Dataset. This scientific framework is composed of dozens of published works, including books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[15]](#15).
+The quantity and the diversity of the works developed and published by the 3W Community demonstrate the relevance and the high-technical quality of the 3W Dataset. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 6. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[15]](#15).
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -443,33 +455,31 @@ The quantity and the diversity of the works developed and published by the 3W Co
 
 ### Usage Notes ✅
 
-This data article describes the 3W Dataset 2.0.0, the current publicly available version, and summarizes its evolution with respect to version 1.0.0, which is detailed by Vargas et al. [[8]](#8).
+This data article describes the 3W Dataset 2.0.0, the current publicly available version, and summarizes its evolution from version 1.0.0, as previously detailed by Vargas et al. [[8]](#8).
 
-The 3W Dataset 2.0.0 was generated with code written in Python 3.10 [[18]](#18) and the main used resources were from the Pandas 1.5 [[30]](#30) and Pyarrow 19.0 [[28]](#28) packages. 
+The 3W Dataset 2.0.0 was generated with Python 3.10 [[18]](#18) code, using resources mainly provided by the Pandas 1.5 [[30]](#30), and Pyarrow 19.0 [[28]](#28) packages. 
 
-The 3W Dataset 2.0.0 was designed to be explored with essentially any programming language (not just Python). Regardless of the language used, the Apache Parquet files [[27]](#27) must be read with the Pyarrow engine [[28]](#28) and the Brotli compression [[29]](#29).
+Designed for cross-platform compatibility, the 3W Dataset 2.0.0 can be explored using virtually any programming language. However, regardless of the language, the Apache Parquet files [[27]](#27) must be accessed using the Pyarrow engine [[28]](#28) alongside Brotli compression [[29]](#29).
 
-When comparing results obtained in different works, it is important to note which versions of the 3W Dataset were used. Certain comparisons can be complex due to the significant differences between the versions of the 3W Dataset published so far. 
+When comparing results obtained in different works, it is important to distinguish which versions of the 3W Dataset were used. Due to substantial differences among the published versions, certain comparisons may pose challenges and require careful consideration.
 
-The main changes incorporated in version 2.0.0 compared to version 1.0.0 are as follows. More details can be found in the release notes available in the 3W Project repository [[15]](#15).
+The main updates introduced in version 2.0.0 compared to version 1.0.0 are summarized below. More details can be found in the release notes available in the 3W Project repository [[15]](#15).
 
-1. Its structure has been considerably modified. Data is now saved in Parquet files, and no longer in CSV files; 
-1. 1 variable has been discontinued (T-JUS-CKGL) and 20 others have been added, resulting in 27 variables in the current version;
-1. 1 undesirable type of event has been added: Hydrate in Service Line;
+1. The dataset structure has been significantly revised. Data is now stored in Parquet files instead of CSV files;
+1. One variable (T-JUS-CKGL) has been discontinued and 20 others have been added, resulting in 27 variables in the current version;
+1. One new type of undesirable event has been added: Hydrate in Service Line;
 1. The number of real instances has increased by 94;
 1. The number of simulated instances has increased by 150;
-1. The number of real wells covered has rose from 21 to 42;
-1. 1 label has been added: state label;
-1. More labeled data (observations) have been incorporated in several instances;
-1. No simulated or hand-drawn instances have changed significantly. All 20 additional variables were incorporated into these instances with missing values.
+1. The number of real wells covered has doubled, increasing from 21 to 42;
+1. A new label, the state label, has been added;
+1. More labeled observations have been incorporated across several instances;
+1. No significant changes have been made to simulated or hand-drawn instances. All 20 new variables were incorporated into these instances with missing values.
 
-The operational status of a well (indicated with the state label) has a strong relationship with the values of its variables. Therefore, algorithms can be applied to the 3W Dataset to quantify these relationships or the state label can be used to select data for specific training.
+The operational status of a well, represented by the state label, is strongly correlated with the values of its variables. This allows algorithms to be applied to the 3W Dataset for quantifying these relationships. Additionaly, the state label can be used to select data for specific training purposes.
 
 ### Code Availability ✅
 
-The 3W Project also develops and makes publicly available in its Git repository [[15]](#15) the 3W Toolkit, which is a software package written in Python 3 [[18]](#18) and licensed under Apache 2.0 [[31]](#31). Its purpose is to facilitate and encourage exploration of the 3W Dataset and proposals for comparative approaches. It provides a range of features for loading data, visualizing time series, calculating metrics, etc.
-
-Python practitioners can therefore use and adapt the 3W Toolkit to speed up their analysis with the 3W Dataset 2.0.0.
+The 3W Project also develops and maintains the 3W Toolkit, a publicly available software package, hosted in its Git repository [[15]](#15). Written in Python 3 [[18]](#18) and licensed under Apache 2.0 [[31]](#31), this toolkit is designed to facilitate and encourage exploration of the 3W Dataset as well as the development and evaluation of comparative approaches. It provides a range of features for loading data, visualizing time series, calculating metrics, and more. Python practitioners can therefore use and adapt the 3W Toolkit to speed up their analysis with the 3W Dataset 2.0.0.
 
 An in-depth description of the 3W Toolkit is beyond the scope of this data article, but its documentation and examples of use can be found in the 3W Project repository [[15]](#15).
 
@@ -484,7 +494,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 > 💡 Author affiliations should provide enough detail for the author to be reached, including the department, institution and country wherever possible. Full postal addresses are not required. Affiliations should be cited in numerical order within the author list, starting with the affiliations of the first author. Email addresses should be provided for corresponding authors.
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
-    * Cláudio Benevenuto de Campos Lima, Ricardo Emanuel Vaz Vargas, Jean Carlos Dias de Araújo & Mateus de Araujo Fernandes
+    * Ricardo Emanuel Vaz Vargas, Afrânio José de Melo Junior, Cláudio Benevenuto de Campos Lima, Jean Carlos Dias de Araújo & Mateus de Araujo Fernandes
 * Department of Electrical Engineering, Federal University of Espírito Santo (UFES), Vitória, Brazil
     * Celso José Munaro & Patrick Marques Ciarelli
 * Department of Informatics, Federal University of Espírito Santo (UFES), Vitória, Brazil
@@ -503,7 +513,7 @@ _Note: when you propose contributions through [Pull Request](https://docs.github
 
 > 💡 The 'Author contributions' statement should briefly describe each author's contribution to the work.
 
-R.V. lead this project, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. merged contributions, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. A.B did it. C.D did that.
+R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
