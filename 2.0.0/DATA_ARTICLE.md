@@ -514,6 +514,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 
 * Petróleo Brasileiro S.A. (Petrobras), Rio de Janeiro, Brazil
     * Ricardo Emanuel Vaz Vargas, Afrânio José de Melo Junior, Cláudio Benevenuto de Campos Lima, Jean Carlos Dias de Araújo, Mateus de Araujo Fernandes & Rogério Leite Alves Pinto
+* Craft & Hawkins Department of Petroleum Engineering, Louisiana State University, Baton Rouge, United States of America
+    * Jader Riso Barbosa Junior
 * Department of Electrical Engineering, Federal University of Espírito Santo (UFES), Vitória, Brazil
     * Celso José Munaro & Patrick Marques Ciarelli
 * Department of Informatics, Federal University of Espírito Santo (UFES), Vitória, Brazil
@@ -524,12 +526,13 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Eduardo Toledo de Lima Junior, Igor de Melo Nery Oliveira, Lucas Gouveia Omena Lopes & Lucas Pereira de Gouveia
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
     * Guiherme Fidelis Peixer
+    * Jaime Andrés Lozano Cadena
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your name in association with your affiliation in the list above._
 
 ### Author Contributions ✅
 
-R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. F.B. labeled data, added content, created figures, provided references, and reviewed texts. J.C. labeled data, added content, created figures, provided references, and reviewed texts. M.S. labeled data, added content, created figures, provided references, and reviewed texts. R.B. labeled data, added content, created figures, provided references, and reviewed texts. R.P. labeled data, added content, and reviewed texts.
+R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. J.C. added content, created figures, provided references, and reviewed texts. J.J. added content, created figures, provided references, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. F.B. labeled data, added content, created figures, provided references, and reviewed texts. J.C. labeled data, added content, created figures, provided references, and reviewed texts. M.S. labeled data, added content, created figures, provided references, and reviewed texts. R.B. labeled data, added content, created figures, provided references, and reviewed texts. R.P. labeled data, added content, and reviewed texts.
 
 _Note: when you propose contributions through [Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), add your initials and summarize your contributions in the list above, which cannot be subdivided._
 
