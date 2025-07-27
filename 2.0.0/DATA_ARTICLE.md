@@ -524,9 +524,9 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Felipe Muntzberg Barrocas, João Neuenschwander Escosteguy Carneiro, Matheus Lima Scramignon & Rodrigo Castello Branco
 * Infotec Brasil, Rio de Janeiro, Brazil
     * Tiago Pereira Siqueira
-* Laboratório de Computação Científica e Visualização (LCCV), Federal University of Alagoas (UFAL), Maceió, Brazil
+* Laboratory of Scientific Computing and Visualization (LCCV), Center of Technology (CTEC), Federal University of Alagoas (UFAL), Maceió, Brazil
     * Eduardo Toledo de Lima Junior, Igor de Melo Nery Oliveira, Lucas Gouveia Omena Lopes & Lucas Pereira de Gouveia
-* POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
+* Research Laboratories for Emerging Technologies in Cooling and Thermophysics (POLO), Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
     * Guilherme Fidelis Peixer & Jaime Andrés Lozano Cadena
 
 ### Author Contributions ✅
