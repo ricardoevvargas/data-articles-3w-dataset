@@ -91,7 +91,7 @@ The 3W Dataset is managed using Semantic Versioning [[15]](#15), with its initia
 
 Since its initial release, the 3W Dataset has been explored by several people who make up the 3W Community [[16]](#16), including independent professionals and representatives of research institutions, startups, companies, and oil operators from different countries. 
 
-The 3W Community has contributed to the development and publication of numerous works, forming a substantial scientific framework focused on the Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[17]](#17).
+The 3W Community has contributed to the development and publication of numerous works, forming a substantial scientific framework focused on the Early Detection of undesirable events in oil wells. This framework is composed by books, conference papers, data articles, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. Publications identified so far that cite the 3W Dataset are listed in the 3W Project repository [[17]](#17).
 
 In 2022, Petrobras officially launched the 3W Project as the inaugural pilot of the Open Lab Module within the Connections for Innovation Program [[18]](#18). The purpose of this module is to encourage open and collaborative project development on the Internet, particularly through the GitHub platform [[19]](#19). Since then, the 3W Dataset has been maintained and developed in its dedicated corporate Git repository [[17]](#17) on GitHub.
 
@@ -309,37 +309,37 @@ The main limitations of this method are:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 2</b><br><img src="images/labeling_process.png" width=45%><br>Illustration of the labeling process of real instances.</td>
+    <td><b>Fig. 2</b><br><img src="images/labeling_process.svg" width=70%><br>Illustration of the labeling process of real instances.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 3</b><br><img src="images/real_spurious_closure_dhsv_instance.png" width=75%><br>Example of a real Spurious Closure of DHSV instance in which pressure increase is observed in sensors located upstream of the DHSV (PDG) and pressure decreases are observed in sensors located downstream of the DHSV (TPT and MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 102; red (3rd period = Steady State): class label = 2; dark green (Open): state label = 0.</td>
+    <td><b>Fig. 3</b><br><img src="images/real_spurious_closure_dhsv_instance.svg" width=100%><br>Example of a real Spurious Closure of DHSV instance in which pressure increase is observed in sensors located upstream of the DHSV (PDG) and pressure decreases are observed in sensors located downstream of the DHSV (TPT and MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 102; red (3rd period = Steady State): class label = 2; dark green (Open): state label = 0.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 4</b><br><img src="images/real_quick_restriction_pck_instance.png" width=75%><br>Example of a real Quick Restriction in PCK instance in which pressure increases are observed in sensors located in TPT, PDG, and MON-CKP. This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 106; red (3rd period = Steady State): class label = 6; dark green (Open): state label = 0.</td>
+    <td><b>Fig. 4</b><br><img src="images/real_quick_restriction_pck_instance.svg" width=100%><br>Example of a real Quick Restriction in PCK instance in which pressure increases are observed in sensors located in TPT, PDG, and MON-CKP. This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 106; red (3rd period = Steady State): class label = 6; dark green (Open): state label = 0.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 5</b><br><img src="images/real_hydrate_production_line_instance.png" width=75%><br>Example of a real Hydrate in Production Line instance in which pressure increases are observed in sensors located upstream of the production line (PDG and TPT) and pressure decrease is observed in sensor located downstream of the production line (MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 108; red (3rd period = Steady State): class label = 8; dark green (Open): state label = 0.</td>
+    <td><b>Fig. 5</b><br><img src="images/real_hydrate_production_line_instance.svg" width=100%><br>Example of a real Hydrate in Production Line instance in which pressure increases are observed in sensors located upstream of the production line (PDG and TPT) and pressure decrease is observed in sensor located downstream of the production line (MON-CKP). This example has 3 periods which were labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; yellow (2nd period = Transient Condition): class label = 108; red (3rd period = Steady State): class label = 8; dark green (Open): state label = 0.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 6</b><br><img src="images/real_severe_lugging_instance.png" width=75%><br>Example of a real Severe Slugging instance in which pressure oscillations with amplitudes above 10 bar are observed in sensors located in PDG and TPT. This example has 1 period which was labeled with the Petrobras' Web Tool as follows: red (1st period = Steady State): class label = 3; dark green (Open): state label = 0.</td>
+    <td><b>Fig. 6</b><br><img src="images/real_severe_lugging_instance.svg" width=100%><br>Example of a real Severe Slugging instance in which pressure oscillations with amplitudes above 10 bar are observed in sensors located in PDG and TPT. This example has 1 period which was labeled with the Petrobras' Web Tool as follows: red (1st period = Steady State): class label = 3; dark green (Open): state label = 0.</td>
   </tr>
 </table>
 
 <table align="center" style="margin: 0px auto;">
   <tr>
-    <td><b>Fig. 7</b><br><img src="images/real_normal_operation_instance.png" width=75%><br>Example of a real Normal Operation instance in which depressurization has been carried out during a well shutdown, as shown by the opening of the PCK and SDV-P. This example has 1 period which was labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; dark green (Open): state label = 0; gray (Shut-In): state label = 1; salmon (Depressurization): state label = 8; magenta (Restart): state label = 7.</td>
+    <td><b>Fig. 7</b><br><img src="images/real_normal_operation_instance.svg" width=100%><br>Example of a real Normal Operation instance in which depressurization has been carried out during a well shutdown, as shown by the opening of the PCK and SDV-P. This example has 1 period which was labeled with the Petrobras' Web Tool as follows: light green (1st period = Normal Operation): class label = 0; dark green (Open): state label = 0; gray (Shut-In): state label = 1; salmon (Depressurization): state label = 8; magenta (Restart): state label = 7.</td>
   </tr>
 </table>
  
@@ -468,7 +468,7 @@ Several carefully incorporated features in the methods described in the Methods 
 
 The experts mentioned here are all from Petrobras and its partners.
 
-The quantity and the diversity of the works developed and published by the 3W Community demonstrate the relevance and the high-technical quality of the 3W Dataset. This framework is composed by books, conference papers, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 10. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[17]](#17).
+The quantity and the diversity of the works developed and published by the 3W Community demonstrate the relevance and the high-technical quality of the 3W Dataset. This framework is composed by books, conference papers, data articles, doctoral theses, final graduation projects, journal articles, master's degree dissertations, repository articles, and specialization monographs. The quantitative annual progress of these publications to date is shown in Fig. 10. Over the years, the adoption of the 3W Dataset by the 3W Community has steadily increased, highlighting its relevance, accessibility, and practical applicability in advancing AEM systems. More information on these works can be found in the 3W Project repository [[17]](#17).
 
 <table align="center" style="margin: 0px auto;">
   <tr>
@@ -522,6 +522,8 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
     * Flávio Miguel Varejão
 * HybridAI, Rio de Janeiro, Brazil
     * Felipe Muntzberg Barrocas, João Neuenschwander Escosteguy Carneiro, Matheus Lima Scramignon & Rodrigo Castello Branco
+* Infotec Brasil, Rio de Janeiro, Brazil
+    * Tiago Pereira Siqueira
 * Laboratório de Computação Científica e Visualização (LCCV), Federal University of Alagoas (UFAL), Maceió, Brazil
     * Eduardo Toledo de Lima Junior, Igor de Melo Nery Oliveira, Lucas Gouveia Omena Lopes & Lucas Pereira de Gouveia
 * POLO - Research Laboratories for Emerging Technologies in Cooling and Thermophysics, Department of Mechanical Engineering, Federal University of Santa Catarina (UFSC), Florianópolis, Brazil
@@ -529,7 +531,7 @@ The authors would like to thank Petróleo Brasileiro S.A. (Petrobras) for provid
 
 ### Author Contributions ✅
 
-R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. J.C. added content, created figures, provided references, and reviewed texts. J.J. added content, created figures, provided references, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. F.B. labeled data, added content, created figures, provided references, and reviewed texts. J.C. labeled data, added content, created figures, provided references, and reviewed texts. M.S. labeled data, added content, created figures, provided references, and reviewed texts. R.B. labeled data, added content, created figures, provided references, and reviewed texts. R.P. labeled data, added content, and reviewed texts.
+R.V. lead this project, labeled data, prepared this manuscript drafts version, and incorporated contributions from all co-authors to produce the submitted and published versions. A.J. lead this project, labeled data, added content, and reviewed texts. C.L. reviewed texts. C.M. added content, and reviewed texts. E.J. provided references, and reviewed texts. F.V. reviewed texts. G.P. added content, created figures, provided references, and reviewed texts. I.O. provided references, and reviewed texts. J.A. labeled data, merged contributions, and reviewed texts. J.C. added content, created figures, provided references, and reviewed texts. J.J. added content, created figures, provided references, and reviewed texts. L.G. provided references, and reviewed texts. L.L. provided references, and reviewed texts. M.F. provided references, and reviewed texts. P.C. added content, and reviewed texts. F.B. labeled data, added content, created figures, provided references, and reviewed texts. J.C. labeled data, added content, created figures, provided references, and reviewed texts. M.S. labeled data, added content, created figures, provided references, and reviewed texts. R.B. labeled data, added content, created figures, provided references, and reviewed texts. R.P. labeled data, added content, and reviewed texts. T.S. improved figures.
 
 ### Corresponding Author ✅
 
